@@ -1,14 +1,27 @@
 <script setup>
 import {onMounted, onUnmounted} from "vue";
-import {initialize} from "../three/home.js";
+import {clearAnimation, initialize} from "../three/home.js";
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
+import router from "../router.js";
 const i18n = useI18n();
 const current = ref(i18n.locale.value);
 function setLanguage(lang) {
   console.log("CLICK LANGUAGE")
   i18n.locale.value = lang;
   current.value = lang;
+}
+
+function go2About() {
+  router.push('/about')
+}
+
+function go2Works() {
+  router.push('/works')
+}
+
+function go2Projects() {
+  router.push('/projects')
 }
 
 onMounted(() => {
@@ -22,12 +35,13 @@ onMounted(() => {
 
 onUnmounted(() => {
   // window.removeEventListener('resize', adjustTitleAlignment);
+  clearAnimation();
 });
 
 </script>
 
 <template>
-  <div id="background"  style="background-color: #1a1a1a"></div>
+  <div id="background"></div>
   <div id="f-center">
     <h1 id="h-title">PANNIC</h1>
     <div class="m-text" style="padding-left: 1vw">
@@ -57,6 +71,22 @@ onUnmounted(() => {
         <a href="https://github.com/Pannic17"><img class="p-social" src="../assets/icon_github.png" alt="Github"/></a>
         <a href="https://www.instagram.com/pannic17/"><img class="p-social" src="../assets/icon_ins.png" alt="Instagram"></a>
       </div>
+
+      <div class="f-button">
+        <button
+            class="sub-button"
+            @click="go2About"
+        >ABOUT</button>
+        <button
+            class="sub-button"
+            @click="go2Works"
+        >WORKS</button>
+        <button
+            class="sub-button"
+            @click="go2Projects"
+        >PROJECTS</button>
+      </div>
+
     </div>
   </div>
   <div id="three-canvas"></div>
@@ -75,6 +105,7 @@ onUnmounted(() => {
 
 #background {
   z-index: -1;
+  background-color: #1a1a1a;
 }
 
 #f-center {
@@ -113,6 +144,31 @@ a {
   font-size: inherit;
 }
 
+.f-button {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 2vh;
+}
+
+.sub-button {
+  background: none;
+  border: none;
+  color: #f9f9f9; /* 或者您希望的任何颜色 */
+  cursor: pointer;
+  padding: 0;
+  //font-weight: bold;
+  font-size: calc(var(--vsr) * 3);
+  padding-block: calc(var(--vsr) * 1);
+}
+
+.sub-button:hover {
+  //background-color: #aaaaaa;
+  color: #54a296;
+  //border-radius: 5px;
+  //font-weight: bold;
+  //padding-block: calc(var(--vsr) * 1);
+}
+
 .is-active {
   text-decoration: underline;
 }
@@ -132,8 +188,9 @@ a {
 .p-social {
   width: 5vh;
   padding-left: 2vh;
-
 }
+
+
 
 @media screen and (max-aspect-ratio: 1/2) {
   #h-title {
@@ -142,6 +199,20 @@ a {
   #m-intro {
     padding-top: 25vh;
     width: 100%;
+  }
+  .f-button {
+    display: flex;
+    flex-direction: column;
+    padding-block: 2vh;
+  }
+  .sub-button {
+    background: none;
+    border: none;
+    color: #f9f9f9; /* 或者您希望的任何颜色 */
+    cursor: pointer;
+    padding: 0;
+    font-size: 3vh;
+    margin: 1vh;
   }
 }
 </style>

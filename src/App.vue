@@ -29,7 +29,20 @@ import HelloWorld from './components/HelloWorld.vue'
   filter: drop-shadow(0 0 2em #42b883aa);
 }
 
-p{
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1a1a1a;
+}
+
+p {
   color: #aaaaaa;
+}
+
+h1 {
+  color: #f9f9f9;
+  padding-top: 9vh;
+  padding-bottom: 2vh;
+  margin-bottom: 0;
+  font-size: calc(var(--vsr) * 20);
 }
 </style>

@@ -25,7 +25,8 @@ let composer, clock, light;
 let model;
 let active = [];
 let times;
-let effects = []
+let effects = [];
+let animationId;
 
 export function initEffect (effect) {
     effect.end();
@@ -154,9 +155,10 @@ function animate () {
     // console.log(active)
 
     composer.render();
-    requestAnimationFrame(animate);
-    // sphereParticles.rotation.y += 0.5
-    // control.update();
-    // renderer.render(scene, camera);
-    // requestAnimationFrame(animate);
+    animationId = requestAnimationFrame(animate);
+}
+
+export function clearAnimation() {
+    // 停止动画循环
+    cancelAnimationFrame(animationId);
 }
