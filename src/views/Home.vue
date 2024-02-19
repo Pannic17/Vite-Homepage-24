@@ -66,7 +66,7 @@ onUnmounted(() => {
       <p id="m-intro">
         As a creative programmer, Innovative developer and project manager, successfully launching a mobile online trading app. From my academic background in creative programming, I have been specialised in integrating neural networks with game engines, demonstrating a strong commitment to the game industry.
       </p>
-      <div class="f-social">
+      <div class="f-social-v">
         <a href="mailto:pannic1984@outlook.com"><img class="p-social" src="../assets/icon_email.png" alt="Email"></a>
         <a href="https://github.com/Pannic17"><img class="p-social" src="../assets/icon_github.png" alt="Github"/></a>
         <a href="https://www.instagram.com/pannic17/"><img class="p-social" src="../assets/icon_ins.png" alt="Instagram"></a>
@@ -85,6 +85,12 @@ onUnmounted(() => {
             class="sub-button"
             @click="go2Projects"
         >PROJECTS</button>
+      </div>
+
+      <div class="f-social-c">
+        <a href="mailto:pannic1984@outlook.com"><img class="p-social" src="../assets/icon_email.png" alt="Email"></a>
+        <a href="https://github.com/Pannic17"><img class="p-social" src="../assets/icon_github.png" alt="Github"/></a>
+        <a href="https://www.instagram.com/pannic17/"><img class="p-social" src="../assets/icon_ins.png" alt="Instagram"></a>
       </div>
 
     </div>
@@ -112,11 +118,15 @@ onUnmounted(() => {
   width: 80%;
   margin: 0 auto;
   text-align: left;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE10+/Edge */
+  user-select: none;
 }
 
 #h-title {
   color: #f9f9f9;
-  padding-top: 9vh;
+  margin-top: 8vh;
   padding-bottom: 2vh;
   margin-bottom: 0;
   font-size: calc(var(--vsr) * 20);
@@ -181,8 +191,12 @@ a {
   width: 50%;
 }
 
-.f-social{
+.f-social-v{
   text-align: right;
+}
+
+.f-social-c{
+  display: none;
 }
 
 .p-social {
@@ -213,6 +227,17 @@ a {
     padding: 0;
     font-size: 3vh;
     margin: 1vh;
+  }
+  .f-social-v {
+    display: none;
+  }
+  .f-social-c {
+    display: inherit;
+    text-align: center;
+    padding-bottom: 3vh;
+  }
+  .p-social {
+    padding: 1vh;
   }
 }
 </style>

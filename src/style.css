@@ -1,6 +1,6 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  /*line-height: 1.5;*/
   font-weight: 400;
 
   color-scheme: light dark;
@@ -18,17 +18,33 @@ h1 {
   color: #f9f9f9;
   padding-top: 9vh;
   padding-bottom: 2vh;
-  margin-bottom: 0;
+  margin: 0;
   font-size: calc(var(--vsr) * 15);
 }
 
+h2 {
+  color: #f9f9f9;
+  padding-top: 4vh;
+  margin: 0;
+  font-size: calc(var(--vsr) * 10);
+}
 
-.card {
-  padding: 2em;
+p {
+  color: #aaaaaa;
+}
+
+span {
+  color: #aaaaaa;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 #app {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
 #background {
