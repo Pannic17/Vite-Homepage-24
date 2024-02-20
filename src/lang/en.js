@@ -5,12 +5,14 @@ export default {
         "bachelor": "BSc Biology & Immunology - University of Toronto"
     },
     "menu":{
-        "about": "About",
-        "game": "Demo & Designs",
-        "project": "Projects",
-        "artwork": "Artworks",
-        "home": "Home",
-        "language": "中文",
+        "about": "ABOUT",
+        "works": "WORKS",
+        "projects": "PROJECTS",
+        "back": "BACK"
+    },
+    "projects":{
+        "sub1": "Projects",
+        "sub2": "Developed/Participated"
     },
     "about":{
         "about": "About PanNic",

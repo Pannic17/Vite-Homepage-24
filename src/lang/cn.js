@@ -6,18 +6,17 @@ export default {
     },
     "menu":{
         "about": "关于",
-        "game": "展示与设计",
-        "project": "程序项目",
-        "artwork": "媒体艺术",
-        "home": "首页",
-        "language": "English",
+        "works": "作品",
+        "projects": "项目",
+        "back": "返回"
+    },
+    "projects":{
+        "sub1": "",
+        "sub2": "开发/参与的项目"
     },
     "about":{
         "about": "关于PanNic",
         "para": "PanNic，2021年毕业于多伦多大学的人类生物学和免疫学",
-    },
-    "contact":{
-        "email": "电子邮件：",
     },
     "game":{
         "demo": "项目Demo",

@@ -1,17 +1,23 @@
 <script setup>
-
-import HelloWorld from "../App.vue";
+import SubRight from "../components/SubRight.vue";
 </script>
 
 <template>
-  <div id="background"  style="background-color: #1a1a1a"></div>
+  <div id="background"></div>
   <div class="f-center">
-    <h2>ABOUT</h2>
-    <div class="subtitle">
-      <span>关于</span><span class="t-cyan"> PANNIC</span>
+    <div class="h-sub">
+      <div class="h-left">
+        <h2>ABOUT</h2>
+        <div class="subtitle">
+          <span>关于</span><span class="t-cyan"> PANNIC</span>
+        </div>
+      </div>
+      <SubRight></SubRight>
     </div>
-    <div style="height: 1px; background-color: #aaaaaa; margin-block: 1vh"></div>
+
+    <div style="height: 1px; background-color: var(--context-color); margin-block: 1vh"></div>
   </div>
+  <h1>UNDER<br>CONSTRUCTION</h1>
 </template>
 
 <style scoped>
@@ -26,8 +32,12 @@ import HelloWorld from "../App.vue";
 }
 
 .t-cyan {
-  color: #54a296;
+  color: var(--hover-color);
 }
 
-
+.h-sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
 </style>
