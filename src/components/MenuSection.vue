@@ -60,8 +60,8 @@ const props = defineProps({
 .s-intro {
   right: 0;
   margin-bottom: 1vh;
-  width: 45vw;
-  text-align: left;
+  width: calc(84vw - var(--vsr) * 40);
+  text-align: right;
 }
 
 .s-title {
@@ -85,7 +85,7 @@ const props = defineProps({
   display: flex;
   justify-content: space-between;
   height: calc(var(--vsr) * 40);
-  width: 100%;
+  width: 90vw;
 
 
   &::before,
@@ -139,14 +139,23 @@ const props = defineProps({
 
   .s-intro {
     width: 100%;
+    text-align: left;
   }
 
   .s-title {
     font-size: calc(var(--vsr) * 5)
   }
 
-  .s-category {
+  .s-subtitles {
+    margin-right: auto;
     margin-block: 1vh;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+  }
+
+  .s-tags {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
 </style>
