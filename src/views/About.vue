@@ -4,8 +4,9 @@ import {onMounted} from "vue";
 
 onMounted(() => {
   // window.removeEventListener('resize', adjustTitleAlignment);
-  const topHeight = document.getElementById('f-top').clientHeight;
+  let topHeight = document.getElementById('f-top').clientHeight;
   const block = document.getElementById('block')
+  topHeight = topHeight - 0.02 * window.innerHeight;
   block.style.height = `${topHeight}px`
 })
 </script>
