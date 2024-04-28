@@ -60,8 +60,7 @@ function onResize() {
 
 <template>
   <div class="section" :id="elementSection">
-    <div style="height: calc(var(--vsr) * 40); width: calc(var(--vsr) * 40);"
-         @click="goToLink" class="s-click">
+    <div @click="goToLink" class="s-click">
       <img :src="cover" class="s-cover s-overlay">
     </div>
 <!--    <img v-else :src="cover" class="s-cover s-overlay">-->
@@ -157,6 +156,8 @@ function onResize() {
 
 .s-click {
   cursor: pointer;
+  height: calc(var(--vsr) * 40);
+  width: calc(var(--vsr) * 40);
 }
 
 .section {
@@ -211,6 +212,11 @@ function onResize() {
   .s-cover {
     width: 90vw;
     height: 90vw;
+  }
+
+  .s-click {
+    height: 90vw;
+    width: 90vw;
   }
 
   .section {
