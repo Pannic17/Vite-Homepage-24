@@ -36,19 +36,23 @@ function onResize() {
 <!--    <div style="height: calc(var(&#45;&#45;vsr) * 40); width: calc(var(&#45;&#45;vsr) * 40);"-->
 <!--         @click="goToLink" class="s-click">-->
 <!--      <img :src="cover" class="s-cover s-overlay">-->
-    <div class="k-titles">
+    <div class="s-titles">
       <div class="k-head">
         <img id="k-logo" src="../assets/logo_kaiwu.png">
         <div>
           <h2 class="k-kaiwu">开物KaiwuArt</h2>
           <h3 class="k-link"><a href="https://kaiwuart.cn/">kaiwuart.cn</a></h3>
         </div>
-        <div id="k-poster">
-          <img src="./image/kaiwu/KW-poster1.jpg">
-        </div>
+
 
       </div>
 
+    </div>
+    <div id="s-posters">
+      <img class="k-poster" src="/image/kaiwu/KW-poster1.jpg">
+      <img class="k-poster" src="/image/kaiwu/KW-poster2.jpg">
+      <img class="k-poster" src="/image/kaiwu/KW-poster3.jpg">
+      <img class="k-poster" src="/image/kaiwu/KW-poster4.jpg">
     </div>
 
   </div>
@@ -60,8 +64,8 @@ function onResize() {
   padding-block: 1vh;
   margin-block: 4vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  height: calc(var(--vsr) * 40);
   width: 90vw;
 
 
@@ -95,7 +99,7 @@ function onResize() {
   }
 }
 
-.k-titles {
+.s-titles {
   width: 100%;
 }
 
@@ -103,6 +107,15 @@ function onResize() {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#s-posters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.k-poster {
+  width: 25%
 }
 
 #k-logo {
