@@ -3,6 +3,7 @@ import SubRight from "../components/SubRight.vue";
 import MenuSection from "../components/MenuSection.vue";
 import {computed, onMounted} from "vue";
 import {useI18n} from "vue-i18n";
+import Kaiwu from "../components/Kaiwu.vue";
 
 onMounted(() => {
   // window.removeEventListener('resize', adjustTitleAlignment);
@@ -22,8 +23,19 @@ const tagsZAR = computed(() => {
 const arMini = computed(() => t('tags.ar-mini'));
 const aiApp = computed(() => t('tags.ai-app'));
 const cTool = computed(() => t('tags.tool'));
+const cWeb = computed(() => t('tags.web'));
 const cCourse = computed(() => t('tags.coursework'));
 const cUnder = computed(() => t('tags.under'));
+
+const tZAR = computed(() => t('title.ZAR'));
+const tBLA = computed(() => t('title.BLA'));
+const tHPG = computed(() => t('title.HPG'));
+const tCCI = computed(() => t('title.CCI'));
+
+const iZAR = computed(() => t('intro.ZAR'));
+const iBLA = computed(() => t('intro.BLA'));
+const iHPG = computed(() => t('intro.HPG'));
+const iCCI = computed(() => t('intro.CCI'));
 </script>
 
 <template>
@@ -44,12 +56,12 @@ const cUnder = computed(() => t('tags.under'));
 
     <div id="block" style="background-color: var(--background-color); width: 90vw"></div>
 
+    <Kaiwu></Kaiwu>
+
     <MenuSection
         cover="./image/ZAR-Cover.png"
-        title="状元街区 · 微缩状元府"
-        intro="状元街区·微缩状元府 是一款微信AR小程序，基于微信xr-frame框架开发。
-              用户通过扫描二维码，可以在对应的Marker上展示出生动的人物三维动画。
-              该小程序作为景区的互动体验项目，旨在复原古代场景中传统中国人的生活。"
+        :title="tZAR"
+        :intro="iZAR"
         :category="arMini"
         :tags="tagsZAR"
         year="Fall 2023"
@@ -57,10 +69,8 @@ const cUnder = computed(() => t('tags.under'));
 
     <MenuSection
         cover="./image/BLA-Cover.png"
-        title="比恋AI"
-        intro=
-            "比恋AI是一款面向中国AI用户的聊天APP，接入了ChatGPT以及文言一心接口，提供可以在中国大陆访问的AI入口。
-            我负责该应用的移动端前端开发，前端基于Flutter框架，实现了iOS和Android端跨平台同步开发，使用响应式布局，同时使用了微信分享等相关接口。"
+        :title="tBLA"
+        :intro="iBLA"
         :category="aiApp"
         :tags="['Flutter', 'AI']"
         year="January 2024"
@@ -76,13 +86,18 @@ const cUnder = computed(() => t('tags.under'));
     ></MenuSection>
 
     <MenuSection
+        cover="./image/HPG-Cover.png"
+        :title="tHPG"
+        :intro="iHPG"
+        :category="cWeb"
+        :tags="['Vue.js', 'Three.js']"
+        year="2023"
+    ></MenuSection>
+
+    <MenuSection
         cover="./image/CourseWork.png"
-        title="CCI课程作业"
-        intro=
-            "这里展示了我在UAL CCI硕士一年期间所有的Coding作业。
-            包括Coding 1中的JavaScript相关，
-            Coding 2中OpenFramework以及Python相关，
-            Coding 3中与神经网络相关的作业。"
+        :title="tCCI"
+        :intro="iCCI"
         :category="cCourse"
         :tags="['JavaScripts', 'OpenFramework', 'Python']"
         year="2023"

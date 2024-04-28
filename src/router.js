@@ -3,6 +3,7 @@ import Home from './views/Home.vue';
 import About from './views/About.vue';
 import Works from "./views/Works.vue";
 import Projects from "./views/Projects.vue";
+import GCS from "./views/pages/GCS.vue";
 
 const routes = [
     {
@@ -18,7 +19,13 @@ const routes = [
     {
         path: '/works',
         name: 'Works',
-        component: Works
+        component: Works,
+        children: [
+            {
+                path: 'gcs',
+                component: GCS
+            }
+        ]
     },
     {
         path: '/projects',

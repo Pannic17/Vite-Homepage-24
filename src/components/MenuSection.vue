@@ -1,19 +1,72 @@
 <script setup>
+import {onMounted, onUnmounted, ref, watch} from "vue";
+import {useI18n} from "vue-i18n";
+import {generateUUID} from "three/src/math/MathUtils.js";
+import router from "../router.js";
+
 const props = defineProps({
   cover: String,
   title: String,
   intro: String,
   category: String,
   tags: Array,
-  year: String
+  year: String,
+  link: String,
+  route: String
 })
+
+onMounted(() => {
+  // window.removeEventListener('resize', adjustTitleAlignment);
+  onResize();
+  window.addEventListener('resize', () => setTimeout(() => onResize(), 50));
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', () => setTimeout(() => onResize(), 50));
+})
+
+const { locale } = useI18n({ useScope: 'global' });
+
+watch(locale, () => setTimeout(() => onResize(), 50))
+
+const elementSection = ref(`section-${generateUUID()}`)
+const elementT1 = ref(`unique-t1-${generateUUID()}`)
+const elementT2 = ref(`unique-t2-${generateUUID()}`)
+
+function goToLink() {
+  if (props.route) {
+    router.push(props.route)
+  }
+  if (props.link) {
+    window.open(props.link, '_blank')
+  }
+}
+
+function onResize() {
+  let section = document.getElementById(elementSection.value)
+  const t1Height = document.getElementById(elementT1.value).clientHeight;
+  const t2Height = document.getElementById(elementT2.value).clientHeight;
+  const textHeight = t1Height + t2Height
+  console.log(`${textHeight}TEXT`)
+  console.log(section.clientHeight)
+  if (section.clientHeight < textHeight) {
+    section.style.height = `${textHeight}px`
+  } else {
+    // const vsrValue = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--vsr')) * 40;
+    // section.style.height = `${vsrValue}px`
+  }
+}
 </script>
 
 <template>
-  <div class="section">
-    <img :src="cover" class="s-cover s-overlay">
-    <div class="s-text s-overlay">
-      <div style="text-align: right; align-items: end; display: flex; justify-content: flex-end; flex-direction: column">
+  <div class="section" :id="elementSection">
+    <div style="height: calc(var(--vsr) * 40); width: calc(var(--vsr) * 40);"
+         @click="goToLink" class="s-click">
+      <img :src="cover" class="s-cover s-overlay">
+    </div>
+<!--    <img v-else :src="cover" class="s-cover s-overlay">-->
+    <div class="s-text s-overlay" id="text">
+      <div :id="elementT1" style="text-align: right; align-items: end; display: flex; justify-content: flex-end; flex-direction: column">
         <h4 class="s-year">{{ year }}</h4>
         <div class="s-subtitles">
           <div v-for="(content, index) in tags" :key="index" class="s-tags">
@@ -22,11 +75,20 @@ const props = defineProps({
           <h4 class="s-category">{{ category }}</h4>
         </div>
       </div>
-      <div style="text-align: right; align-items: end; display: flex; justify-content: flex-end; flex-direction: column">
+
+      <div :id="elementT2"
+           @click="goToLink"
+           class="s-click"
+           aria-label="Link to Project"
+           style="text-align: right; align-items: end; display: flex; justify-content: flex-end; flex-direction: column; height: 100%">
+        <div class="s-expand"></div>
         <div class="s-intro">
             <span>{{ intro }}</span>
         </div>
-        <h3 class="s-title">{{ title }}</h3>
+        <a v-if="link" :href="link" target="_blank" style="text-decoration: none">
+          <h3 class="s-title">{{ title }}</h3>
+        </a>
+        <h3 v-else class="s-title">{{ title }}</h3>
       </div>
 
     </div>
@@ -66,6 +128,7 @@ const props = defineProps({
   margin-bottom: 1vh;
   width: calc(84vw - var(--vsr) * 40);
   text-align: right;
+  pointer-events: none;
 }
 
 .s-title {
@@ -84,6 +147,16 @@ const props = defineProps({
   z-index: -1;
   width: calc(var(--vsr) * 40);
   height: calc(var(--vsr) * 40);
+}
+
+.s-expand {
+  flex-grow: 1;
+  width: 100%;
+  //height: 100%;
+}
+
+.s-click {
+  cursor: pointer;
 }
 
 .section {

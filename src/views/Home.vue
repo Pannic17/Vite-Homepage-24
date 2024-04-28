@@ -41,7 +41,7 @@ onUnmounted(() => {
         {{ $t("home.name") }}<br>
         {{ $t("home.master") }}<br>
         {{ $t("home.bachelor") }}<br>
-        Co-founder and Developer of <a href="https://kaiwuart.cn/">kaiwuart.cn</a>
+        Co-founder and Developer of <a href="https://kaiwuart.cn/" target="_blank">kaiwuart.cn</a>
       </p>
       <LanguageSwitch></LanguageSwitch>
       <p id="m-intro">
@@ -49,8 +49,8 @@ onUnmounted(() => {
       </p>
       <div class="f-social-v">
         <a href="mailto:pannic1984@outlook.com"><img class="p-social" src="../assets/icon_email.png" alt="Email"></a>
-        <a href="https://github.com/Pannic17"><img class="p-social" src="../assets/icon_github.png" alt="Github"/></a>
-        <a href="https://www.instagram.com/pannic17/"><img class="p-social" src="../assets/icon_ins.png" alt="Instagram"></a>
+        <a href="https://github.com/Pannic17" target="_blank"><img class="p-social" src="../assets/icon_github.png" alt="Github"/></a>
+        <a href="https://www.instagram.com/pannic17/" target="_blank"><img class="p-social" src="../assets/icon_ins.png" alt="Instagram"></a>
       </div>
 
       <div class="f-button">
@@ -70,8 +70,8 @@ onUnmounted(() => {
 
       <div class="f-social-c">
         <a href="mailto:pannic1984@outlook.com"><img class="p-social" src="../assets/icon_email.png" alt="Email"></a>
-        <a href="https://github.com/Pannic17"><img class="p-social" src="../assets/icon_github.png" alt="Github"/></a>
-        <a href="https://www.instagram.com/pannic17/"><img class="p-social" src="../assets/icon_ins.png" alt="Instagram"></a>
+        <a href="https://github.com/Pannic17" target="_blank"><img class="p-social" src="../assets/icon_github.png" alt="Github"/></a>
+        <a href="https://www.instagram.com/pannic17/" target="_blank"><img class="p-social" src="../assets/icon_ins.png" alt="Instagram"></a>
       </div>
 
     </div>

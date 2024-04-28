@@ -18,7 +18,7 @@ function goBack() {
 <template>
   <div class="h-right">
     <LanguageSwitch fontSize="calc(var(--vsr) * 2)"></LanguageSwitch>
-    <button id="b-back" @click="goBack">{{ $t("menu.back") }}</button>
+    <button id="b-back" @click="goBack">{{ $t("menu.main") }}</button>
   </div>
 </template>
 
