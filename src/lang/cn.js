@@ -28,7 +28,8 @@ export default {
         "tool": "工具",
         "web": "网页",
         "coursework": "课程作业",
-        "under": "仍在开发"
+        "under": "仍在开发",
+        "arduino": "交互装置",
     },
     "title":{
         "ZAR": "状元街区 · 微缩状元府",

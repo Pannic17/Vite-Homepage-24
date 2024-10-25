@@ -5,7 +5,7 @@ import SubRight from "../components/SubRight.vue";
 import MenuSection from "../components/MenuSection.vue";
 import {computed, onMounted} from "vue";
 import {useI18n} from "vue-i18n";
-import Kaiwu from "../components/Kaiwu.vue";
+import Kaiwu from "../components/KaiwuSection.vue";
 
 onMounted(() => {
   // window.removeEventListener('resize', adjustTitleAlignment);
@@ -32,6 +32,7 @@ const xrInteractive = computed(() => t('tags.xr-interactive'));
 const aiGame = computed(() => t('tags.ai-game'));
 const webGame = computed(() => t('tags.web-game'));
 const aiExperiment = computed(() => t('tags.ai-experiment'));
+const arduino = computed(() => t('tags.arduino'));
 
 const iCAT = computed(() => t('intro.CAT'));
 const iGCS = computed(() => t('intro.GCS'));
@@ -39,7 +40,7 @@ const iGCS = computed(() => t('intro.GCS'));
 </script>
 
 <template>
-  <hello-world></hello-world><div id="background"></div>
+  <div id="background"></div>
   <div class="f-center">
     <div id="f-top">
       <div class="h-sub">
@@ -51,7 +52,7 @@ const iGCS = computed(() => t('intro.GCS'));
         </div>
         <SubRight></SubRight>
       </div>
-      <div style="height: 1px; background-color: var(--context-color); margin-block: 1vh"></div>
+      <div style="  height: 1px; background-color: var(--context-color); margin-block: 1vh"></div>
     </div>
 
     <div id="block" style="background-color: var(--background-color); width: 90vw"></div>
@@ -94,6 +95,16 @@ const iGCS = computed(() => t('intro.GCS'));
     ></MenuSection>
 
     <MenuSection
+        cover="./image/AMR-Cover.png"
+        title="Resonance"
+        intro="An "
+        :category="arduino"
+        :tags="['Arduino', 'Sensors']"
+        year="December 2022"
+        link="https://github.com/Pannic17/PCOMP-Final-Resonance/"
+    ></MenuSection>
+
+    <MenuSection
         cover="./image/C3F-Cover.png"
         title="AI Shijing Paintings"
         intro="An experiment of using AI to understand ancient Chinese Poem and reconstruct paints."
@@ -126,6 +137,8 @@ const iGCS = computed(() => t('intro.GCS'));
         :tags="tagsABP"
         year="March 2023"
     ></MenuSection>
+
+    
 
   </div>
 <!--  <h1>UNDER<br>CONSTRUCTION</h1>-->

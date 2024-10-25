@@ -136,6 +136,8 @@ function onResize() {
   color: var(--title-color);
   text-shadow: 2px 2px 2px var(--context-color);
   text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .s-title:hover {
