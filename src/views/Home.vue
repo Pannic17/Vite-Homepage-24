@@ -4,6 +4,11 @@ import {clearAnimation, initialize} from "../three/home.js";
 import router from "../router.js";
 import LanguageSwitch from "../components/LanguageSwitch.vue";
 
+// function for debug
+function go2Debug() {
+  router.push('/debug')
+}
+
 function go2About() {
   router.push('/about')
 }
