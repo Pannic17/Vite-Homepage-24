@@ -21,6 +21,10 @@ function go2Projects() {
   router.push('/projects')
 }
 
+function go2Test() {
+  router.push('/test')
+}
+
 onMounted(() => {
 
   // initialize();
@@ -79,7 +83,13 @@ onUnmounted(() => {
         <a href="https://www.instagram.com/pannic17/" target="_blank"><img class="p-social" src="../assets/icon_ins.png" alt="Instagram"></a>
       </div>
 
+      <button
+          class="sub-button"
+          @click="go2Test"
+      >TEST</button>
+
     </div>
+
   </div>
   <div id="three-canvas"></div>
 </template>
