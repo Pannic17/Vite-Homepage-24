@@ -162,6 +162,7 @@ function onDetail() {
   border: 1px solid var(--hover-color);
   background-color: transparent;
   font-size: calc(var(--vsr) * 2);
+  color: var(--context-color);
 }
 
 .k-detail:hover {
