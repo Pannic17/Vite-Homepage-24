@@ -33,9 +33,7 @@ function goBack() {
   color: var(--context-color);
   cursor: pointer;
   padding: 0;
-//font-weight: bold;
   font-size: calc(var(--vsr) * 2);
-//padding-block: calc(var(--vsr) * 1);
   text-align: right;
   margin-top: calc(var(--vsr) * 1.5);
   line-height: 1.5;

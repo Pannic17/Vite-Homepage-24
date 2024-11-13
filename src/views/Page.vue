@@ -1,29 +1,35 @@
 <script setup>
 
+import router from "../router.js";
+import PageHeader from "../components/PageHeader.vue";
+import {computed} from "vue";
+import {useI18n} from "vue-i18n";
+
+const props = defineProps({
+  cover: String,
+  title: String,
+  year: String,
+  category: String,
+})
+
+const { t } = useI18n();
+function goBack() {
+  router.back();
+}
+
+const arMini = computed(() => t('tags.ar-mini'));
 </script>
 
 <template>
-  <div class="p-hd">
-    <div class="p-header p-inline">
-      <div class="p-left">
-        <img src="/image/ZAR-Cover.png" alt="Cover Image" class="ph-cover">
-        <div class="ph-divider-v"></div>
-      </div>
-      <div class="ph-title">TEST PAGE</div>
-    </div>
-    <div class="p-divider p-inline">
-      <div class="p-divider-inline"></div>
-      <div class="p-divider-center"></div>
-      <div class="p-divider-inline"></div>
-    </div>
-    <div class="p-content p-inline">
-      <div class="p-left">
-        <div class="p-category"></div>
-        <div class="ph-divider-v"></div>
-      </div>
-
-      <div class="p-main"></div>
-    </div>
+  <div style="overflow-x: hidden">
+    <PageHeader
+        cover="./image/ZAR-Cover.png"
+        title="Test Page"
+        :category="arMini"
+        year="December 2024"
+    ></PageHeader>
+    <div class="p-category"></div>
+    <div class="p-main" ></div>
   </div>
 
   <!--
@@ -37,79 +43,20 @@
 </template>
 
 <style scoped>
-.p-hd {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  width: 100vw;
-  background-color: var(--background-color);
-}
-
-.p-header {
-  height: 10vw;
-  margin-top: 3vw;
-}
-
-.p-left {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: end;
-}
-
-.ph-cover {
-  width: 10vw;
-  height: 10vw;
-}
-
-.ph-divider-v {
-  width: 2px;
-  height: 10vw;
-  margin-inline: 3vw;
-  background-color: var(--hover-color);
-}
-
-.ph-title {
-  text-align: right;
-  color: var(--title-color);
-  text-shadow: 2px 2px 2px var(--hover-color);
-  font-size: 10vw;
-  line-height: 1;
-  align-items: center;
-  vertical-align: top;
-}
-
-.p-inline {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  padding-inline: 3vw;
-}
-
-.p-divider {
-  height: calc(6vw + 2px);
-  justify-content: start;
-}
-
-.p-divider-inline {
-  height: 2px;
-  margin-block: 3vw;
-  width: 13vw;
-  background-color: var(--hover-color);
-}
-
-.p-divider-center {
-  height: calc(6vw + 2px);
-  width: 2px;
-  background-color: var(--hover-color);
-}
 
 .p-category {
   width: 10vw;
+}
+
+
+
+.p-main {
+  height: 200vh;
+  overflow-y: auto;
+  background-color: #888888;
+  margin-top: calc(var(--vsr) * 15);
+  margin-left: calc(var(--vsr) * 30);
+  width: calc(100% - calc(var(--vsr) * 35));
 }
 
 
