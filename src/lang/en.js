@@ -28,7 +28,8 @@ export default {
         "tool": "Tool",
         "web": "Web",
         "coursework": "Course Work",
-        "under": "Under Development"
+        "under": "Under Development",
+        "arduino": "Interactive Installment"
     },
     "title":{
         "ZAR": "Zhuangyuan Jiequ - Miniature Mansion",

@@ -3,7 +3,7 @@ import SubRight from "../components/SubRight.vue";
 import MenuSection from "../components/MenuSection.vue";
 import {computed, onMounted} from "vue";
 import {useI18n} from "vue-i18n";
-import Kaiwu from "../components/Kaiwu.vue";
+import Kaiwu from "../components/KaiwuSection.vue";
 
 onMounted(() => {
   // window.removeEventListener('resize', adjustTitleAlignment);

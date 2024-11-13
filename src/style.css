@@ -34,6 +34,10 @@ h2 {
   font-size: calc(var(--vsr) * 8);
 }
 
+h3 {
+  font-size: calc(var(--vsr) * 2);
+}
+
 p {
   color: var(--context-color);
 }
