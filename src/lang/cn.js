@@ -1,4 +1,8 @@
 export default {
+    "status": {
+        "notFound": "未找到这个页面。",
+        "detailsPending": "更多项目详情正在整理中。"
+    },
     "home":{
         "name": "潘江昀",
         "master": "伦敦艺术大学 - 创意计算机硕士",

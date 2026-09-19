@@ -1,17 +1,12 @@
 <script setup>
+import {useHeaderSpacer} from "../composables/useHeaderSpacer";
 import SubRight from "../components/SubRight.vue";
 import MenuSection from "../components/MenuSection.vue";
-import {computed, onMounted} from "vue";
+import {computed} from "vue";
 import {useI18n} from "vue-i18n";
 import Kaiwu from "../components/KaiwuSection.vue";
 
-onMounted(() => {
-  // window.removeEventListener('resize', adjustTitleAlignment);
-  let topHeight = document.getElementById('f-top').clientHeight;
-  const block = document.getElementById('block')
-  topHeight = topHeight - 0.02 * window.innerHeight;
-  block.style.height = `${topHeight}px`
-})
+useHeaderSpacer();
 
 const { t } = useI18n();
 

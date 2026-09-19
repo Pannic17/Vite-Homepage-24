@@ -1,0 +1,198 @@
+[
+  {
+    "project": "desktop-chromium",
+    "samples": [
+      {
+        "created": 1,
+        "lost": 0,
+        "raf": 1,
+        "resize": 1,
+        "doubleClick": 1,
+        "canvas": 1,
+        "gui": 0
+      },
+      {
+        "cycle": 1,
+        "away": {
+          "created": 1,
+          "lost": 1,
+          "raf": 0,
+          "resize": 10,
+          "doubleClick": 0,
+          "canvas": 0,
+          "gui": 0
+        },
+        "home": {
+          "created": 2,
+          "lost": 1,
+          "raf": 1,
+          "resize": 1,
+          "doubleClick": 1,
+          "canvas": 1,
+          "gui": 0
+        }
+      },
+      {
+        "cycle": 5,
+        "away": {
+          "created": 5,
+          "lost": 5,
+          "raf": 0,
+          "resize": 10,
+          "doubleClick": 0,
+          "canvas": 0,
+          "gui": 0
+        },
+        "home": {
+          "created": 6,
+          "lost": 5,
+          "raf": 1,
+          "resize": 1,
+          "doubleClick": 1,
+          "canvas": 1,
+          "gui": 0
+        }
+      },
+      {
+        "cycle": 10,
+        "away": {
+          "created": 10,
+          "lost": 10,
+          "raf": 0,
+          "resize": 10,
+          "doubleClick": 0,
+          "canvas": 0,
+          "gui": 0
+        },
+        "home": {
+          "created": 11,
+          "lost": 10,
+          "raf": 1,
+          "resize": 1,
+          "doubleClick": 1,
+          "canvas": 1,
+          "gui": 0
+        }
+      },
+      {
+        "cycle": 20,
+        "away": {
+          "created": 20,
+          "lost": 20,
+          "raf": 0,
+          "resize": 10,
+          "doubleClick": 0,
+          "canvas": 0,
+          "gui": 0
+        },
+        "home": {
+          "created": 21,
+          "lost": 20,
+          "raf": 1,
+          "resize": 1,
+          "doubleClick": 1,
+          "canvas": 1,
+          "gui": 0
+        }
+      }
+    ]
+  },
+  {
+    "project": "mobile-chromium",
+    "samples": [
+      {
+        "created": 1,
+        "lost": 0,
+        "raf": 1,
+        "resize": 1,
+        "doubleClick": 1,
+        "canvas": 1,
+        "gui": 0
+      },
+      {
+        "cycle": 1,
+        "away": {
+          "created": 1,
+          "lost": 1,
+          "raf": 0,
+          "resize": 10,
+          "doubleClick": 0,
+          "canvas": 0,
+          "gui": 0
+        },
+        "home": {
+          "created": 2,
+          "lost": 1,
+          "raf": 1,
+          "resize": 1,
+          "doubleClick": 1,
+          "canvas": 1,
+          "gui": 0
+        }
+      },
+      {
+        "cycle": 5,
+        "away": {
+          "created": 5,
+          "lost": 5,
+          "raf": 0,
+          "resize": 10,
+          "doubleClick": 0,
+          "canvas": 0,
+          "gui": 0
+        },
+        "home": {
+          "created": 6,
+          "lost": 5,
+          "raf": 1,
+          "resize": 1,
+          "doubleClick": 1,
+          "canvas": 1,
+          "gui": 0
+        }
+      },
+      {
+        "cycle": 10,
+        "away": {
+          "created": 10,
+          "lost": 10,
+          "raf": 0,
+          "resize": 10,
+          "doubleClick": 0,
+          "canvas": 0,
+          "gui": 0
+        },
+        "home": {
+          "created": 11,
+          "lost": 10,
+          "raf": 1,
+          "resize": 1,
+          "doubleClick": 1,
+          "canvas": 1,
+          "gui": 0
+        }
+      },
+      {
+        "cycle": 20,
+        "away": {
+          "created": 20,
+          "lost": 20,
+          "raf": 0,
+          "resize": 10,
+          "doubleClick": 0,
+          "canvas": 0,
+          "gui": 0
+        },
+        "home": {
+          "created": 21,
+          "lost": 20,
+          "raf": 1,
+          "resize": 1,
+          "doubleClick": 1,
+          "canvas": 1,
+          "gui": 0
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,148 @@
+{
+  "conditions": "1440x900 headless desktop, no throttling. Instrumented WebGL context creation/draw methods and RAF. CDP forces garbage collection before heap samples; GPU memory not measured.",
+  "errors": [],
+  "warnings": [
+    "WARNING: Too many active WebGL contexts. Oldest context will be lost.",
+    "WARNING: Too many active WebGL contexts. Oldest context will be lost.",
+    "WARNING: Too many active WebGL contexts. Oldest context will be lost.",
+    "WARNING: Too many active WebGL contexts. Oldest context will be lost.",
+    "WARNING: Too many active WebGL contexts. Oldest context will be lost.",
+    "WARNING: Too many active WebGL contexts. Oldest context will be lost.",
+    "WARNING: Too many active WebGL contexts. Oldest context will be lost.",
+    "WARNING: Too many active WebGL contexts. Oldest context will be lost.",
+    "WARNING: Too many active WebGL contexts. Oldest context will be lost.",
+    "WARNING: Too many active WebGL contexts. Oldest context will be lost.",
+    "WARNING: Too many active WebGL contexts. Oldest context will be lost."
+  ],
+  "samples": [
+    {
+      "cycle": 0,
+      "location": "home",
+      "contextsCreated": 2,
+      "pendingRaf": 1,
+      "canvases": 1,
+      "guiPanels": 3,
+      "onresize": "function",
+      "ondblclick": "function",
+      "JSHeapUsedSize": 3955888,
+      "Nodes": 129,
+      "JSEventListeners": 45
+    },
+    {
+      "cycle": 1,
+      "location": "works",
+      "contextsCreated": 2,
+      "pendingRaf": 0,
+      "canvases": 0,
+      "guiPanels": 3,
+      "onresize": "function",
+      "ondblclick": "function",
+      "JSHeapUsedSize": 5042960,
+      "Nodes": 442,
+      "JSEventListeners": 85
+    },
+    {
+      "cycle": 1,
+      "location": "home",
+      "contextsCreated": 4,
+      "pendingRaf": 1,
+      "canvases": 1,
+      "guiPanels": 6,
+      "onresize": "function",
+      "ondblclick": "function",
+      "JSHeapUsedSize": 5238048,
+      "Nodes": 529,
+      "JSEventListeners": 112
+    },
+    {
+      "cycle": 5,
+      "location": "works",
+      "contextsCreated": 10,
+      "pendingRaf": 0,
+      "canvases": 0,
+      "guiPanels": 15,
+      "onresize": "function",
+      "ondblclick": "function",
+      "JSHeapUsedSize": 6109144,
+      "Nodes": 658,
+      "JSEventListeners": 201
+    },
+    {
+      "cycle": 5,
+      "location": "home",
+      "contextsCreated": 12,
+      "pendingRaf": 1,
+      "canvases": 1,
+      "guiPanels": 18,
+      "onresize": "function",
+      "ondblclick": "function",
+      "JSHeapUsedSize": 6239968,
+      "Nodes": 745,
+      "JSEventListeners": 228
+    },
+    {
+      "cycle": 10,
+      "location": "works",
+      "contextsCreated": 20,
+      "pendingRaf": 0,
+      "canvases": 0,
+      "guiPanels": 30,
+      "onresize": "function",
+      "ondblclick": "function",
+      "JSHeapUsedSize": 7014440,
+      "Nodes": 928,
+      "JSEventListeners": 346
+    },
+    {
+      "cycle": 10,
+      "location": "home",
+      "contextsCreated": 22,
+      "pendingRaf": 1,
+      "canvases": 1,
+      "guiPanels": 33,
+      "onresize": "function",
+      "ondblclick": "function",
+      "JSHeapUsedSize": 7120540,
+      "Nodes": 1015,
+      "JSEventListeners": 373
+    },
+    {
+      "cycle": 20,
+      "location": "works",
+      "contextsCreated": 40,
+      "pendingRaf": 0,
+      "canvases": 0,
+      "guiPanels": 60,
+      "onresize": "function",
+      "ondblclick": "function",
+      "JSHeapUsedSize": 8314252,
+      "Nodes": 1468,
+      "JSEventListeners": 636
+    },
+    {
+      "cycle": 20,
+      "location": "home",
+      "contextsCreated": 42,
+      "pendingRaf": 1,
+      "canvases": 1,
+      "guiPanels": 63,
+      "onresize": "function",
+      "ondblclick": "function",
+      "JSHeapUsedSize": 8425828,
+      "Nodes": 1555,
+      "JSEventListeners": 663
+    }
+  ],
+  "gpu": {
+    "vendor": "Google Inc. (Google)",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  "frameSample": {
+    "durationMs": 5004.900000095367,
+    "rafFrames": 298,
+    "rafFps": 59.541649182665324,
+    "framesWithDrawCalls": 298,
+    "observedRenderFps": 59.541649182665324,
+    "p95IntervalMs": 16.799999999999727
+  }
+}

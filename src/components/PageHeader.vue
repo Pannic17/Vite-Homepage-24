@@ -1,6 +1,8 @@
 <script setup>
 import LanguageSwitch from "./LanguageSwitch.vue";
 import router from "../router.js";
+import {backOrFallback} from '../utils/navigation';
+import {publicAsset} from '../utils/publicAsset';
 
 const props = defineProps({
   cover: String,
@@ -10,7 +12,7 @@ const props = defineProps({
 })
 
 function goBack() {
-  router.back();
+  backOrFallback(router, router.currentRoute.value.meta.parent || '/');
 }
 
 function goHome() {
@@ -22,7 +24,7 @@ function goHome() {
     <div class="p-header p-inline">
       <div class="p-left">
         <div class="p-cover">
-          <img :src="cover" class="ph-cover">
+          <img :src="publicAsset(cover)" :alt="title" class="ph-cover">
           <div class="ph-divider-v"></div>
         </div>
         <div class="ph-set">

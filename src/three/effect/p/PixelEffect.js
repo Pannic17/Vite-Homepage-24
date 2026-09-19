@@ -34,9 +34,9 @@ export class PixelEffect {
         } else {
             if (this.time < this.fadeTP) {
                 let curve = fade(this.time/this.fadeTP) * this.fadeTP;
-                this.pass.pixelSize = Math.floor(curve);
+                this.pass.setPixelSize(Math.max(1, Math.floor(curve)));
             } else if (this.time == this.fadeTP) {
-                this.pass.pixelSize = this.size;
+                this.pass.setPixelSize(Math.max(1, Math.floor(this.size)));
             }
             this.time += 1;
         }

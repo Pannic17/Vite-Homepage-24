@@ -3,19 +3,31 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:e2e": "playwright test",
+    "test:smoke": "playwright test smoke.spec.js",
+    "test:unit": "node --test tests/unit/*.test.js",
+    "test:static": "node scripts/check-static-host.mjs",
+    "baseline:capture": "node scripts/capture-baseline.mjs",
+    "baseline:lighthouse": "node scripts/lighthouse-baseline.mjs"
   },
   "dependencies": {
     "three": "0.147.0",
     "vue": "^3.4.15",
-    "vue-i18n": "^9.9.0",
+    "vue-i18n": "^9.14.5",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.3",
-    "vite": "^5.1.0"
+    "@playwright/test": "^1.63.0",
+    "@vitejs/plugin-vue": "^6.0.9",
+    "chrome-launcher": "^1.2.1",
+    "lighthouse": "^13.4.1",
+    "vite": "^8.3.0"
   }
 }

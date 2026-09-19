@@ -3,6 +3,7 @@ import {onMounted, onUnmounted, ref, watch} from "vue";
 import {useI18n} from "vue-i18n";
 import {generateUUID} from "three/src/math/MathUtils.js";
 import router from "../router.js";
+import {publicAsset} from '../utils/publicAsset';
 
 const props = defineProps({
   cover: String,
@@ -15,19 +16,27 @@ const props = defineProps({
   route: String
 })
 
+let resizeTimer;
+let disposed = false;
+function scheduleResize() {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => { if (!disposed) onResize(); }, 50);
+}
+
 onMounted(() => {
-  // window.removeEventListener('resize', adjustTitleAlignment);
   onResize();
-  window.addEventListener('resize', () => setTimeout(() => onResize(), 50));
-})
+  window.addEventListener('resize', scheduleResize);
+});
 
 onUnmounted(() => {
-  window.removeEventListener('resize', () => setTimeout(() => onResize(), 50));
-})
+  disposed = true;
+  clearTimeout(resizeTimer);
+  window.removeEventListener('resize', scheduleResize);
+});
 
 const { locale } = useI18n({ useScope: 'global' });
 
-watch(locale, () => setTimeout(() => onResize(), 50))
+watch(locale, scheduleResize, { flush: 'post' });
 
 const elementSection = ref(`section-${generateUUID()}`)
 const elementT1 = ref(`unique-t1-${generateUUID()}`)
@@ -35,20 +44,22 @@ const elementT2 = ref(`unique-t2-${generateUUID()}`)
 
 function goToLink() {
   if (props.route) {
-    router.push(props.route)
+    return router.push(props.route)
   }
   if (props.link) {
-    window.open(props.link, '_blank')
+    window.open(props.link, '_blank', 'noopener,noreferrer')
   }
 }
 
 function onResize() {
   let section = document.getElementById(elementSection.value)
-  const t1Height = document.getElementById(elementT1.value).clientHeight;
-  const t2Height = document.getElementById(elementT2.value).clientHeight;
+  const t1 = document.getElementById(elementT1.value);
+  const t2 = document.getElementById(elementT2.value);
+  if (!section || !t1 || !t2) return;
+  section.style.height = '';
+  const t1Height = t1.clientHeight;
+  const t2Height = t2.clientHeight;
   const textHeight = t1Height + t2Height
-  console.log(`${textHeight}TEXT`)
-  console.log(section.clientHeight)
   if (section.clientHeight < textHeight) {
     section.style.height = `${textHeight}px`
   } else {
@@ -61,7 +72,7 @@ function onResize() {
 <template>
   <div class="section" :id="elementSection">
     <div @click="goToLink" class="s-click">
-      <img :src="cover" class="s-cover s-overlay">
+      <img :src="publicAsset(cover)" :alt="title" class="s-cover s-overlay">
     </div>
 <!--    <img v-else :src="cover" class="s-cover s-overlay">-->
     <div class="s-text s-overlay" id="text">
@@ -84,7 +95,7 @@ function onResize() {
         <div class="s-intro">
             <span>{{ intro }}</span>
         </div>
-        <a v-if="link" :href="link" target="_blank" style="text-decoration: none">
+        <a v-if="link" :href="link" target="_blank" rel="noopener noreferrer" @click.stop style="text-decoration: none">
           <h3 class="s-title">{{ title }}</h3>
         </a>
         <h3 v-else class="s-title">{{ title }}</h3>
@@ -153,7 +164,7 @@ function onResize() {
 .s-expand {
   flex-grow: 1;
   width: 100%;
-  //height: 100%;
+  /* height: 100%; */
 }
 
 .s-click {
@@ -198,7 +209,7 @@ function onResize() {
   &:hover::before,
   &:hover::after {
     width: calc(100% - 1px);
-  //height: calc(100% - 1px);
+  /* height: calc(100% - 1px); */
   }
 }
 

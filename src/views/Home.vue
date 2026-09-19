@@ -1,6 +1,7 @@
 <script setup>
-import {onMounted, onUnmounted} from "vue";
-import {clearAnimation, initialize} from "../three/home.js";
+import {onMounted, onUnmounted, ref} from "vue";
+import {createHomeScene} from "../three/home.js";
+import {publicAsset} from "../utils/publicAsset.js";
 import router from "../router.js";
 import LanguageSwitch from "../components/LanguageSwitch.vue";
 
@@ -25,19 +26,16 @@ function go2Test() {
   router.push('/test')
 }
 
+const canvasHost = ref(null);
+const sceneState = ref('loading');
+let homeScene;
 onMounted(() => {
-
-  // initialize();
-  initialize();
-  window.onresize = function (){
-    location.reload();
-  }
-})
-
-onUnmounted(() => {
-  // window.removeEventListener('resize', adjustTitleAlignment);
-  clearAnimation();
+  homeScene = createHomeScene(canvasHost.value, {
+    onReady: () => { sceneState.value = 'ready'; },
+    onError: () => { sceneState.value = 'fallback'; },
+  });
 });
+onUnmounted(() => homeScene?.dispose());
 
 </script>
 
@@ -91,10 +89,19 @@ onUnmounted(() => {
     </div>
 
   </div>
-  <div id="three-canvas"></div>
+  <div id="three-canvas" ref="canvasHost" :data-state="sceneState" aria-hidden="true"></div>
+  <img v-if="sceneState === 'fallback'" class="scene-fallback" :src="publicAsset('image/CAT-Cover.png')" alt="" aria-hidden="true">
 </template>
 
 <style scoped>
+.scene-fallback {
+  position: fixed;
+  right: 5vw;
+  top: 35vh;
+  width: min(30vw, 260px);
+  opacity: 0.12;
+  pointer-events: none;
+}
 #background, #three-canvas {
   padding: 0;
   position: fixed;
@@ -121,7 +128,7 @@ onUnmounted(() => {
   padding-bottom: 2vh;
   margin-bottom: 0;
   font-size: calc(var(--vsr) * 20);
-  //width: 84%;
+  /* width: 84%; */
 }
 
 .m-text {
@@ -140,17 +147,17 @@ onUnmounted(() => {
   color: var(--title-color); /* 或者您希望的任何颜色 */
   cursor: pointer;
   padding: 0;
-  //font-weight: bold;
+  /* font-weight: bold; */
   font-size: calc(var(--vsr) * 3);
   padding-block: calc(var(--vsr) * 1);
 }
 
 .sub-button:hover {
-  //background-color: #aaaaaa;
+  /* background-color: #aaaaaa; */
   color: var(--hover-color);
-  //border-radius: 5px;
-  //font-weight: bold;
-  //padding-block: calc(var(--vsr) * 1);
+  /* border-radius: 5px; */
+  /* font-weight: bold; */
+  /* padding-block: calc(var(--vsr) * 1); */
 }
 
 #three-canvas {

@@ -10,7 +10,7 @@ const props = defineProps({
 });
 
 function goBack() {
-  router.back();
+  router.push('/');
 }
 
 </script>

@@ -1,0 +1,1032 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\PANNIC\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+      "E:\\Projects\\vite-homepage\\node_modules\\playwright\\cli.js",
+      "test"
+    ],
+    "configFile": "E:\\Projects\\vite-homepage\\playwright.config.js",
+    "rootDir": "E:/Projects/vite-homepage/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/Projects/vite-homepage/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-chromium",
+        "name": "desktop-chromium",
+        "testDir": "E:/Projects/vite-homepage/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/Projects/vite-homepage/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-chromium",
+        "name": "mobile-chromium",
+        "testDir": "E:/Projects/vite-homepage/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node scripts/baseline-server.mjs",
+      "url": "http://127.0.0.1:4175/Vite-Homepage-24/",
+      "reuseExistingServer": false,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "known-issues.spec.js",
+      "file": "known-issues.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "B01: resizing home preserves the document",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fail",
+                  "description": "B01: Home.vue reloads the page on resize",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                    "line": 13,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "failed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 711,
+                  "error": {
+                    "message": "Error: page.evaluate: Execution context was destroyed, most likely because of a navigation",
+                    "stack": "Error: page.evaluate: Execution context was destroyed, most likely because of a navigation\n    at E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js:14:21",
+                    "location": {
+                      "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                      "column": 21,
+                      "line": 14
+                    },
+                    "snippet": "  12 |   await page.waitForLoadState();\n  13 |   test.fail(true, 'B01: Home.vue reloads the page on resize');\n> 14 |   expect(await page.evaluate(() => window.__baselineDocument)).toBe('original');\n     |                     ^\n  15 | });\n  16 |\n  17 | test('B02: selected language survives refresh', async ({ page }) => {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                        "column": 21,
+                        "line": 14
+                      },
+                      "message": "Error: page.evaluate: Execution context was destroyed, most likely because of a navigation\n\n  12 |   await page.waitForLoadState();\n  13 |   test.fail(true, 'B01: Home.vue reloads the page on resize');\n> 14 |   expect(await page.evaluate(() => window.__baselineDocument)).toBe('original');\n     |                     ^\n  15 | });\n  16 |\n  17 | test('B02: selected language survives refresh', async ({ page }) => {\n    at E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js:14:21"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:38.843Z",
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "description": "B01: Home.vue reloads the page on resize",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                        "line": 13,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\Projects\\vite-homepage\\test-results\\known-issues-B01-resizing-home-preserves-the-document-desktop-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                    "column": 21,
+                    "line": 14
+                  }
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7ca88b1a9080b60415e6-c1e1646aff5171ff56fd",
+          "file": "known-issues.spec.js",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "B02: selected language survives refresh",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fail",
+                  "description": "B02: LanguageSwitch does not persist locale",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                    "line": 23,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "failed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1019,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js:24:79",
+                    "location": {
+                      "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                      "column": 79,
+                      "line": 24
+                    },
+                    "snippet": "  22 |   await expect(page.locator('#h-title')).toBeVisible();\n  23 |   test.fail(true, 'B02: LanguageSwitch does not persist locale');\n> 24 |   expect(await page.getByRole('button', { name: '作品', exact: true }).count()).toBe(1);\n     |                                                                               ^\n  25 | });\n  26 |\n  27 | test('B03: GCS direct URL renders a detail view rather than the works listing', async ({ page }) => {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                        "column": 79,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  22 |   await expect(page.locator('#h-title')).toBeVisible();\n  23 |   test.fail(true, 'B02: LanguageSwitch does not persist locale');\n> 24 |   expect(await page.getByRole('button', { name: '作品', exact: true }).count()).toBe(1);\n     |                                                                               ^\n  25 | });\n  26 |\n  27 | test('B03: GCS direct URL renders a detail view rather than the works listing', async ({ page }) => {\n    at E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js:24:79"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:39.720Z",
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "description": "B02: LanguageSwitch does not persist locale",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                        "line": 23,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\Projects\\vite-homepage\\test-results\\known-issues-B02-selected-language-survives-refresh-desktop-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                    "column": 79,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7ca88b1a9080b60415e6-9935e4377cf109dfdbdc",
+          "file": "known-issues.spec.js",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "B03: GCS direct URL renders a detail view rather than the works listing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fail",
+                  "description": "B03: parent Works view has no nested router-view",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                    "line": 30,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "failed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 228,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js:31:51",
+                    "location": {
+                      "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                      "column": 51,
+                      "line": 31
+                    },
+                    "snippet": "  29 |   await expect(page.locator('#app')).not.toBeEmpty();\n  30 |   test.fail(true, 'B03: parent Works view has no nested router-view');\n> 31 |   expect(await page.locator('.d-header').count()).toBe(1);\n     |                                                   ^\n  32 | });\n  33 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                        "column": 51,
+                        "line": 31
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  29 |   await expect(page.locator('#app')).not.toBeEmpty();\n  30 |   test.fail(true, 'B03: parent Works view has no nested router-view');\n> 31 |   expect(await page.locator('.d-header').count()).toBe(1);\n     |                                                   ^\n  32 | });\n  33 |\n    at E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js:31:51"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:40.747Z",
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "description": "B03: parent Works view has no nested router-view",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                        "line": 30,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\Projects\\vite-homepage\\test-results\\known-issues-B03-GCS-direc-565bb-ther-than-the-works-listing-desktop-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                    "column": 51,
+                    "line": 31
+                  }
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7ca88b1a9080b60415e6-bbd6698c55d367c4aa88",
+          "file": "known-issues.spec.js",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "B01: resizing home preserves the document",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fail",
+                  "description": "B01: Home.vue reloads the page on resize",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                    "line": 13,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "failed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 640,
+                  "error": {
+                    "message": "Error: page.evaluate: Execution context was destroyed, most likely because of a navigation",
+                    "stack": "Error: page.evaluate: Execution context was destroyed, most likely because of a navigation\n    at E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js:14:21",
+                    "location": {
+                      "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                      "column": 21,
+                      "line": 14
+                    },
+                    "snippet": "  12 |   await page.waitForLoadState();\n  13 |   test.fail(true, 'B01: Home.vue reloads the page on resize');\n> 14 |   expect(await page.evaluate(() => window.__baselineDocument)).toBe('original');\n     |                     ^\n  15 | });\n  16 |\n  17 | test('B02: selected language survives refresh', async ({ page }) => {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                        "column": 21,
+                        "line": 14
+                      },
+                      "message": "Error: page.evaluate: Execution context was destroyed, most likely because of a navigation\n\n  12 |   await page.waitForLoadState();\n  13 |   test.fail(true, 'B01: Home.vue reloads the page on resize');\n> 14 |   expect(await page.evaluate(() => window.__baselineDocument)).toBe('original');\n     |                     ^\n  15 | });\n  16 |\n  17 | test('B02: selected language survives refresh', async ({ page }) => {\n    at E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js:14:21"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:45.999Z",
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "description": "B01: Home.vue reloads the page on resize",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                        "line": 13,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\Projects\\vite-homepage\\test-results\\known-issues-B01-resizing-home-preserves-the-document-mobile-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                    "column": 21,
+                    "line": 14
+                  }
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7ca88b1a9080b60415e6-6a4ddf398451754cdc32",
+          "file": "known-issues.spec.js",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "B02: selected language survives refresh",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fail",
+                  "description": "B02: LanguageSwitch does not persist locale",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                    "line": 23,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "failed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 657,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js:24:79",
+                    "location": {
+                      "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                      "column": 79,
+                      "line": 24
+                    },
+                    "snippet": "  22 |   await expect(page.locator('#h-title')).toBeVisible();\n  23 |   test.fail(true, 'B02: LanguageSwitch does not persist locale');\n> 24 |   expect(await page.getByRole('button', { name: '作品', exact: true }).count()).toBe(1);\n     |                                                                               ^\n  25 | });\n  26 |\n  27 | test('B03: GCS direct URL renders a detail view rather than the works listing', async ({ page }) => {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                        "column": 79,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  22 |   await expect(page.locator('#h-title')).toBeVisible();\n  23 |   test.fail(true, 'B02: LanguageSwitch does not persist locale');\n> 24 |   expect(await page.getByRole('button', { name: '作品', exact: true }).count()).toBe(1);\n     |                                                                               ^\n  25 | });\n  26 |\n  27 | test('B03: GCS direct URL renders a detail view rather than the works listing', async ({ page }) => {\n    at E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js:24:79"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:46.763Z",
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "description": "B02: LanguageSwitch does not persist locale",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                        "line": 23,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\Projects\\vite-homepage\\test-results\\known-issues-B02-selected-language-survives-refresh-mobile-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                    "column": 79,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7ca88b1a9080b60415e6-4d5d0ffad2d938de7588",
+          "file": "known-issues.spec.js",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "B03: GCS direct URL renders a detail view rather than the works listing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fail",
+                  "description": "B03: parent Works view has no nested router-view",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                    "line": 30,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "failed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 195,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js:31:51",
+                    "location": {
+                      "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                      "column": 51,
+                      "line": 31
+                    },
+                    "snippet": "  29 |   await expect(page.locator('#app')).not.toBeEmpty();\n  30 |   test.fail(true, 'B03: parent Works view has no nested router-view');\n> 31 |   expect(await page.locator('.d-header').count()).toBe(1);\n     |                                                   ^\n  32 | });\n  33 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                        "column": 51,
+                        "line": 31
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  29 |   await expect(page.locator('#app')).not.toBeEmpty();\n  30 |   test.fail(true, 'B03: parent Works view has no nested router-view');\n> 31 |   expect(await page.locator('.d-header').count()).toBe(1);\n     |                                                   ^\n  32 | });\n  33 |\n    at E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js:31:51"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:47.428Z",
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "description": "B03: parent Works view has no nested router-view",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                        "line": 30,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\Projects\\vite-homepage\\test-results\\known-issues-B03-GCS-direc-565bb-ther-than-the-works-listing-mobile-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\known-issues.spec.js",
+                    "column": 51,
+                    "line": 31
+                  }
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7ca88b1a9080b60415e6-4e18fb8c2bd1530dbbcd",
+          "file": "known-issues.spec.js",
+          "line": 27,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "smoke.spec.js",
+      "file": "smoke.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "home renders and its local images and model are served",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 558,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:40.997Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-57f2fba0be2073771de7",
+          "file": "smoke.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "home navigation reaches about",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 808,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:41.561Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-37829cfd5d1a53d1510e",
+          "file": "smoke.spec.js",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "home navigation reaches works",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 858,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:42.376Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-5e5eaf229b5d6645e86b",
+          "file": "smoke.spec.js",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "home navigation reaches projects",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 908,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:43.245Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-43eff0f6d0509c14899e",
+          "file": "smoke.spec.js",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "language switches the home identity and navigation in both directions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1028,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:44.160Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-4e132b1d73c14a851787",
+          "file": "smoke.spec.js",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "works and projects images load in the production subpath",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 383,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:45.194Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-ea8c4cad0392a41b1170",
+          "file": "smoke.spec.js",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "home renders and its local images and model are served",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 422,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:47.644Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-3d0c839918d67b70b434",
+          "file": "smoke.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "home navigation reaches about",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 594,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:48.072Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-644dc02c64ba9e690e32",
+          "file": "smoke.spec.js",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "home navigation reaches works",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 679,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:48.671Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-e668d41022f73905fdd1",
+          "file": "smoke.spec.js",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "home navigation reaches projects",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 678,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:49.355Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-f3b8cb00a47a0ad63f4f",
+          "file": "smoke.spec.js",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "language switches the home identity and navigation in both directions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 462,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:50.038Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-a2d02f5cc5330b06e918",
+          "file": "smoke.spec.js",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "works and projects images load in the production subpath",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 348,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-18T00:23:50.504Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-e070e3bcd621fb68ca51",
+          "file": "smoke.spec.js",
+          "line": 37,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-18T00:23:37.537Z",
+    "duration": 13807.589,
+    "expected": 18,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

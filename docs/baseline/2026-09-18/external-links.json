@@ -1,0 +1,51 @@
+[
+  {
+    "url": "https://kaiwuart.cn/",
+    "error": "fetch failed",
+    "checkedAt": "2026-09-17T16:32:51.227Z",
+    "note": "Network failure is not proof the destination is unavailable to users"
+  },
+  {
+    "url": "https://github.com/Pannic17",
+    "error": "The operation was aborted due to timeout",
+    "checkedAt": "2026-09-17T16:33:03.245Z",
+    "note": "Network failure is not proof the destination is unavailable to users"
+  },
+  {
+    "url": "https://www.instagram.com/pannic17/",
+    "error": "fetch failed",
+    "checkedAt": "2026-09-17T16:33:13.775Z",
+    "note": "Network failure is not proof the destination is unavailable to users"
+  },
+  {
+    "url": "https://pannic17.github.io/C1-Final/",
+    "status": 200,
+    "finalUrl": "https://pannic17.github.io/C1-Final/",
+    "checkedAt": "2026-09-17T16:33:14.499Z",
+    "note": "HTTP reachability only; no login or interactive validation"
+  },
+  {
+    "url": "https://github.com/Pannic17/PCOMP-Final-Resonance/",
+    "error": "fetch failed",
+    "checkedAt": "2026-09-17T16:33:25.214Z",
+    "note": "Network failure is not proof the destination is unavailable to users"
+  },
+  {
+    "url": "https://github.com/Pannic17/C3-Final",
+    "error": "fetch failed",
+    "checkedAt": "2026-09-17T16:33:35.917Z",
+    "note": "Network failure is not proof the destination is unavailable to users"
+  },
+  {
+    "url": "https://github.com/Pannic17/C2-Final",
+    "error": "fetch failed",
+    "checkedAt": "2026-09-17T16:33:46.624Z",
+    "note": "Network failure is not proof the destination is unavailable to users"
+  },
+  {
+    "url": "https://kaiwuart.cn/3d-viewer",
+    "error": "fetch failed",
+    "checkedAt": "2026-09-17T16:33:48.849Z",
+    "note": "Network failure is not proof the destination is unavailable to users"
+  }
+]

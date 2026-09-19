@@ -1,0 +1,102 @@
+[
+  {
+    "path": "public/cat.gltf",
+    "bytes": 2593854
+  },
+  {
+    "path": "public/eevee.gltf",
+    "bytes": 101810
+  },
+  {
+    "path": "public/favicon.ico",
+    "bytes": 4286
+  },
+  {
+    "path": "public/image/ABP-Cover.png",
+    "bytes": 1769709
+  },
+  {
+    "path": "public/image/AMR-Cover.png",
+    "bytes": 1238272
+  },
+  {
+    "path": "public/image/BLA-Cover.png",
+    "bytes": 169866
+  },
+  {
+    "path": "public/image/C1F-Cover.png",
+    "bytes": 293766
+  },
+  {
+    "path": "public/image/C2F-Cover.png",
+    "bytes": 1411002
+  },
+  {
+    "path": "public/image/C3F-Cover.png",
+    "bytes": 159323
+  },
+  {
+    "path": "public/image/CAT-Cover.png",
+    "bytes": 509613
+  },
+  {
+    "path": "public/image/Construction.png",
+    "bytes": 2624918
+  },
+  {
+    "path": "public/image/CourseWork.png",
+    "bytes": 2321036
+  },
+  {
+    "path": "public/image/GCS-Cover.jpg",
+    "bytes": 65817
+  },
+  {
+    "path": "public/image/HPG-Cover.png",
+    "bytes": 468587
+  },
+  {
+    "path": "public/image/kaiwu/KW-poster1.jpg",
+    "bytes": 619489
+  },
+  {
+    "path": "public/image/kaiwu/KW-poster2.jpg",
+    "bytes": 114283
+  },
+  {
+    "path": "public/image/kaiwu/KW-poster3.jpg",
+    "bytes": 127696
+  },
+  {
+    "path": "public/image/kaiwu/KW-poster4.jpg",
+    "bytes": 83701
+  },
+  {
+    "path": "public/image/kaiwu-header.png",
+    "bytes": 291945
+  },
+  {
+    "path": "public/image/OGX-Cover.png",
+    "bytes": 858172
+  },
+  {
+    "path": "public/image/Split!.png",
+    "bytes": 2484902
+  },
+  {
+    "path": "public/image/ZAR-Cover.png",
+    "bytes": 1001448
+  },
+  {
+    "path": "public/logo_cat.ico",
+    "bytes": 87839
+  },
+  {
+    "path": "public/res/G-Log R9.pdf",
+    "bytes": 1935681
+  },
+  {
+    "path": "public/vite.svg",
+    "bytes": 1497
+  }
+]

@@ -4,44 +4,50 @@ import About from './views/About.vue';
 import Works from "./views/Works.vue";
 import Projects from "./views/Projects.vue";
 import GCS from "./views/pages/GCS.vue";
+import NotFound from './views/NotFound.vue';
+import { pagePaths } from './routePaths';
 
 const routes = [
     {
-        path: '/',
+        path: pagePaths.home,
         name: 'Home',
         component: Home
     },
     {
-        path: '/about',
+        path: pagePaths.about,
         name: 'About',
         component: About
     },
     {
-        path: '/works',
+        path: pagePaths.works,
         name: 'Works',
         component: Works,
-        children: [
-            {
-                path: 'gcs',
-                component: GCS
-            }
-        ]
     },
     {
-        path: '/projects',
+        path: pagePaths.gcs,
+        name: 'GCS',
+        component: GCS,
+        meta: { parent: pagePaths.works },
+    },
+    {
+        path: pagePaths.projects,
         name: 'Projects',
         component: Projects
     },
     {
-        path: '/test',
+        path: pagePaths.test,
         name: 'Test',
         component: () => import('./views/Page.vue')
-    }
+    },
+    { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound, meta: { notFound: true } },
 ];
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
-    routes
+    routes,
+    scrollBehavior(to, from, savedPosition) {
+        return savedPosition || { left: 0, top: 0 };
+    },
 });
 
 export default router;

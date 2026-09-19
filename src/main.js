@@ -6,7 +6,6 @@ import i18n from './i18n';
 const app = createApp(App);
 app.use(router);
 app.use(i18n);
-app.mount('#app');
 
 function updateCssVariableForShortEdge() {
     const vh = window.innerHeight * 0.01;
@@ -17,6 +16,10 @@ function updateCssVariableForShortEdge() {
 
 // 在页面加载时设置
 updateCssVariableForShortEdge();
+app.mount('#app');
 
 // 监听窗口尺寸变化
 window.addEventListener('resize', updateCssVariableForShortEdge);
+if (import.meta.hot) {
+    import.meta.hot.dispose(() => window.removeEventListener('resize', updateCssVariableForShortEdge));
+}

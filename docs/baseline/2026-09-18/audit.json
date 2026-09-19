@@ -1,0 +1,198 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@intlify/core-base": {
+      "name": "@intlify/core-base",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@intlify/message-compiler",
+        "@intlify/shared",
+        {
+          "source": 1101021,
+          "name": "@intlify/core-base",
+          "dependency": "@intlify/core-base",
+          "title": "vue-i18n has cross-site scripting vulnerability with prototype pollution",
+          "url": "https://github.com/advisories/GHSA-9r9m-ffp6-9x4v",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=9.3.0 <9.14.2"
+        },
+        {
+          "source": 1106453,
+          "name": "@intlify/core-base",
+          "dependency": "@intlify/core-base",
+          "title": "vue-i18n's escapeParameterHtml does not prevent DOM-based XSS through its tag attributes",
+          "url": "https://github.com/advisories/GHSA-x8qp-wqqm-57ph",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=9.0.0 <9.14.5"
+        }
+      ],
+      "effects": [
+        "vue-i18n"
+      ],
+      "range": "9.0.0 - 9.14.4 || 11.2.5",
+      "nodes": [
+        "node_modules/@intlify/core-base"
+      ],
+      "fixAvailable": true
+    },
+    "@intlify/message-compiler": {
+      "name": "@intlify/message-compiler",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@intlify/shared"
+      ],
+      "effects": [],
+      "range": "9.7.0 - 9.14.1 || 11.2.5",
+      "nodes": [
+        "node_modules/@intlify/message-compiler"
+      ],
+      "fixAvailable": true
+    },
+    "@intlify/shared": {
+      "name": "@intlify/shared",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1101012,
+          "name": "@intlify/shared",
+          "dependency": "@intlify/shared",
+          "title": "@intlify/shared Prototype Pollution vulnerability",
+          "url": "https://github.com/advisories/GHSA-hjwq-mjwj-4x6c",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-1321"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=9.7.0 <9.14.2"
+        }
+      ],
+      "effects": [
+        "@intlify/core-base",
+        "@intlify/message-compiler",
+        "vue-i18n"
+      ],
+      "range": "9.7.0 - 9.14.1",
+      "nodes": [
+        "node_modules/@intlify/shared"
+      ],
+      "fixAvailable": true
+    },
+    "vue-i18n": {
+      "name": "vue-i18n",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@intlify/core-base",
+        "@intlify/shared",
+        {
+          "source": 1101010,
+          "name": "vue-i18n",
+          "dependency": "vue-i18n",
+          "title": "@intlify/shared Prototype Pollution vulnerability",
+          "url": "https://github.com/advisories/GHSA-hjwq-mjwj-4x6c",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-1321"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=9.7.0 <9.14.2"
+        },
+        {
+          "source": 1101020,
+          "name": "vue-i18n",
+          "dependency": "vue-i18n",
+          "title": "vue-i18n has cross-site scripting vulnerability with prototype pollution",
+          "url": "https://github.com/advisories/GHSA-9r9m-ffp6-9x4v",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=9.3.0 <9.14.2"
+        },
+        {
+          "source": 1106459,
+          "name": "vue-i18n",
+          "dependency": "vue-i18n",
+          "title": "vue-i18n's escapeParameterHtml does not prevent DOM-based XSS through its tag attributes",
+          "url": "https://github.com/advisories/GHSA-x8qp-wqqm-57ph",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=9.0.0 <9.14.5"
+        },
+        {
+          "source": 1146055,
+          "name": "vue-i18n",
+          "dependency": "vue-i18n",
+          "title": "Vue I18n Allows Prototype Pollution in `handleFlatJson`",
+          "url": "https://github.com/advisories/GHSA-p2ph-7g93-hw3m",
+          "severity": "high",
+          "cwe": [
+            "CWE-1321"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=9.1.0 <9.14.3"
+        }
+      ],
+      "effects": [],
+      "range": "9.0.0 - 9.14.4",
+      "nodes": [
+        "node_modules/vue-i18n"
+      ],
+      "fixAvailable": true
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 3,
+      "high": 1,
+      "critical": 0,
+      "total": 4
+    },
+    "dependencies": {
+      "prod": 28,
+      "dev": 148,
+      "optional": 27,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 175
+    }
+  }
+}

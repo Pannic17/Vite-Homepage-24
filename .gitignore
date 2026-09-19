@@ -23,3 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 /dist/
+
+# Phase 0 verification output (baseline evidence lives under docs/baseline)
+.baseline-dist/
+test-results/
+playwright-report/

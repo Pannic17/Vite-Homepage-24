@@ -56,7 +56,7 @@ function goToLink() {
   &:hover::before,
   &:hover::after {
     width: calc(100% - 1px);
-  //height: calc(100% - 1px);
+  /* height: calc(100% - 1px); */
 
   }
 }

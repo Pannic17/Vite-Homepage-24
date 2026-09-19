@@ -2,6 +2,7 @@
 import {ref} from "vue";
 import {generateUUID} from "three/src/math/MathUtils.js";
 import AniButtom from "./AniButtom.vue";
+import {publicAsset} from '../utils/publicAsset';
 
 const elementSection = ref(`section-${generateUUID()}`)
 const elementT1 = ref(`unique-t1-${generateUUID()}`)
@@ -56,10 +57,10 @@ function onDetail() {
     <button class="k-detail" @click="onDetail">Click For Details</button>
 <!--    <AniButtom name="Click For Details" link="https://kaiwuart.cn/3d-viewer"></AniButtom>-->
     <div id="s-posters">
-      <img class="k-poster" src="/image/kaiwu/KW-poster1.jpg">
-      <img class="k-poster" src="/image/kaiwu/KW-poster2.jpg">
-      <img class="k-poster" src="/image/kaiwu/KW-poster3.jpg">
-      <img class="k-poster" src="/image/kaiwu/KW-poster4.jpg">
+      <img class="k-poster" :src="publicAsset('image/kaiwu/KW-poster1.jpg')" alt="Kaiwu poster 1">
+      <img class="k-poster" :src="publicAsset('image/kaiwu/KW-poster2.jpg')" alt="Kaiwu poster 2">
+      <img class="k-poster" :src="publicAsset('image/kaiwu/KW-poster3.jpg')" alt="Kaiwu poster 3">
+      <img class="k-poster" :src="publicAsset('image/kaiwu/KW-poster4.jpg')" alt="Kaiwu poster 4">
     </div>
 
 <!--    <div id="b-click">-->
@@ -139,7 +140,7 @@ function onDetail() {
   &:hover::before,
   &:hover::after {
     width: calc(100% - 1px);
-  //height: calc(100% - 1px);
+  /* height: calc(100% - 1px); */
   }
 }
 
@@ -207,7 +208,7 @@ function onDetail() {
   &:hover::before,
   &:hover::after {
     width: calc(100% - 1px);
-  //height: calc(100% - 1px);
+  /* height: calc(100% - 1px); */
 
   }
 }
@@ -293,9 +294,9 @@ function onDetail() {
   color: var(--context-color);
   cursor: pointer;
   padding: 0;
-//font-weight: bold;
+/* font-weight: bold; */
   font-size: calc(var(--vsr) * 2);
-//padding-block: calc(var(--vsr) * 1);
+/* padding-block: calc(var(--vsr) * 1); */
   text-align: right;
   margin-top: calc(var(--vsr) * 1.5);
   line-height: 1.5;

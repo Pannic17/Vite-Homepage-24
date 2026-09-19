@@ -1,4 +1,8 @@
 export default {
+    "status": {
+        "notFound": "This page could not be found.",
+        "detailsPending": "More project details will be added here."
+    },
     "home":{
         "name": "Jiangyun Pan",
         "master": "MSc Creative Computing - UAL CCI",

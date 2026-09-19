@@ -1,164 +1,172 @@
-import * as THREE from "three";
-import {GUI} from "three/examples/jsm/libs/lil-gui.module.min";
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer';
+import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
+import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass';
+import { RGBShiftShader } from 'three/examples/jsm/shaders/RGBShiftShader';
+import { setupThree } from './setup';
+import { disposeObject3D } from './dispose';
+import { publicAsset } from '../utils/publicAsset';
+import { ShiftEffect } from './effect/p/ShiftEffect';
+import { SobelEffect } from './effect/c/SobelEffect';
+import { LineEffect } from './effect/c/LineEffect';
+import { HalftoneEffect } from './effect/p/HalftoneEffect';
+import { PostEffect } from './effect/p/PostEffect';
+import { PixelEffect } from './effect/p/PixelEffect';
+import { AfterEffect } from './effect/p/AfterEffect';
+import { GlitchEffect } from './effect/c/GlitchEffect';
 
-import {setupThree} from "./setup.js";
-import {Lights} from "./lights.js";
-import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader";
+// One instance is owned by one mounted Home view. No scene state survives routes.
+export function createHomeScene(container, { onReady = () => {}, onError = () => {} } = {}) {
+  let scene, camera, renderer, composer, model, observer;
+  let disposed = false;
+  let animationId;
+  let lastEffect = 0;
+  let effects = [];
+  const passes = new Set();
+  const active = new Set();
+  const abort = new AbortController();
 
-import {EffectComposer} from "three/examples/jsm/postprocessing/EffectComposer";
-import {RenderPass} from "three/examples/jsm/postprocessing/RenderPass";
-import {ShiftEffect} from "./effect/p/ShiftEffect.js";
-import {WaveEffect} from "./effect/c/WaveEffect.js";
-import {SobelEffect} from "./effect/c/SobelEffect.js";
-import {LineEffect} from "./effect/c/LineEffect.js";
-import {HalftoneEffect} from "./effect/p/HalftoneEffect.js";
-import {PostEffect} from "./effect/p/PostEffect.js";
-import {PixelEffect} from "./effect/p/PixelEffect.js";
-import {AfterEffect} from "./effect/p/AfterEffect.js";
-import {GlitchEffect} from "./effect/c/GlitchEffect.js";
-import {ShaderPass} from "three/examples/jsm/postprocessing/ShaderPass";
-import {RGBShiftShader} from "three/examples/jsm/shaders/RGBShiftShader";
+  function dispose() {
+    if (disposed) return;
+    disposed = true;
+    abort.abort();
+    cancelAnimationFrame(animationId);
+    observer?.disconnect();
+    document.removeEventListener('dblclick', onDoubleClick);
+    renderer?.domElement.removeEventListener('webglcontextlost', onContextLost);
+    active.clear();
+    // Includes inactive effects, which are not in composer.passes.
+    for (const pass of passes) pass.dispose?.();
+    passes.clear();
+    composer?.dispose();
+    disposeObject3D(scene);
+    scene?.clear();
+    renderer?.dispose();
+    renderer?.forceContextLoss();
+    renderer?.domElement.remove();
+    model = null;
+    effects = [];
+  }
 
-let far = 1000;
-let scene, camera, renderer, gui;
-let composer, clock, light;
-let model;
-let active = [];
-let times;
-let effects = [];
-let animationId;
+  function fail(error) {
+    if (disposed) return;
+    dispose();
+    onError(error);
+  }
 
-export function initEffect (effect) {
+  function onContextLost(event) {
+    event.preventDefault();
+    fail(new Error('WebGL context lost'));
+  }
+
+  function startEffect(effect) {
     effect.end();
     effect.add();
-    active.push(effect);
-    console.log(effect)
-}
+    active.add(effect);
+  }
 
-export function initialize() {
+  function onDoubleClick(event) {
+    if (!model || disposed || event.target.closest?.('a,button,input,select,textarea')) return;
+    startEffect(effects[0]);
+    startEffect(effects[1]);
+  }
 
-    let background = document.getElementById('background');
-    console.log(background)
+  function resize() {
+    if (disposed || !renderer) return;
+    const width = Math.max(1, container.clientWidth);
+    const height = Math.max(1, container.clientHeight);
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+    renderer.setSize(width, height);
+    composer.setSize(width, height);
+    for (const pass of passes) {
+      pass.setSize?.(width, height);
+      if (pass.uniforms?.width) pass.uniforms.width.value = width;
+      if (pass.uniforms?.height) pass.uniforms.height.value = height;
+    }
+  }
 
-    setupThree();
-    let init = setupThree(far);
+  function animate(time) {
+    if (disposed || !model) return;
+    try {
+      model.position.y = Math.cos(time / 100) * 0.02;
+      model.rotation.y += 0.005;
+      if (!lastEffect) lastEffect = time;
+      if (time - lastEffect > 10000 + Math.random() * 5000) {
+        startEffect(effects[Math.floor(Math.random() * effects.length)]);
+        lastEffect = time;
+      }
+      for (const effect of active) effect.animate(() => active.delete(effect));
+      composer.render();
+      animationId = requestAnimationFrame(animate);
+    } catch (error) { fail(error); }
+  }
 
-    scene = init.scene;
-    camera = init.camera;
-    renderer = init.renderer;
-    gui = new GUI();
-
+  try {
+    ({ scene, camera, renderer } = setupThree(container));
+    renderer.domElement.addEventListener('webglcontextlost', onContextLost);
     composer = new EffectComposer(renderer);
-    composer.addPass(new RenderPass(scene, camera));
-
-    // const effectDot = new DotEffect(composer, 50);
-    const effectShift = new ShiftEffect(composer, 200,0.025, 30);
-    // const effectNormal = new NormalEffect(composer, 50, renderer, scene, camera);
-    // const effectSlice = new SliceEffect(composer, 50, 15);
-    const effectWave = new WaveEffect(composer, 300);
-    // const effectSpiral = new SpiralEffect(composer, 100, innerWidth, innerHeight);
-    const effectSobel = new SobelEffect(composer, 200, innerWidth, innerHeight, 30);
-    const effectLine = new LineEffect(composer, 200, innerWidth, innerHeight)
-    const effectHalftone = new HalftoneEffect(composer, 200, innerWidth, innerHeight, Math.random()*6+6)
-    const effectPost = new PostEffect(composer, 100, 20);
-    const effectPixel = new PixelEffect(composer, 120, scene, camera, 50)
-    const effectAfter = new AfterEffect(composer, 200);
-    const effectGlitch = new GlitchEffect(composer, 100);
-
-    effects = [effectShift, effectSobel, effectLine, effectHalftone, effectPost, effectPixel, effectAfter, effectGlitch]
-
-    let _gui = {
-        "Log": logCamera
+    const renderPass = new RenderPass(scene, camera);
+    passes.add(renderPass);
+    composer.addPass(renderPass);
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+    effects = [
+      new ShiftEffect(composer, 200, 0.025, 30),
+      new SobelEffect(composer, 200, width, height, 30),
+      new LineEffect(composer, 200, width, height),
+      new HalftoneEffect(composer, 200, width, height),
+      new PostEffect(composer, 100, 20),
+      new PixelEffect(composer, 120, scene, camera, 50),
+      new AfterEffect(composer, 200),
+      new GlitchEffect(composer, 100),
+    ];
+    for (const effect of effects) {
+      for (const pass of [effect.pass, effect.mask, effect.p1, effect.p2]) {
+        if (pass) passes.add(pass);
+      }
     }
-    gui.add(_gui, "Log");
-    gui.domElement.style.display = 'none'
-
-    function logCamera() {
-        console.log(camera);
-    }
-
-    clock = new THREE.Clock();
-    light = new Lights(scene, gui);
-    light = new THREE.DirectionalLight(0xffffff);
+    const shift = new ShaderPass(RGBShiftShader);
+    shift.uniforms.amount.value = 0.0015;
+    passes.add(shift);
+    composer.addPass(shift);
+    scene.add(new THREE.AmbientLight(0x999999));
+    const light = new THREE.DirectionalLight(0xffffff);
     light.position.set(1, 1, 1);
     scene.add(light);
+    resize();
+    observer = new ResizeObserver(() => {
+      try { resize(); } catch (error) { fail(error); }
+    });
+    observer.observe(container);
+    document.addEventListener('dblclick', onDoubleClick);
 
-    let sphere = new THREE.Mesh (new THREE.IcosahedronGeometry (0.5, 8), new THREE.MeshBasicMaterial({color: 'cyan'}));
-    sphere.position.set (1.2, 0, 1)
-
-    document.ondblclick = function (e) {
-        // console.log(effectA)
-        initEffect(effectShift);
-        initEffect(effectSobel)
-    }
-    // scene.add(sphere)
-
-
-    const loader = new GLTFLoader();
-    loader.load(
-        './cat.gltf',
-        function (gltf) {
-            // let eevee = gltf.scene.children[2];
-            // eevee.position.y = -1;
-            model = gltf.scene;
-            model.position.y = 0;
-            console.log(model);
-            scene.add(model);
-            animate();
-        },
-        function (xhr) {console.log((xhr.loaded / xhr.total * 100) + '% loaded')},
-        function (error) {console.log('An error happened')}
-    )
-    // const light = new THREE.DirectionalLight(0xffffff);
-    // light.position.set(1, 1, 1);
-    // scene.add(light);
-
-    // composer = new EffectComposer(renderer);
-    // composer.addPass(new RenderPass(scene, camera));
-
-    // const effect1 = new ShaderPass(DotScreenShader);
-    // effect1.uniforms.scale.value = 10;
-    // composer.addPass(effect1);
-
-    const effect2 = new ShaderPass(RGBShiftShader);
-    effect2.uniforms.amount.value = 0.0015;
-    effect2.renderToScreen = true;
-    composer.addPass(effect2);
-}
-
-function animate () {
-    const time = Date.now();
-    model.position.y = Math.cos(time / 100) * 0.02 ;
-    model.rotation.y += 0.005;
-
-    if (!times) {
-        times = time
-    } else {
-        const interval = Math.random() * (10000 - 5000) + 10000;
-        if ((time - times) > interval) {
-            let toAdd = effects[Math.floor(Math.random() * effects.length)]
-            // console.log(effectA)
-            initEffect(toAdd);
-            times = time
-            console.log("ADD")
+    const modelUrl = publicAsset('cat.gltf');
+    // Fetch is cancellable; parsing is not, so also guard its resolved result.
+    fetch(modelUrl, { signal: abort.signal })
+      .then(response => {
+        if (!response.ok) throw new Error('Model HTTP ' + response.status);
+        return response.arrayBuffer();
+      })
+      .then(buffer => {
+        if (disposed) return null;
+        return new GLTFLoader().parseAsync(buffer, new URL('.', new URL(modelUrl, location.href)).href);
+      })
+      .then(gltf => {
+        if (!gltf) return;
+        if (disposed) {
+          const released = new Set();
+          for (const root of gltf.scenes) disposeObject3D(root, released);
+          return;
         }
-    }
+        model = gltf.scene;
+        scene.add(model);
+        onReady();
+        animationId = requestAnimationFrame(animate);
+      })
+      .catch(error => { if (!disposed) fail(error); });
+  } catch (error) { fail(error); }
 
-    for (let i = 0; i < active.length; i++) {
-        active[i].animate(function () {
-            active = active.filter(function (item) {
-                // noinspection EqualityComparisonWithCoercionJS
-                return item != active[i];
-            })
-        });
-    }
-    // console.log(active)
-
-    composer.render();
-    animationId = requestAnimationFrame(animate);
-}
-
-export function clearAnimation() {
-    // 停止动画循环
-    cancelAnimationFrame(animationId);
+  return { dispose, resize };
 }
