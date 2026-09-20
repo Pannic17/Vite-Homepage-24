@@ -1,0 +1,150 @@
+{
+  "checkedAt": "2026-09-20T01:28:49.596Z",
+  "checkpoint": "4ce1506d2aa8de6536b1cd4f22e7f562feb3417a",
+  "originalCards": 14,
+  "currentCards": 14,
+  "missingCovers": [],
+  "missingExternalLinks": [],
+  "entries": [
+    {
+      "id": "catnet",
+      "collection": "works",
+      "cover": "image/CAT-Cover.png",
+      "destination": {
+        "kind": "none"
+      },
+      "introStatus": "provided"
+    },
+    {
+      "id": "chronoscape",
+      "collection": "works",
+      "cover": "image/GCS-Cover.jpg",
+      "destination": {
+        "kind": "internal",
+        "to": "/works/gcs"
+      },
+      "introStatus": "provided"
+    },
+    {
+      "id": "o-galaxy",
+      "collection": "works",
+      "cover": "image/OGX-Cover.png",
+      "destination": {
+        "kind": "none"
+      },
+      "introStatus": "provided"
+    },
+    {
+      "id": "pokemon-pad",
+      "collection": "works",
+      "cover": "image/C1F-Cover.png",
+      "destination": {
+        "kind": "external",
+        "href": "https://pannic17.github.io/C1-Final/"
+      },
+      "introStatus": "provided"
+    },
+    {
+      "id": "resonance",
+      "collection": "works",
+      "cover": "image/AMR-Cover.png",
+      "destination": {
+        "kind": "external",
+        "href": "https://github.com/Pannic17/PCOMP-Final-Resonance/"
+      },
+      "introStatus": "pending"
+    },
+    {
+      "id": "ai-shijing",
+      "collection": "works",
+      "cover": "image/C3F-Cover.png",
+      "destination": {
+        "kind": "external",
+        "href": "https://github.com/Pannic17/C3-Final"
+      },
+      "introStatus": "provided"
+    },
+    {
+      "id": "ai-art-hash",
+      "collection": "works",
+      "cover": "image/C2F-Cover.png",
+      "destination": {
+        "kind": "external",
+        "href": "https://github.com/Pannic17/C2-Final"
+      },
+      "introStatus": "provided"
+    },
+    {
+      "id": "anybody-problem",
+      "collection": "works",
+      "cover": "image/ABP-Cover.png",
+      "destination": {
+        "kind": "none"
+      },
+      "introStatus": "pending"
+    },
+    {
+      "id": "zhuangyuan",
+      "collection": "projects",
+      "cover": "image/ZAR-Cover.png",
+      "destination": {
+        "kind": "none"
+      },
+      "introStatus": "provided"
+    },
+    {
+      "id": "bilian-ai",
+      "collection": "projects",
+      "cover": "image/BLA-Cover.png",
+      "destination": {
+        "kind": "none"
+      },
+      "introStatus": "provided"
+    },
+    {
+      "id": "split",
+      "collection": "projects",
+      "cover": "image/Split!.png",
+      "destination": {
+        "kind": "none"
+      },
+      "introStatus": "pending"
+    },
+    {
+      "id": "homepage",
+      "collection": "projects",
+      "cover": "image/HPG-Cover.png",
+      "destination": {
+        "kind": "none"
+      },
+      "introStatus": "provided"
+    },
+    {
+      "id": "cci-coursework",
+      "collection": "projects",
+      "cover": "image/CourseWork.png",
+      "destination": {
+        "kind": "none"
+      },
+      "introStatus": "provided"
+    },
+    {
+      "id": "ai-tester",
+      "collection": "projects",
+      "cover": "image/Construction.png",
+      "destination": {
+        "kind": "none"
+      },
+      "introStatus": "pending"
+    }
+  ],
+  "featured": {
+    "id": "kaiwu",
+    "posters": [
+      "image/kaiwu/KW-poster1.jpg",
+      "image/kaiwu/KW-poster2.jpg",
+      "image/kaiwu/KW-poster3.jpg",
+      "image/kaiwu/KW-poster4.jpg"
+    ]
+  }
+}

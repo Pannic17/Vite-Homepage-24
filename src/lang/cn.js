@@ -1,66 +1,107 @@
 export default {
-    "accessibility": { "skip": "跳到正文", "navigation": "网站导航", "language": "语言" },
-    "status": {
-        "notFound": "未找到这个页面。",
-        "detailsPending": "更多项目详情正在整理中。"
-    },
-    "home":{
-        "name": "潘江昀",
-        "master": "伦敦艺术大学 - 创意计算机硕士",
-        "bachelor": "多伦多大学 - 生物学和免疫学学士",
-    },
-    "menu":{
-        "about": "关于",
-        "works": "作品",
-        "projects": "项目",
-        "main": "首页",
-        "back": "返回"
-    },
-    "projects":{
-        "sub1": "",
-        "sub2": "开发/参与的项目"
-    },
-    "tags":{
-        "mini": "微信小程序",
-        "installment": "装置",
-        "xr-game": "XR游戏",
-        "xr-interactive": "XR交互",
-        "ai-game": "AI游戏",
-        "web-game": "Web游戏",
-        "ai-experiment": "AI艺术实验",
-        "ar-mini": "AR小程序",
-        "ai-app": "AI聊天应用",
-        "tool": "工具",
-        "web": "网页",
-        "coursework": "课程作业",
-        "under": "仍在开发",
-        "arduino": "交互装置",
-    },
-    "title":{
-        "ZAR": "状元街区 · 微缩状元府",
-        "BLA": "比恋AI",
-        "HPG": "个人主页",
-        "CCI": "CCI课程作业"
-    },
-    "intro": {
-        "ZAR": "状元街区·微缩状元府 是一款微信AR小程序，基于微信xr-frame框架开发。" +
-            "用户通过扫描二维码，可以在对应的Marker上展示出生动的人物三维动画。" +
-            "该小程序作为景区的互动体验项目，旨在复原古代场景中传统中国人的生活。",
-        "BLA": "比恋AI是一款面向中国AI用户的聊天APP，接入了ChatGPT以及文言一心接口，提供可以在中国大陆访问的AI入口。" +
-            "我负责该应用的移动端前端开发，前端基于Flutter框架，实现了iOS和Android端跨平台同步开发，" +
-            "使用响应式布局，同时使用了微信分享等相关接口。",
-        "CCI": "这里展示了我在UAL CCI硕士一年期间所有的Coding作业。包括Coding 1中的JavaScript相关，" +
-            "Coding 2中OpenFramework以及Python相关，Coding 3中与神经网络相关的作业。",
-        "HPG": "由Vue3+Vite构建，响应式布局，组件化开发。使用Three.js搭建三维模型，i18n搭建语言国际化。",
-        "CAT": "CatNet是一款结合了神经网路的AR游戏。" +
-            "该游戏由Unity开发，利用Unity Barracuda插件将轻量级神经网络部署到移动端游戏中，" +
-            "实现通过手机摄像头利用神经网络对现实生物进行识别分类和特征提取，" +
-            "并利用获得的数据程序化生成相应的3D模型。" +
-            "通过该项目对未来可能的AR游戏方向进行实验性的探索，研究通过主流游戏引擎将轻量化模型部署在移动端的可能性。",
-        "GCS": "Chronoscape时空景观 是一款基于UE5引擎开发的XR交互游戏装置。" +
-            "在这个作品中，通过游戏体验，将人类的存在延伸到虚拟的数字世界。" +
-            "我们的目标是设计一个沉浸式的游乐空间，以此放大和纪念个人在世间所产生的影响。" +
-            "作品由Unreal开发，通过OpenCV和实验性的神经网络模块将自己训练的YOLO网络部署在游戏中，" +
-            "利用置于顶部的摄像机画面实时追踪场景中人踪迹并反馈到游戏场景中。"
+  "accessibility": {
+    "skip": "跳到正文",
+    "navigation": "网站导航",
+    "language": "语言"
+  },
+  "status": {
+    "notFound": "未找到这个页面。",
+    "detailsPending": "更多项目详情正在整理中。",
+    "introPending": "项目介绍待补充。",
+    "noDetail": "详情待补充"
+  },
+  "home": {
+    "name": "潘江昀",
+    "master": "伦敦艺术大学 - 创意计算机硕士",
+    "bachelor": "多伦多大学 - 生物学和免疫学学士",
+    "company": "{company} 联合创始人及开发者",
+    "intro": "作为创意程序员、开发者和项目经理，我参与并成功推出了一款移动端在线交易应用。在创意编程的学习与实践中，我专注于将神经网络与游戏引擎结合，持续探索游戏行业的发展。"
+  },
+  "menu": {
+    "about": "关于",
+    "works": "作品",
+    "projects": "项目",
+    "main": "首页",
+    "back": "返回",
+    "test": "测试"
+  },
+  "tags": {
+    "mini": "微信小程序",
+    "installment": "装置",
+    "xr-game": "XR游戏",
+    "xr-interactive": "XR交互",
+    "ai-game": "AI游戏",
+    "web-game": "Web游戏",
+    "ai-experiment": "AI艺术实验",
+    "ar-mini": "AR小程序",
+    "ai-app": "AI聊天应用",
+    "tool": "工具",
+    "web": "网页",
+    "coursework": "课程作业",
+    "under": "仍在开发",
+    "arduino": "交互装置"
+  },
+  "title": {
+    "ZAR": "状元街区 · 微缩状元府",
+    "BLA": "比恋AI",
+    "HPG": "个人主页",
+    "CCI": "CCI课程作业",
+    "CAT": "CatNet",
+    "GCS": "Chronoscape",
+    "OGX": "O Galaxy",
+    "C1F": "PokemonPad",
+    "AMR": "Resonance",
+    "C3F": "AI 诗经绘画",
+    "C2F": "Ai, Art & hAsh",
+    "ABP": "Anybody Problem",
+    "SPLIT": "SPLIT!",
+    "TESTER": "AI 测试工具"
+  },
+  "intro": {
+    "ZAR": "状元街区·微缩状元府 是一款微信AR小程序，基于微信xr-frame框架开发。用户通过扫描二维码，可以在对应的Marker上展示出生动的人物三维动画。该小程序作为景区的互动体验项目，旨在复原古代场景中传统中国人的生活。",
+    "BLA": "比恋AI是一款面向中国AI用户的聊天APP，接入了ChatGPT以及文言一心接口，提供可以在中国大陆访问的AI入口。我负责该应用的移动端前端开发，前端基于Flutter框架，实现了iOS和Android端跨平台同步开发，使用响应式布局，同时使用了微信分享等相关接口。",
+    "CCI": "这里展示了我在UAL CCI硕士一年期间所有的Coding作业。包括Coding 1中的JavaScript相关，Coding 2中OpenFramework以及Python相关，Coding 3中与神经网络相关的作业。",
+    "HPG": "由Vue3+Vite构建，响应式布局，组件化开发。使用Three.js搭建三维模型，i18n搭建语言国际化。",
+    "CAT": "CatNet是一款结合了神经网路的AR游戏。该游戏由Unity开发，利用Unity Barracuda插件将轻量级神经网络部署到移动端游戏中，实现通过手机摄像头利用神经网络对现实生物进行识别分类和特征提取，并利用获得的数据程序化生成相应的3D模型。通过该项目对未来可能的AR游戏方向进行实验性的探索，研究通过主流游戏引擎将轻量化模型部署在移动端的可能性。",
+    "GCS": "Chronoscape时空景观 是一款基于UE5引擎开发的XR交互游戏装置。在这个作品中，通过游戏体验，将人类的存在延伸到虚拟的数字世界。我们的目标是设计一个沉浸式的游乐空间，以此放大和纪念个人在世间所产生的影响。作品由Unreal开发，通过OpenCV和实验性的神经网络模块将自己训练的YOLO网络部署在游戏中，利用置于顶部的摄像机画面实时追踪场景中人踪迹并反馈到游戏场景中。",
+    "OGX": "利用棱镜、摄像机和投影仪，通过捕捉现实世界的图像创建虚拟世界。",
+    "C1F": "一款基于 Three.js 和 WebGL 开发的 Web 音乐小游戏。",
+    "C3F": "利用 AI 理解中国古代诗歌并重构绘画的实验。",
+    "C2F": "探索计算机对图片的理解、记忆与验证的生成艺术项目。我编写了 Python 脚本，使用 Stable Diffusion 根据哈希字符串生成图像，再将生成的图像用于替换输入图片中的人脸。脚本利用 OpenCV 检测人脸，通过二值掩码完成替换，并使用 OpenCV 计算输入图片的感知哈希。"
+  },
+  "pages": {
+    "worksSubtitle": "PANNIC 的艺术作品",
+    "projectsSubtitle": "PANNIC 开发或参与的项目"
+  },
+  "contact": {
+    "label": "联系方式与社交账号",
+    "email": "电子邮件",
+    "github": "GitHub",
+    "instagram": "Instagram"
+  },
+  "dates": {
+    "2021": "2021年",
+    "2023": "2023年",
+    "2024": "2024年",
+    "june2023": "2023年6月",
+    "fall2023": "2023年秋",
+    "december2022": "2022年12月",
+    "march2023": "2023年3月",
+    "january2024": "2024年1月",
+    "winter2023": "2023年冬",
+    "december2024": "2024年12月"
+  },
+  "kaiwu": {
+    "title": "开物 KaiwuArt",
+    "poster": "开物宣传海报 {number}",
+    "intro": "开物是面向中国 3D 数字艺术品市场的 NFT 交易平台，关注 3D 数字艺术品在元宇宙、游戏、流行文化、收藏和 CG 行业中的应用。",
+    "role": "作为项目经理和开发者，我参与了项目开发的各个环节，包括 Android/iOS 移动应用、微信小程序、官方网站、云服务器、数据库、3D 渲染以及加密代币的发行与交易。我与开发者和设计师合作，成功推出了 KaiwuArt，并开展了一系列活动。",
+    "links": {
+      "viewer": "3D 查看器",
+      "app": "移动应用",
+      "websites": "网站",
+      "backend": "云服务与后端",
+      "chain": "NFT 与至信链"
     }
-}
+  }
+};

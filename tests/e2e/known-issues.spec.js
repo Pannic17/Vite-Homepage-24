@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-// These assert the desired behavior. An unexpected pass prompts removing the
-// annotation; existing defects are never approved visual snapshots.
+// Regression coverage for the three original baseline defects, now resolved.
 test('B01: resizing home preserves the document', async ({ page }) => {
   await page.goto('./');
   await expect(page.locator('#three-canvas canvas')).toHaveCount(1);
@@ -21,7 +20,6 @@ test('B02: selected language survives refresh', async ({ page }) => {
   await expect(page.getByRole('link', { name: '作品', exact: true })).toBeVisible();
   await page.reload();
   await expect(page.locator('#h-title')).toBeVisible();
-  test.fail(true, 'B02: LanguageSwitch does not persist locale');
   expect(await page.getByRole('link', { name: '作品', exact: true }).count()).toBe(1);
 });
 

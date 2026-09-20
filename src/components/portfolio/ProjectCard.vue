@@ -1,20 +1,24 @@
 <script setup>
 import {publicAsset} from '../../utils/publicAsset';
-defineProps({ cover: String, title: String, intro: String, category: String, tags: Array, year: String, link: String, route: String });
+import TagList from './TagList.vue';
+import {useI18n} from 'vue-i18n';
+defineProps({entry:{type:Object,required:true}});
+const {t} = useI18n();
 </script>
 <template>
-  <article class="project-card section">
-    <img :src="publicAsset(cover)" :alt="title" class="s-cover" width="600" height="600">
+  <article class="project-card section" :data-entry-id="entry.id">
+    <img :src="publicAsset(entry.cover)" :alt="t(entry.titleKey)" class="s-cover" width="600" height="600">
     <div class="card-content">
-      <p class="s-year">{{ year }}</p>
+      <p class="s-year">{{ t(entry.dateKey) }}</p>
       <h2 class="s-title">
-        <RouterLink v-if="route" :to="route">{{ title }}</RouterLink>
-        <a v-else-if="link" :href="link" target="_blank" rel="noopener noreferrer">{{ title }}<span class="external" aria-hidden="true"> ↗</span></a>
-        <template v-else>{{ title }}</template>
+        <RouterLink v-if="entry.destination.kind === 'internal'" :to="entry.destination.to">{{ t(entry.titleKey) }}</RouterLink>
+        <a v-else-if="entry.destination.kind === 'external'" :href="entry.destination.href" target="_blank" rel="noopener noreferrer">{{ t(entry.titleKey) }}<span class="external" aria-hidden="true"> ↗</span></a>
+        <template v-else>{{ t(entry.titleKey) }}</template>
       </h2>
-      <p v-if="category" class="category">{{ category }}</p>
-      <ul v-if="tags?.length" class="tags"><li v-for="tag in tags" :key="tag">{{ tag }}</li></ul>
-      <p v-if="intro" class="s-intro">{{ intro }}</p>
+      <p class="category">{{ t(entry.categoryKey) }}</p>
+      <TagList :tags="entry.tags" />
+      <p class="s-intro">{{ entry.introKey ? t(entry.introKey) : t('status.introPending') }}</p>
+      <p v-if="entry.destination.kind === 'none'" class="detail-status">{{ t('status.noDetail') }}</p>
     </div>
   </article>
 </template>
@@ -28,8 +32,6 @@ defineProps({ cover: String, title: String, intro: String, category: String, tag
 .s-title a { display: inline-block; min-height: 44px; padding-block: .25rem; }
 .external { font-size: 1rem; }
 .category { color: var(--title-color); }
-.tags { display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0; list-style: none; }
-.tags li { padding: .15rem .6rem; border: 1px solid var(--border-color); border-radius: .25rem; overflow-wrap: anywhere; max-width: 100%; font-size: .875rem; }
 .s-intro { max-width: 65ch; }
 @media (min-width: 40rem) { .project-card { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: clamp(1.5rem, 4vw, 3rem); } }
 </style>

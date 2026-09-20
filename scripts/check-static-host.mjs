@@ -4,7 +4,7 @@ import { createServer } from 'node:http';
 import { readFile, stat, mkdir, writeFile } from 'node:fs/promises';
 import { resolve, sep, extname, join } from 'node:path';
 import assert from 'node:assert/strict';
-import { pagePaths } from '../src/routePaths.js';
+import { productionPaths } from '../src/routePaths.js';
 
 const output = resolve(process.argv.includes('--output') ? process.argv[process.argv.indexOf('--output') + 1] : 'phase1-latest.local');
 await mkdir(output, { recursive: true });
@@ -42,7 +42,7 @@ try {
     const origin = 'http://127.0.0.1:' + server.address().port;
     const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, locale: 'en-US' });
     try {
-      for (const route of [...Object.values(pagePaths), '/unknown-page']) {
+      for (const route of [...productionPaths, '/test', '/unknown-page']) {
         const page = await context.newPage();
         const failures = [];
         page.on('pageerror', error => failures.push(error.message));
@@ -50,7 +50,7 @@ try {
           if (response.request().resourceType() !== 'document' && response.status() >= 400) failures.push(response.status() + ' ' + response.url());
         });
         const response = await page.goto(origin + base + route.slice(1) + '?probe=one#marker', { waitUntil: 'networkidle' });
-        assert.equal(response.status(), route === '/unknown-page' ? 404 : 200);
+        assert.equal(response.status(), ['/test','/unknown-page'].includes(route) ? 404 : 200);
         assert.equal(new URL(page.url()).search, '?probe=one');
         assert.equal(new URL(page.url()).hash, '#marker');
         await page.waitForFunction(() => document.querySelector('#app')?.textContent.trim().length > 0);
@@ -59,7 +59,7 @@ try {
           assert.equal(await page.locator('.d-header h1').textContent(), 'Chronoscape');
           if (base !== '/') await page.screenshot({ path: join(output, 'gcs-desktop.png'), fullPage: true });
         }
-        if (route === '/unknown-page') assert.equal(await page.locator('h1').textContent(), '404');
+        if (['/test','/unknown-page'].includes(route)) assert.equal(await page.locator('h1').textContent(), '404');
         assert.deepEqual(failures, []);
         results.runs.push({ base, route, status: response.status(), finalUrl: page.url(), images: await page.locator('img').count(), failures });
         await page.close();

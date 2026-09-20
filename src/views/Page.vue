@@ -4,8 +4,8 @@ import {publicAsset} from '../utils/publicAsset';
 </script>
 <template>
   <main id="main-content" class="page-container" tabindex="-1">
-    <PageHeader title="Test Page" :category="$t('tags.ar-mini')" year="December 2024" />
-    <img class="test-cover" :src="publicAsset('image/ZAR-Cover.png')" alt="AR Miniprogram">
+    <PageHeader :title="$t('menu.test')" :category="$t('tags.ar-mini')" :year="$t('dates.december2024')" />
+    <img class="test-cover" :src="publicAsset('image/ZAR-Cover.png')" :alt="$t('title.ZAR')">
     <p>{{ $t('status.detailsPending') }}</p>
   </main>
 </template>

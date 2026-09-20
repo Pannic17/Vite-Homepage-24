@@ -35,13 +35,15 @@ for (const [width,height] of viewports) {
     await page.route('**/cat.gltf', route => route.fulfill({status:503,body:'layout fixture'}));
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
+    await page.goto('./');
     for (const locale of ['en-US','zh-CN']) {
-      await page.addInitScript(value => localStorage.setItem('locale', value), locale);
+      await page.evaluate(value => localStorage.setItem('locale', value), locale);
       for (const route of routes) {
         await page.goto(route || './');
-        // Use the UI: storage persistence is intentionally left for phase 3.
+        // Exercise both stored preference and the language controls.
         const language = page.getByRole('button', {name:locale === 'zh-CN' ? '中文' : 'ENGLISH',exact:true});
         if (await language.count()) await language.click();
+        await expect(page.locator('html')).toHaveAttribute('lang',locale);
         await page.evaluate(() => document.fonts.ready);
         await checkLayout(page);
         const header = page.locator('.site-header');
