@@ -27,6 +27,5 @@ dist-ssr
 test-results/
 playwright-report/
 
-# Local editor and GitHub configuration
+# Local editor configuration
 /.vscode/
-/.github/
