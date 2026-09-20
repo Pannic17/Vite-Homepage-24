@@ -135,7 +135,7 @@ tests/               单元测试与浏览器测试
 - 更新作品封面或 Kaiwu 海报后，运行 `npm run images:optimize`，同时保存生成的 `public/image/optimized/` 和 `src/content/imageVariants.json`。
 - 带有详情定义的项目会自动生成详情路由及静态 HTML 入口。`/test` 仅供开发使用，不会生成生产页面。
 
-详细说明见 [内容与语言维护](docs/content.md)。
+详细说明见 [内容与语言维护](docs/Phase1/content.md)。
 
 ## 常用检查
 
@@ -153,4 +153,4 @@ npm run test:e2e
 npm run test:static
 ```
 
-浏览器检查请依次运行，避免预览端口冲突。更多开发记录见 [Roadmap](Roadmap.md) 和 `docs/` 目录。
+浏览器检查请依次运行，避免预览端口冲突。更多开发记录见 [Roadmap](docs/Phase1/Roadmap.md) 和 `docs/Phase1/` 目录。

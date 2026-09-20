@@ -44,7 +44,7 @@ test('all baseline external destinations survive the content migration', () => {
     ...portfolio.filter(entry => entry.destination.kind === 'external').map(entry => entry.destination.href),
     kaiwu.href,...kaiwu.links.map(link => link.href),profile.company.href,...profile.contacts.map(contact => contact.href),
   ]);
-  const baseline = JSON.parse(readFileSync('docs/baseline/2026-09-18/external-links.json','utf8'));
+  const baseline = JSON.parse(readFileSync('docs/Phase1/baseline/2026-09-18/external-links.json','utf8'));
   for(const {url} of baseline) assert.ok(actual.has(url),'Missing destination: ' + url);
   assert.ok(actual.has('mailto:pannic1984@outlook.com'));
 });

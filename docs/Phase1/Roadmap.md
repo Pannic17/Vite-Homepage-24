@@ -3,21 +3,21 @@
 日期：2026-09-18  
 状态：阶段 0–4 已完成；阶段 5 工程与本地自动化已完成，真机与远端发布待验收。更新于 2026-09-21。
 
-阶段 5 交付：[回归与交付报告](docs/phase5/2026-09-21/README.md)、[部署与回滚](docs/deployment.md)。本地 109 项端到端、10 项单元、14 项静态路径检查通过；已配置 master 推送自动构建和发布，并将远端 Pages 来源切为 GitHub Actions。工作流尚未推送，真机和远端 CI 未验证；旧 dist 解除跟踪被自动审批拒绝，仍待处理。
+阶段 5 交付：[回归与交付报告](phase5/2026-09-21/README.md)、[部署与回滚](deployment.md)。本地 109 项端到端、10 项单元、14 项静态路径检查通过；已配置 master 推送自动构建和发布，并将远端 Pages 来源切为 GitHub Actions。工作流尚未推送，真机和远端 CI 未验证；旧 dist 解除跟踪被自动审批拒绝，仍待处理。
 
-阶段 4 交付：[3D 与加载性能报告](docs/phase4/2026-09-20/README.md)。路由与场景按需加载、当前静态路由预加载、动画开关、后台暂停、质量降级和响应式 WebP 已实现；本地回退节点为 `codex/phase-4-checkpoint`。最终三轮 Lighthouse 的 LCP 中位数约 2.12 秒，CLS 为 0；真机 GPU 和 Safari 等验证留在阶段 5。
+阶段 4 交付：[3D 与加载性能报告](phase4/2026-09-20/README.md)。路由与场景按需加载、当前静态路由预加载、动画开关、后台暂停、质量降级和响应式 WebP 已实现；本地回退节点为 `codex/phase-4-checkpoint`。最终三轮 Lighthouse 的 LCP 中位数约 2.12 秒，CLS 为 0；真机 GPU 和 Safari 等验证留在阶段 5。
 
-阶段 3 交付：[内容、路由与语言报告](docs/phase3/2026-09-20/README.md)、[内容维护指南](docs/content.md)。作品数据化、详情模板、语言持久化与页面元信息已完成；本地回退节点为 `codex/phase-3-checkpoint`。
+阶段 3 交付：[内容、路由与语言报告](phase3/2026-09-20/README.md)、[内容维护指南](content.md)。作品数据化、详情模板、语言持久化与页面元信息已完成；本地回退节点为 `codex/phase-3-checkpoint`。
 
 首页设计约束（2026-09-20 用户纠正）：保留重构前的首页构图，包括大标题、原有文字与导航顺序、全屏叠加 3D 和手机留白。阶段 2 的首页左右分区方案已撤回；后续优化只修复功能、适配和性能，不再擅自重排首页。
 
 作品／项目设计约束（同日用户纠正）：保留原版青绿色角标展开 hover、标题阴影、右对齐图文层次、竖线标签以及 Kaiwu 的品牌排版和连续海报。重构只替换实现方式，不替换既有视觉设计；点击和键盘选择不出现全包边框，角标只随鼠标 hover 展开。
 
-阶段 2 交付：[共享布局与响应式 UI 报告](docs/phase2/2026-09-20/README.md)。统一自然流页头、Grid 卡片、字体与容器，首页正文和 3D 分区；本地回退节点为 `codex/phase-2-checkpoint`。
+阶段 2 交付：[共享布局与响应式 UI 报告](phase2/2026-09-20/README.md)。统一自然流页头、Grid 卡片、字体与容器，首页正文和 3D 分区；本地回退节点为 `codex/phase-2-checkpoint`。
 
-阶段 1 交付：[稳定性与部署路径报告](docs/phase1/2026-09-18/README.md)。已修复首页生命周期、异常回退、导航与静态部署路径，保留本地回退节点 `codex/phase-1-checkpoint`。
+阶段 1 交付：[稳定性与部署路径报告](phase1/2026-09-18/README.md)。已修复首页生命周期、异常回退、导航与静态部署路径，保留本地回退节点 `codex/phase-1-checkpoint`。
 
-阶段 0 交付：[基线报告](docs/baseline/2026-09-18/README.md)、[问题与内容清单](docs/baseline/2026-09-18/inventory.md)、[截图](docs/baseline/2026-09-18/screenshots.md)、[性能](docs/baseline/2026-09-18/performance.md)、[测试记录](docs/baseline/2026-09-18/tests.md)。已建立本地回退节点 `codex/phase-0-checkpoint`，补充 Playwright 冒烟和可重复的采集脚本。
+阶段 0 交付：[基线报告](baseline/2026-09-18/README.md)、[问题与内容清单](baseline/2026-09-18/inventory.md)、[截图](baseline/2026-09-18/screenshots.md)、[性能](baseline/2026-09-18/performance.md)、[测试记录](baseline/2026-09-18/tests.md)。已建立本地回退节点 `codex/phase-0-checkpoint`，补充 Playwright 冒烟和可重复的采集脚本。
 
 ## 1. 目标与范围
 
