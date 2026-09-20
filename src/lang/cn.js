@@ -1,4 +1,5 @@
 export default {
+    "accessibility": { "skip": "跳到正文", "navigation": "网站导航", "language": "语言" },
     "status": {
         "notFound": "未找到这个页面。",
         "detailsPending": "更多项目详情正在整理中。"

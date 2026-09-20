@@ -130,10 +130,10 @@ try {
   }
   await sample(0, 'home');
   for (let cycle = 1; cycle <= 20; cycle++) {
-    await page.getByRole('button', { name: 'WORKS', exact: true }).click();
+    await page.getByRole('link', { name: 'WORKS', exact: true }).click();
     await page.waitForTimeout(100);
     if ([1,5,10,20].includes(cycle)) await sample(cycle, 'works');
-    await page.getByRole('button', { name: 'HOME', exact: true }).click();
+    await page.getByRole('link', { name: 'HOME', exact: true }).click();
     await page.waitForTimeout(350);
     if ([1,5,10,20].includes(cycle)) await sample(cycle, 'home');
   }

@@ -1,0 +1,27 @@
+{
+  "capturedAt": "2026-09-19T18:19:13.281Z",
+  "conditions": "Local production preview; live 3D; mobile viewport/touch emulation; no throttling.",
+  "captures": [
+    {
+      "width": 390,
+      "state": "ready"
+    },
+    {
+      "width": 1440,
+      "state": "ready"
+    }
+  ],
+  "stress": [
+    {
+      "textPercent": 100,
+      "viewport": 320,
+      "content": 320
+    },
+    {
+      "textPercent": 200,
+      "viewport": 320,
+      "content": 320
+    }
+  ],
+  "browser": "152.0.4191.66"
+}

@@ -1,30 +1,8 @@
 <script setup>
-import {onMounted, onUnmounted, ref} from "vue";
-import {createHomeScene} from "../three/home.js";
-import {publicAsset} from "../utils/publicAsset.js";
-import router from "../router.js";
-import LanguageSwitch from "../components/LanguageSwitch.vue";
-
-// function for debug
-function go2Debug() {
-  router.push('/debug')
-}
-
-function go2About() {
-  router.push('/about')
-}
-
-function go2Works() {
-  router.push('/works')
-}
-
-function go2Projects() {
-  router.push('/projects')
-}
-
-function go2Test() {
-  router.push('/test')
-}
+import {onMounted, onUnmounted, ref} from 'vue';
+import {createHomeScene} from '../three/home.js';
+import {publicAsset} from '../utils/publicAsset.js';
+import LanguageSwitch from '../components/LanguageSwitch.vue';
 
 const canvasHost = ref(null);
 const sceneState = ref('loading');
@@ -36,183 +14,56 @@ onMounted(() => {
   });
 });
 onUnmounted(() => homeScene?.dispose());
-
 </script>
 
 <template>
-  <div id="background"></div>
-  <div id="f-center">
-    <h1 id="h-title">PANNIC</h1>
-    <div class="m-text" style="padding-left: 1vw">
-      <p>
-        {{ $t("home.name") }}<br>
-        {{ $t("home.master") }}<br>
-        {{ $t("home.bachelor") }}<br>
-        Co-founder and Developer of <a href="https://kaiwuart.cn/" target="_blank">kaiwuart.cn</a>
-      </p>
-      <LanguageSwitch></LanguageSwitch>
-      <p id="m-intro">
-        As a creative programmer, Innovative developer and project manager, successfully launching a mobile online trading app. From my academic background in creative programming, I have been specialised in integrating neural networks with game engines, demonstrating a strong commitment to the game industry.
-      </p>
-      <div class="f-social-v">
-        <a href="mailto:pannic1984@outlook.com"><img class="p-social" src="../assets/icon_email.png" alt="Email"></a>
-        <a href="https://github.com/Pannic17" target="_blank"><img class="p-social" src="../assets/icon_github.png" alt="Github"/></a>
-        <a href="https://www.instagram.com/pannic17/" target="_blank"><img class="p-social" src="../assets/icon_ins.png" alt="Instagram"></a>
+  <main id="main-content" class="page-container home" tabindex="-1">
+    <header class="home-header">
+      <h1 id="h-title">PANNIC</h1>
+      <LanguageSwitch />
+    </header>
+    <div class="home-grid">
+      <div class="home-copy">
+        <p class="identity">{{ $t('home.name') }}<br>{{ $t('home.master') }}<br>{{ $t('home.bachelor') }}<br>
+          Co-founder and Developer of <a href="https://kaiwuart.cn/" target="_blank" rel="noopener noreferrer">kaiwuart.cn</a>
+        </p>
+        <p id="m-intro">As a creative programmer, Innovative developer and project manager, successfully launching a mobile online trading app. From my academic background in creative programming, I have been specialised in integrating neural networks with game engines, demonstrating a strong commitment to the game industry.</p>
+        <nav class="f-button" :aria-label="$t('accessibility.navigation')">
+          <RouterLink class="text-link" to="/about">{{ $t('menu.about') }}</RouterLink>
+          <RouterLink class="text-link" to="/works">{{ $t('menu.works') }}</RouterLink>
+          <RouterLink class="text-link" to="/projects">{{ $t('menu.projects') }}</RouterLink>
+        </nav>
+        <div class="social-links">
+          <a href="mailto:pannic1984@outlook.com"><img src="../assets/icon_email.png" alt="Email"></a>
+          <a href="https://github.com/Pannic17" target="_blank" rel="noopener noreferrer"><img src="../assets/icon_github.png" alt="Github"></a>
+          <a href="https://www.instagram.com/pannic17/" target="_blank" rel="noopener noreferrer"><img src="../assets/icon_ins.png" alt="Instagram"></a>
+          <RouterLink class="text-link test-link" to="/test">TEST</RouterLink>
+        </div>
       </div>
-
-      <div class="f-button">
-        <button
-            class="sub-button"
-            @click="go2About"
-        >{{ $t("menu.about") }}</button>
-        <button
-            class="sub-button"
-            @click="go2Works"
-        >{{ $t("menu.works") }}</button>
-        <button
-            class="sub-button"
-            @click="go2Projects"
-        >{{ $t("menu.projects") }}</button>
+      <div class="scene-panel" aria-hidden="true">
+        <div id="three-canvas" ref="canvasHost" :data-state="sceneState"></div>
+        <img v-if="sceneState !== 'ready'" class="scene-fallback" :src="publicAsset('image/CAT-Cover.png')" alt="">
       </div>
-
-      <div class="f-social-c">
-        <a href="mailto:pannic1984@outlook.com"><img class="p-social" src="../assets/icon_email.png" alt="Email"></a>
-        <a href="https://github.com/Pannic17" target="_blank"><img class="p-social" src="../assets/icon_github.png" alt="Github"/></a>
-        <a href="https://www.instagram.com/pannic17/" target="_blank"><img class="p-social" src="../assets/icon_ins.png" alt="Instagram"></a>
-      </div>
-
-      <button
-          class="sub-button"
-          @click="go2Test"
-      >TEST</button>
-
     </div>
-
-  </div>
-  <div id="three-canvas" ref="canvasHost" :data-state="sceneState" aria-hidden="true"></div>
-  <img v-if="sceneState === 'fallback'" class="scene-fallback" :src="publicAsset('image/CAT-Cover.png')" alt="" aria-hidden="true">
+  </main>
 </template>
 
 <style scoped>
-.scene-fallback {
-  position: fixed;
-  right: 5vw;
-  top: 35vh;
-  width: min(30vw, 260px);
-  opacity: 0.12;
-  pointer-events: none;
-}
-#background, #three-canvas {
-  padding: 0;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  /*background-color: #1a1a1a;*/
-}
-
-#f-center {
-  width: 80%;
-  margin: 0 auto;
-  text-align: left;
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none;    /* Firefox */
-  -ms-user-select: none;     /* IE10+/Edge */
-  user-select: none;
-}
-
-#h-title {
-  color: var(--title-color);
-  margin-top: 8vh;
-  padding-bottom: 2vh;
-  margin-bottom: 0;
-  font-size: calc(var(--vsr) * 20);
-  /* width: 84%; */
-}
-
-.m-text {
-  color: var(--context-color);
-}
-
-.f-button {
-  display: flex;
-  justify-content: space-between;
-  padding-block: 2vh;
-}
-
-.sub-button {
-  background: none;
-  border: none;
-  color: var(--title-color); /* 或者您希望的任何颜色 */
-  cursor: pointer;
-  padding: 0;
-  /* font-weight: bold; */
-  font-size: calc(var(--vsr) * 3);
-  padding-block: calc(var(--vsr) * 1);
-}
-
-.sub-button:hover {
-  /* background-color: #aaaaaa; */
-  color: var(--hover-color);
-  /* border-radius: 5px; */
-  /* font-weight: bold; */
-  /* padding-block: calc(var(--vsr) * 1); */
-}
-
-#three-canvas {
-  pointer-events: none;
-}
-
-#m-intro {
-  width: 50%;
-}
-
-.f-social-v{
-  text-align: right;
-}
-
-.f-social-c{
-  display: none;
-}
-
-.p-social {
-  width: 5vh;
-  padding-left: 2vh;
-}
-
-@media screen and (max-aspect-ratio: 1/1.7) {
-  #h-title {
-    padding-top: 2vh;
-  }
-  #m-intro {
-    padding-top: 25vh;
-    width: 100%;
-  }
-  .f-button {
-    display: flex;
-    flex-direction: column;
-    padding-block: 2vh;
-  }
-  .sub-button {
-    background: none;
-    border: none;
-    color: var(--title-color); /* 或者您希望的任何颜色 */
-    cursor: pointer;
-    padding: 0;
-    font-size: 3vh;
-    margin: 1vh;
-  }
-  .f-social-v {
-    display: none;
-  }
-  .f-social-c {
-    display: inherit;
-    text-align: center;
-    padding-bottom: 3vh;
-  }
-  .p-social {
-    padding: 1vh;
-  }
-}
+.home { min-height: 100vh; min-height: 100svh; }
+.home-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: var(--space-section); }
+#h-title { font-size: clamp(3rem, 2rem + 6vw, 7rem); letter-spacing: -.045em; }
+.home-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; align-items: center; }
+.home-copy { min-width: 0; display: grid; gap: 1.5rem; }
+.identity { color: var(--title-color); }
+#m-intro { max-width: 60ch; }
+.f-button { display: flex; flex-wrap: wrap; gap: .75rem; }
+.social-links { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+.social-links a { display: inline-flex; justify-content: center; align-items: center; min-height: 44px; min-width: 44px; }
+.social-links img { width: 28px; height: 28px; object-fit: contain; }
+.test-link { margin-left: auto; }
+.scene-panel { position: relative; min-width: 0; aspect-ratio: 1; width: 100%; max-width: 30rem; justify-self: center; background: #202321; border: 1px solid var(--border-color); }
+#three-canvas { position: absolute; inset: 0; pointer-events: none; }
+#three-canvas :deep(canvas) { display: block; max-width: 100%; }
+.scene-fallback { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; opacity: .5; pointer-events: none; }
+@media (min-width: 64rem) { .home-grid { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 3rem; } }
 </style>

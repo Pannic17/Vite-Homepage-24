@@ -62,9 +62,30 @@ npm run test:e2e
 npm run test:static
 ```
 
-The current end-to-end suite has 36 passing cases and two expected failures
-(language persistence, one per viewport). Static-host checks cover both base
-paths without an SPA rewrite. Run browser commands sequentially.
+The current end-to-end suite has 53 passing cases and two expected failures
+(language persistence, one per viewport). Eleven duplicate matrix cases are
+intentionally skipped in the mobile project: the desktop project explicitly
+checks all eleven viewport sizes. Static-host checks cover both base paths
+without an SPA rewrite. Run browser commands sequentially.
+
+## Responsive layout
+
+Phase 2 introduces shared page headers, responsive project cards, bounded
+typography, keyboard navigation, and a dedicated home scene area. See the
+[phase 2 report](docs/phase2/2026-09-20/README.md) for screenshots and the test
+matrix. Tokens live in `src/styles/tokens.css`; page content remains in the
+existing views until phase 3.
+
+For live scene screenshots and long-title/URL stress checks:
+
+```sh
+node scripts/capture-phase2.mjs
+```
+
+The default output is `phase2-latest.local/`. This uses the same preview port
+as the other browser checks, so run it separately. Automated viewport and
+200% text checks do not replace Safari, physical-device, or native browser
+zoom verification.
 
 ## Refactoring baseline
 

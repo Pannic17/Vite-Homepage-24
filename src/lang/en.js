@@ -1,4 +1,5 @@
 export default {
+    "accessibility": { "skip": "Skip to content", "navigation": "Site navigation", "language": "Language" },
     "status": {
         "notFound": "This page could not be found.",
         "detailsPending": "More project details will be added here."

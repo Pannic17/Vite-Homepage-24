@@ -1,12 +1,11 @@
 <script setup>
-import {useHeaderSpacer} from "../composables/useHeaderSpacer";
-import SubRight from "../components/SubRight.vue";
+import SiteLayout from '../layouts/SiteLayout.vue';
 import MenuSection from "../components/MenuSection.vue";
 import {computed} from "vue";
 import {useI18n} from "vue-i18n";
 import Kaiwu from "../components/KaiwuSection.vue";
 
-useHeaderSpacer();
+
 
 const { t } = useI18n();
 
@@ -34,23 +33,8 @@ const iCCI = computed(() => t('intro.CCI'));
 </script>
 
 <template>
-  <div id="background"></div>
-  <div class="f-center">
-    <div id="f-top">
-      <div class="h-sub">
-        <div class="h-left">
-          <h2>PROJECTS</h2>
-          <div class="subtitle">
-            <span>{{ $t("projects.sub1") }}</span><span class="t-cyan"> PANNIC </span><span>{{ $t("projects.sub2") }}</span>
-          </div>
-        </div>
-        <SubRight></SubRight>
-      </div>
-      <div style="height: 1px; background-color: var(--context-color); margin-block: 1vh"></div>
-    </div>
-
-    <div id="block" style="background-color: var(--background-color); width: 90vw"></div>
-
+  <SiteLayout title="PROJECTS">
+    <template #subtitle>{{ $t("projects.sub1") }} PANNIC {{ $t("projects.sub2") }}</template>
     <Kaiwu></Kaiwu>
 
     <MenuSection
@@ -107,40 +91,5 @@ const iCCI = computed(() => t('intro.CCI'));
         year="2024"
     ></MenuSection>
 
-  </div>
-
-  <div style="background-color: var(--background-color); width: 90vw; height: 2vh"></div>
-
-
-<!--  <h1>UNDER<br>CONSTRUCTION</h1>-->
+  </SiteLayout>
 </template>
-
-<style scoped>
-#f-top {
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  width: 90vw;
-  background: var(--background-color);
-}
-
-.f-center {
-  margin: 0 auto;
-  padding-inline: 5%;
-  text-align: left;
-}
-
-.subtitle {
-  font-size: calc(var(--vsr) * 2);
-}
-
-.t-cyan {
-  color: var(--hover-color);
-}
-
-.h-sub {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
-</style>

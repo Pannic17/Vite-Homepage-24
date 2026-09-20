@@ -4,10 +4,10 @@ const {t} = useI18n();
 </script>
 
 <template>
-  <main class="not-found">
+  <main id="main-content" class="page-container not-found" tabindex="-1">
     <h1>404</h1>
     <p>{{ t('status.notFound') }}</p>
-    <RouterLink to="/">{{ t('menu.main') }}</RouterLink>
+    <RouterLink class="text-link" to="/">{{ t('menu.main') }}</RouterLink>
   </main>
 </template>
 

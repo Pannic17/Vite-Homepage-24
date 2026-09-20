@@ -1,13 +1,11 @@
 <script setup>
-import {useHeaderSpacer} from "../composables/useHeaderSpacer";
 
-import HelloWorld from "../App.vue";
-import SubRight from "../components/SubRight.vue";
+import SiteLayout from '../layouts/SiteLayout.vue';
 import MenuSection from "../components/MenuSection.vue";
 import {computed} from "vue";
 import {useI18n} from "vue-i18n";
 
-useHeaderSpacer();
+
 
 const { t } = useI18n();
 
@@ -34,23 +32,8 @@ const iGCS = computed(() => t('intro.GCS'));
 </script>
 
 <template>
-  <div id="background"></div>
-  <div class="f-center">
-    <div id="f-top">
-      <div class="h-sub">
-        <div class="h-left">
-          <h2>WORKS</h2>
-          <div class="subtitle">
-            <span>Artworks by</span><span class="t-cyan"> PANNIC </span><span>作品</span>
-          </div>
-        </div>
-        <SubRight></SubRight>
-      </div>
-      <div style="  height: 1px; background-color: var(--context-color); margin-block: 1vh"></div>
-    </div>
-
-    <div id="block" style="background-color: var(--background-color); width: 90vw"></div>
-
+  <SiteLayout title="WORKS">
+    <template #subtitle>Artworks by PANNIC · 作品</template>
     <MenuSection
         cover="./image/CAT-Cover.png"
         title="CatNet"
@@ -133,38 +116,5 @@ const iGCS = computed(() => t('intro.GCS'));
         year="March 2023"
     ></MenuSection>
 
-  </div>
-<!--  <h1>UNDER<br>CONSTRUCTION</h1>-->
-  <div style="background-color: var(--background-color); width: 90vw; height: 2vh"></div>
+  </SiteLayout>
 </template>
-
-<style scoped>
-#f-top {
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  width: 90vw;
-  background: var(--background-color);
-}
-
-.f-center {
-  width: 90%;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.subtitle {
-  font-size: calc(var(--vsr) * 2);
-}
-
-.t-cyan {
-  color: var(--hover-color);
-}
-
-.h-sub {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
-
-</style>

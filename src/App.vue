@@ -1,16 +1,4 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-
-  <router-view></router-view>
+  <a class="skip-link" href="#main-content">{{ $t('accessibility.skip') }}</a>
+  <router-view />
 </template>
-
-<style scoped>
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #1a1a1a;
-}
-</style>

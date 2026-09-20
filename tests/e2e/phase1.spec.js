@@ -56,7 +56,7 @@ test('20 route round trips release render contexts, frames and page listeners', 
   for (let cycle = 1; cycle <= 20; cycle++) {
     // Start postprocessing as well as the base pass, then tear down mid-effect.
     await page.locator('#h-title').dblclick();
-    await page.getByRole('button', { name: 'WORKS', exact: true }).click();
+    await page.getByRole('link', { name: 'WORKS', exact: true }).click();
     await expect(page).toHaveURL(/\/works$/);
     await expect.poll(async () => (await snapshot(page)).lost).toBe(cycle);
     const away = await snapshot(page);
@@ -64,7 +64,7 @@ test('20 route round trips release render contexts, frames and page listeners', 
     expect(away.canvas).toBe(0);
     expect(away.doubleClick).toBe(0);
     expect(away.gui).toBe(0);
-    await page.getByRole('button', { name: 'HOME', exact: true }).click();
+    await page.getByRole('link', { name: 'HOME', exact: true }).click();
     await ready(page);
     const home = await snapshot(page);
     expect(home.created - home.lost).toBe(1);
@@ -92,7 +92,7 @@ test('leaving during model download does not restart rendering', async ({ page }
   });
   await page.goto('./');
   await expect.poll(() => requested).toBe(true);
-  await page.getByRole('button', { name: 'WORKS', exact: true }).click();
+  await page.getByRole('link', { name: 'WORKS', exact: true }).click();
   release();
   await page.waitForTimeout(300);
   const state = await snapshot(page);
@@ -122,7 +122,7 @@ test('a GLTF parse finishing after navigation is discarded', async ({ page }) =>
   page.on('pageerror', error => errors.push(error.message));
   await page.goto('./');
   await expect.poll(() => parsing).toBe(true);
-  await page.getByRole('button', { name: 'WORKS', exact: true }).click();
+  await page.getByRole('link', { name: 'WORKS', exact: true }).click();
   release();
   await done;
   await page.waitForTimeout(300);
@@ -151,7 +151,7 @@ for (const mode of ['no-webgl', 'model-http-error', 'invalid-model', 'context-lo
     await expect(page.locator('#three-canvas')).toHaveAttribute('data-state', 'fallback');
     await expect(page.locator('canvas')).toHaveCount(0);
     await expect.poll(() => page.locator('.scene-fallback').evaluate(image => image.complete && image.naturalWidth > 0)).toBe(true);
-    await page.getByRole('button', { name: 'WORKS', exact: true }).click();
+    await page.getByRole('link', { name: 'WORKS', exact: true }).click();
     await expect(page.getByRole('heading', { name: 'WORKS', exact: true })).toBeVisible();
     expect(errors).toEqual([]);
   });
@@ -162,7 +162,7 @@ test('direct detail back has a site fallback; direct HOME does not leave the sit
   await page.getByRole('button', { name: 'BACK', exact: true }).click();
   await expect(page).toHaveURL(/\/works$/);
   await page.goto('about');
-  await page.getByRole('button', { name: 'HOME', exact: true }).click();
+  await page.getByRole('link', { name: 'HOME', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'PANNIC', exact: true })).toBeVisible();
 });
 
