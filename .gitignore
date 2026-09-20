@@ -13,8 +13,6 @@ dist-ssr
 *.local
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
 .idea
 .DS_Store
 *.suo
@@ -28,3 +26,7 @@ dist-ssr
 .baseline-dist/
 test-results/
 playwright-report/
+
+# Local editor and GitHub configuration
+/.vscode/
+/.github/
