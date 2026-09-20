@@ -1,0 +1,388 @@
+{
+  "image/CAT-Cover.png": {
+    "width": 1024,
+    "height": 1024,
+    "originalBytes": 509613,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/CAT-Cover-320.webp",
+        "bytes": 8530
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/CAT-Cover-640.webp",
+        "bytes": 17182
+      },
+      {
+        "width": 960,
+        "src": "image/optimized/CAT-Cover-960.webp",
+        "bytes": 25458
+      }
+    ]
+  },
+  "image/GCS-Cover.jpg": {
+    "width": 657,
+    "height": 694,
+    "originalBytes": 65817,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/GCS-Cover-320.webp",
+        "bytes": 11490
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/GCS-Cover-640.webp",
+        "bytes": 25528
+      },
+      {
+        "width": 657,
+        "src": "image/optimized/GCS-Cover-657.webp",
+        "bytes": 26638
+      }
+    ]
+  },
+  "image/OGX-Cover.png": {
+    "width": 1024,
+    "height": 1024,
+    "originalBytes": 858172,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/OGX-Cover-320.webp",
+        "bytes": 9872
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/OGX-Cover-640.webp",
+        "bytes": 21538
+      },
+      {
+        "width": 960,
+        "src": "image/optimized/OGX-Cover-960.webp",
+        "bytes": 34014
+      }
+    ]
+  },
+  "image/C1F-Cover.png": {
+    "width": 1024,
+    "height": 1024,
+    "originalBytes": 293766,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/C1F-Cover-320.webp",
+        "bytes": 5486
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/C1F-Cover-640.webp",
+        "bytes": 11064
+      },
+      {
+        "width": 960,
+        "src": "image/optimized/C1F-Cover-960.webp",
+        "bytes": 16326
+      }
+    ]
+  },
+  "image/AMR-Cover.png": {
+    "width": 1024,
+    "height": 1024,
+    "originalBytes": 1238272,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/AMR-Cover-320.webp",
+        "bytes": 13290
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/AMR-Cover-640.webp",
+        "bytes": 32820
+      },
+      {
+        "width": 960,
+        "src": "image/optimized/AMR-Cover-960.webp",
+        "bytes": 52290
+      }
+    ]
+  },
+  "image/C3F-Cover.png": {
+    "width": 265,
+    "height": 265,
+    "originalBytes": 159323,
+    "variants": [
+      {
+        "width": 265,
+        "src": "image/optimized/C3F-Cover-265.webp",
+        "bytes": 6866
+      }
+    ]
+  },
+  "image/C2F-Cover.png": {
+    "width": 1024,
+    "height": 1024,
+    "originalBytes": 1411002,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/C2F-Cover-320.webp",
+        "bytes": 34082
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/C2F-Cover-640.webp",
+        "bytes": 96144
+      },
+      {
+        "width": 960,
+        "src": "image/optimized/C2F-Cover-960.webp",
+        "bytes": 148908
+      }
+    ]
+  },
+  "image/ABP-Cover.png": {
+    "width": 1024,
+    "height": 1024,
+    "originalBytes": 1769709,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/ABP-Cover-320.webp",
+        "bytes": 12924
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/ABP-Cover-640.webp",
+        "bytes": 52906
+      },
+      {
+        "width": 960,
+        "src": "image/optimized/ABP-Cover-960.webp",
+        "bytes": 114528
+      }
+    ]
+  },
+  "image/ZAR-Cover.png": {
+    "width": 1024,
+    "height": 1024,
+    "originalBytes": 1001448,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/ZAR-Cover-320.webp",
+        "bytes": 11468
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/ZAR-Cover-640.webp",
+        "bytes": 27914
+      },
+      {
+        "width": 960,
+        "src": "image/optimized/ZAR-Cover-960.webp",
+        "bytes": 44082
+      }
+    ]
+  },
+  "image/BLA-Cover.png": {
+    "width": 1024,
+    "height": 1024,
+    "originalBytes": 169866,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/BLA-Cover-320.webp",
+        "bytes": 7956
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/BLA-Cover-640.webp",
+        "bytes": 18740
+      },
+      {
+        "width": 960,
+        "src": "image/optimized/BLA-Cover-960.webp",
+        "bytes": 27646
+      }
+    ]
+  },
+  "image/Split!.png": {
+    "width": 1024,
+    "height": 1024,
+    "originalBytes": 2484902,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/Split--320.webp",
+        "bytes": 25602
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/Split--640.webp",
+        "bytes": 86408
+      },
+      {
+        "width": 960,
+        "src": "image/optimized/Split--960.webp",
+        "bytes": 157176
+      }
+    ]
+  },
+  "image/HPG-Cover.png": {
+    "width": 1024,
+    "height": 1024,
+    "originalBytes": 468587,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/HPG-Cover-320.webp",
+        "bytes": 13762
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/HPG-Cover-640.webp",
+        "bytes": 42386
+      },
+      {
+        "width": 960,
+        "src": "image/optimized/HPG-Cover-960.webp",
+        "bytes": 75434
+      }
+    ]
+  },
+  "image/CourseWork.png": {
+    "width": 1024,
+    "height": 1024,
+    "originalBytes": 2321036,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/CourseWork-320.webp",
+        "bytes": 26830
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/CourseWork-640.webp",
+        "bytes": 84562
+      },
+      {
+        "width": 960,
+        "src": "image/optimized/CourseWork-960.webp",
+        "bytes": 190502
+      }
+    ]
+  },
+  "image/Construction.png": {
+    "width": 1024,
+    "height": 1024,
+    "originalBytes": 2624918,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/Construction-320.webp",
+        "bytes": 28242
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/Construction-640.webp",
+        "bytes": 77506
+      },
+      {
+        "width": 960,
+        "src": "image/optimized/Construction-960.webp",
+        "bytes": 138094
+      }
+    ]
+  },
+  "image/kaiwu/KW-poster1.jpg": {
+    "width": 1242,
+    "height": 2208,
+    "originalBytes": 619489,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/KW-poster1-320.webp",
+        "bytes": 12934
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/KW-poster1-640.webp",
+        "bytes": 47198
+      },
+      {
+        "width": 960,
+        "src": "image/optimized/KW-poster1-960.webp",
+        "bytes": 107276
+      }
+    ]
+  },
+  "image/kaiwu/KW-poster2.jpg": {
+    "width": 1242,
+    "height": 2208,
+    "originalBytes": 114283,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/KW-poster2-320.webp",
+        "bytes": 18198
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/KW-poster2-640.webp",
+        "bytes": 41572
+      },
+      {
+        "width": 960,
+        "src": "image/optimized/KW-poster2-960.webp",
+        "bytes": 65430
+      }
+    ]
+  },
+  "image/kaiwu/KW-poster3.jpg": {
+    "width": 1242,
+    "height": 2208,
+    "originalBytes": 127696,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/KW-poster3-320.webp",
+        "bytes": 22268
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/KW-poster3-640.webp",
+        "bytes": 48696
+      },
+      {
+        "width": 960,
+        "src": "image/optimized/KW-poster3-960.webp",
+        "bytes": 75670
+      }
+    ]
+  },
+  "image/kaiwu/KW-poster4.jpg": {
+    "width": 1242,
+    "height": 2208,
+    "originalBytes": 83701,
+    "variants": [
+      {
+        "width": 320,
+        "src": "image/optimized/KW-poster4-320.webp",
+        "bytes": 11722
+      },
+      {
+        "width": 640,
+        "src": "image/optimized/KW-poster4-640.webp",
+        "bytes": 25606
+      },
+      {
+        "width": 960,
+        "src": "image/optimized/KW-poster4-960.webp",
+        "bytes": 40900
+      }
+    ]
+  }
+}

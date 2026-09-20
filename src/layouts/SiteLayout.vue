@@ -1,9 +1,10 @@
 <script setup>
 import SiteHeader from '../components/layout/SiteHeader.vue';
-defineProps({ title: String });
+import '../styles/portfolio.css';
+defineProps({ title: String, portfolio: Boolean });
 </script>
 <template>
-  <div class="page-container">
+  <div class="page-container" :class="{'portfolio-layout': portfolio}">
     <SiteHeader :title="title"><slot name="subtitle" /></SiteHeader>
     <main id="main-content" tabindex="-1"><slot /></main>
   </div>

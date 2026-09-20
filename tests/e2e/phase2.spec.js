@@ -53,11 +53,17 @@ for (const [width,height] of viewports) {
           expect(top).toBeGreaterThanOrEqual(bottom);
         }
         if (route === '') {
-          const copy = await page.locator('.home-copy').boundingBox();
-          const scene = await page.locator('.scene-panel').boundingBox();
-          expect(scene.x >= copy.x + copy.width - 1 || scene.y >= copy.y + copy.height - 1).toBe(true);
+          // The original full-viewport scene composition is intentional.
+          const scene = await page.locator('#three-canvas').boundingBox();
+          expect(scene.x).toBe(0);
+          expect(scene.y).toBe(0);
+          expect(scene.width).toBe(width);
+          expect(scene.height).toBe(height);
+          await expect(page.locator('.scene-panel')).toHaveCount(0);
         }
         if ([390,1440].includes(width) && ['','works','projects','works/gcs','about'].includes(route)) {
+          // Full-page screenshots deliberately resolve offscreen lazy images.
+          await page.locator('img').evaluateAll(images => images.forEach(image => { image.loading = 'eager'; }));
           await page.locator('img').evaluateAll(images => Promise.all(images.map(image => image.decode())));
           await page.screenshot({path:testInfo.outputPath((route || 'home').replaceAll('/','-') + '-' + locale + '.png'),fullPage:true});
         }
@@ -87,7 +93,8 @@ test('keyboard navigation, language state and honest card semantics', async ({pa
   await expect(english).toHaveAttribute('aria-pressed','true');
   const works = page.getByRole('link',{name:'WORKS',exact:true});
   await works.focus();
-  expect(await works.evaluate(el => getComputedStyle(el).outlineStyle)).not.toBe('none');
+  expect(await works.evaluate(el => getComputedStyle(el).outlineStyle)).toBe('none');
+  expect(await works.evaluate(el => getComputedStyle(el).textDecorationLine)).toContain('underline');
   await page.keyboard.press('Enter');
   await expect(page).toHaveURL(/\/works$/);
   await expect(page.locator('.project-card').filter({has:page.getByRole('heading',{name:'CatNet',exact:true})}).locator('a,button')).toHaveCount(0);
@@ -118,7 +125,7 @@ test('200 percent text sizing and narrow effective viewport preserve content', a
 test('standalone touch controls are at least 44 pixels and do not rely on hover', async ({page}) => {
   for (const route of ['', 'works','projects','works/gcs']) {
     await page.goto(route || './');
-    for (const control of await page.locator('.text-link,.language-switch button,.social-links a,.s-title a').all()) {
+    for (const control of await page.locator('.text-link,.sub-button,.language-switch button,.social-links a,.s-title a').all()) {
       const size = await control.boundingBox();
       expect(size.width).toBeGreaterThanOrEqual(44);
       expect(size.height).toBeGreaterThanOrEqual(44);

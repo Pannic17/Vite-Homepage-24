@@ -1,0 +1,4640 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\PANNIC\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+      "E:\\Projects\\vite-homepage\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "E:\\Projects\\vite-homepage\\playwright.config.js",
+    "rootDir": "E:/Projects/vite-homepage/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/Projects/vite-homepage/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-chromium",
+        "name": "desktop-chromium",
+        "testDir": "E:/Projects/vite-homepage/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/Projects/vite-homepage/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-chromium",
+        "name": "mobile-chromium",
+        "testDir": "E:/Projects/vite-homepage/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/Projects/vite-homepage/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-firefox",
+        "name": "desktop-firefox",
+        "testDir": "E:/Projects/vite-homepage/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "cross-browser.spec.js"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/Projects/vite-homepage/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-webkit",
+        "name": "desktop-webkit",
+        "testDir": "E:/Projects/vite-homepage/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "cross-browser.spec.js"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/Projects/vite-homepage/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-webkit",
+        "name": "mobile-webkit",
+        "testDir": "E:/Projects/vite-homepage/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "cross-browser.spec.js"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "none",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node scripts/baseline-server.mjs",
+      "url": "http://127.0.0.1:4175/Vite-Homepage-24/",
+      "reuseExistingServer": false,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "cross-browser.spec.js",
+      "file": "cross-browser.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "content, language persistence and responsive geometry across engines",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 949,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:06.044Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a799908c19a4c7fca37b-ab2d2fd9bc2931593810",
+          "file": "cross-browser.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "static motion preference, keyboard navigation and image fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 331,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:07.071Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a799908c19a4c7fca37b-d5cdb64a2d00f781d4b2",
+          "file": "cross-browser.spec.js",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "WebGL either starts or provides an operable fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "webgl",
+                  "description": "ready"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 682,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:07.407Z",
+                  "annotations": [
+                    {
+                      "type": "webgl",
+                      "description": "ready"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a799908c19a4c7fca37b-e2cd7e8ff15ed9e8bd81",
+          "file": "cross-browser.spec.js",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "content, language persistence and responsive geometry across engines",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 939,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:15.850Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a799908c19a4c7fca37b-7fee415dc97bc23513c3",
+          "file": "cross-browser.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "static motion preference, keyboard navigation and image fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 208,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:16.868Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a799908c19a4c7fca37b-7cc18cbd9663f14d0b81",
+          "file": "cross-browser.spec.js",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "WebGL either starts or provides an operable fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "webgl",
+                  "description": "ready"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 394,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:17.083Z",
+                  "annotations": [
+                    {
+                      "type": "webgl",
+                      "description": "ready"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a799908c19a4c7fca37b-d138d4137f1ca3438c6c",
+          "file": "cross-browser.spec.js",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "content, language persistence and responsive geometry across engines",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-firefox",
+              "projectName": "desktop-firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2565,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:45.486Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a799908c19a4c7fca37b-b679e73db7c2b749b50e",
+          "file": "cross-browser.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "static motion preference, keyboard navigation and image fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-firefox",
+              "projectName": "desktop-firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 359,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:48.418Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a799908c19a4c7fca37b-8dc3f080252469bfe6b7",
+          "file": "cross-browser.spec.js",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "WebGL either starts or provides an operable fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "webgl",
+                  "description": "ready"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "desktop-firefox",
+              "projectName": "desktop-firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 589,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:48.782Z",
+                  "annotations": [
+                    {
+                      "type": "webgl",
+                      "description": "ready"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a799908c19a4c7fca37b-11defcb07c1308e94a42",
+          "file": "cross-browser.spec.js",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "content, language persistence and responsive geometry across engines",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-webkit",
+              "projectName": "desktop-webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2224,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:49.970Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a799908c19a4c7fca37b-982a00dd6ab737f6fff7",
+          "file": "cross-browser.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "static motion preference, keyboard navigation and image fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-webkit",
+              "projectName": "desktop-webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 440,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:52.243Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a799908c19a4c7fca37b-6fe735a3a6e04efe251a",
+          "file": "cross-browser.spec.js",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "WebGL either starts or provides an operable fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "webgl",
+                  "description": "ready"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "desktop-webkit",
+              "projectName": "desktop-webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1024,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:52.688Z",
+                  "annotations": [
+                    {
+                      "type": "webgl",
+                      "description": "ready"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a799908c19a4c7fca37b-4c16bd033cdbd931c01b",
+          "file": "cross-browser.spec.js",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "content, language persistence and responsive geometry across engines",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-webkit",
+              "projectName": "mobile-webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2207,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:54.108Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a799908c19a4c7fca37b-f34cf1b2364fce673895",
+          "file": "cross-browser.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "static motion preference, keyboard navigation and image fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-webkit",
+              "projectName": "mobile-webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 453,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:56.357Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a799908c19a4c7fca37b-fe22185fb25ddee1e58f",
+          "file": "cross-browser.spec.js",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "WebGL either starts or provides an operable fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "webgl",
+                  "description": "ready"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "mobile-webkit",
+              "projectName": "mobile-webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 864,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:56.815Z",
+                  "annotations": [
+                    {
+                      "type": "webgl",
+                      "description": "ready"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a799908c19a4c7fca37b-642764b5d233bcfe0199",
+          "file": "cross-browser.spec.js",
+          "line": 42,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "known-issues.spec.js",
+      "file": "known-issues.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "B01: resizing home preserves the document",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1875,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:08.102Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7ca88b1a9080b60415e6-c1e1646aff5171ff56fd",
+          "file": "known-issues.spec.js",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "B02: selected language survives refresh",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 551,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:09.982Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7ca88b1a9080b60415e6-9935e4377cf109dfdbdc",
+          "file": "known-issues.spec.js",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "B03: GCS direct URL renders a detail view rather than the works listing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 175,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:10.538Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7ca88b1a9080b60415e6-bbd6698c55d367c4aa88",
+          "file": "known-issues.spec.js",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "B01: resizing home preserves the document",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1804,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:17.485Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7ca88b1a9080b60415e6-6a4ddf398451754cdc32",
+          "file": "known-issues.spec.js",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "B02: selected language survives refresh",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 369,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:19.294Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7ca88b1a9080b60415e6-4d5d0ffad2d938de7588",
+          "file": "known-issues.spec.js",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "B03: GCS direct URL renders a detail view rather than the works listing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 152,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:19.670Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7ca88b1a9080b60415e6-4e18fb8c2bd1530dbbcd",
+          "file": "known-issues.spec.js",
+          "line": 26,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "phase1.spec.js",
+      "file": "phase1.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "20 route round trips release render contexts, frames and page listeners",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 22315,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:10.731Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "lifecycle",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJjcmVhdGVkIjogMSwKICAgICJsb3N0IjogMCwKICAgICJyYWYiOiAxLAogICAgInJlc2l6ZSI6IDAsCiAgICAiZG91YmxlQ2xpY2siOiAxLAogICAgImNhbnZhcyI6IDEsCiAgICAiZ3VpIjogMAogIH0sCiAgewogICAgImN5Y2xlIjogMSwKICAgICJhd2F5IjogewogICAgICAiY3JlYXRlZCI6IDEsCiAgICAgICJsb3N0IjogMSwKICAgICAgInJhZiI6IDAsCiAgICAgICJyZXNpemUiOiAwLAogICAgICAiZG91YmxlQ2xpY2siOiAwLAogICAgICAiY2FudmFzIjogMCwKICAgICAgImd1aSI6IDAKICAgIH0sCiAgICAiaG9tZSI6IHsKICAgICAgImNyZWF0ZWQiOiAyLAogICAgICAibG9zdCI6IDEsCiAgICAgICJyYWYiOiAxLAogICAgICAicmVzaXplIjogMCwKICAgICAgImRvdWJsZUNsaWNrIjogMSwKICAgICAgImNhbnZhcyI6IDEsCiAgICAgICJndWkiOiAwCiAgICB9CiAgfSwKICB7CiAgICAiY3ljbGUiOiA1LAogICAgImF3YXkiOiB7CiAgICAgICJjcmVhdGVkIjogNSwKICAgICAgImxvc3QiOiA1LAogICAgICAicmFmIjogMCwKICAgICAgInJlc2l6ZSI6IDAsCiAgICAgICJkb3VibGVDbGljayI6IDAsCiAgICAgICJjYW52YXMiOiAwLAogICAgICAiZ3VpIjogMAogICAgfSwKICAgICJob21lIjogewogICAgICAiY3JlYXRlZCI6IDYsCiAgICAgICJsb3N0IjogNSwKICAgICAgInJhZiI6IDEsCiAgICAgICJyZXNpemUiOiAwLAogICAgICAiZG91YmxlQ2xpY2siOiAxLAogICAgICAiY2FudmFzIjogMSwKICAgICAgImd1aSI6IDAKICAgIH0KICB9LAogIHsKICAgICJjeWNsZSI6IDEwLAogICAgImF3YXkiOiB7CiAgICAgICJjcmVhdGVkIjogMTAsCiAgICAgICJsb3N0IjogMTAsCiAgICAgICJyYWYiOiAwLAogICAgICAicmVzaXplIjogMCwKICAgICAgImRvdWJsZUNsaWNrIjogMCwKICAgICAgImNhbnZhcyI6IDAsCiAgICAgICJndWkiOiAwCiAgICB9LAogICAgImhvbWUiOiB7CiAgICAgICJjcmVhdGVkIjogMTEsCiAgICAgICJsb3N0IjogMTAsCiAgICAgICJyYWYiOiAxLAogICAgICAicmVzaXplIjogMCwKICAgICAgImRvdWJsZUNsaWNrIjogMSwKICAgICAgImNhbnZhcyI6IDEsCiAgICAgICJndWkiOiAwCiAgICB9CiAgfSwKICB7CiAgICAiY3ljbGUiOiAyMCwKICAgICJhd2F5IjogewogICAgICAiY3JlYXRlZCI6IDIwLAogICAgICAibG9zdCI6IDIwLAogICAgICAicmFmIjogMCwKICAgICAgInJlc2l6ZSI6IDAsCiAgICAgICJkb3VibGVDbGljayI6IDAsCiAgICAgICJjYW52YXMiOiAwLAogICAgICAiZ3VpIjogMAogICAgfSwKICAgICJob21lIjogewogICAgICAiY3JlYXRlZCI6IDIxLAogICAgICAibG9zdCI6IDIwLAogICAgICAicmFmIjogMSwKICAgICAgInJlc2l6ZSI6IDAsCiAgICAgICJkb3VibGVDbGljayI6IDEsCiAgICAgICJjYW52YXMiOiAxLAogICAgICAiZ3VpIjogMAogICAgfQogIH0KXQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-acd2f04fe3966cf35a2c",
+          "file": "phase1.spec.js",
+          "line": 44,
+          "column": 1
+        },
+        {
+          "title": "leaving during model download does not restart rendering",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 636,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:33.051Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-222b748f14637f0d99cd",
+          "file": "phase1.spec.js",
+          "line": 82,
+          "column": 1
+        },
+        {
+          "title": "a GLTF parse finishing after navigation is discarded",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 629,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:33.693Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-edfce07a59907b3b1dff",
+          "file": "phase1.spec.js",
+          "line": 104,
+          "column": 1
+        },
+        {
+          "title": "3D fallback keeps navigation usable: no-webgl",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 233,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:34.327Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-25f5b3fdd453fa552f9e",
+          "file": "phase1.spec.js",
+          "line": 135,
+          "column": 3
+        },
+        {
+          "title": "3D fallback keeps navigation usable: model-http-error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 244,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:34.564Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-1c8248e827e4da777142",
+          "file": "phase1.spec.js",
+          "line": 135,
+          "column": 3
+        },
+        {
+          "title": "3D fallback keeps navigation usable: invalid-model",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 296,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:34.813Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-2cc67afbdb99f4242048",
+          "file": "phase1.spec.js",
+          "line": 135,
+          "column": 3
+        },
+        {
+          "title": "3D fallback keeps navigation usable: context-loss",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 513,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:35.113Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-605b40ebf0ba1a5391aa",
+          "file": "phase1.spec.js",
+          "line": 135,
+          "column": 3
+        },
+        {
+          "title": "direct detail back has a site fallback; direct HOME does not leave the site",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 365,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:35.631Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-f5880b9f34575c2ea393",
+          "file": "phase1.spec.js",
+          "line": 160,
+          "column": 1
+        },
+        {
+          "title": "GCS card navigation restores the works scroll position on BACK",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 314,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:36.000Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-c889964e5da9d62f930b",
+          "file": "phase1.spec.js",
+          "line": 169,
+          "column": 1
+        },
+        {
+          "title": "unknown URL renders a useful 404 instead of an empty app",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 201,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:36.320Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-948a12606189ee1f6a13",
+          "file": "phase1.spec.js",
+          "line": 182,
+          "column": 1
+        },
+        {
+          "title": "20 route round trips release render contexts, frames and page listeners",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7825,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:19.847Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "lifecycle",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJjcmVhdGVkIjogMSwKICAgICJsb3N0IjogMCwKICAgICJyYWYiOiAxLAogICAgInJlc2l6ZSI6IDAsCiAgICAiZG91YmxlQ2xpY2siOiAxLAogICAgImNhbnZhcyI6IDEsCiAgICAiZ3VpIjogMAogIH0sCiAgewogICAgImN5Y2xlIjogMSwKICAgICJhd2F5IjogewogICAgICAiY3JlYXRlZCI6IDEsCiAgICAgICJsb3N0IjogMSwKICAgICAgInJhZiI6IDAsCiAgICAgICJyZXNpemUiOiAwLAogICAgICAiZG91YmxlQ2xpY2siOiAwLAogICAgICAiY2FudmFzIjogMCwKICAgICAgImd1aSI6IDAKICAgIH0sCiAgICAiaG9tZSI6IHsKICAgICAgImNyZWF0ZWQiOiAyLAogICAgICAibG9zdCI6IDEsCiAgICAgICJyYWYiOiAxLAogICAgICAicmVzaXplIjogMCwKICAgICAgImRvdWJsZUNsaWNrIjogMSwKICAgICAgImNhbnZhcyI6IDEsCiAgICAgICJndWkiOiAwCiAgICB9CiAgfSwKICB7CiAgICAiY3ljbGUiOiA1LAogICAgImF3YXkiOiB7CiAgICAgICJjcmVhdGVkIjogNSwKICAgICAgImxvc3QiOiA1LAogICAgICAicmFmIjogMCwKICAgICAgInJlc2l6ZSI6IDAsCiAgICAgICJkb3VibGVDbGljayI6IDAsCiAgICAgICJjYW52YXMiOiAwLAogICAgICAiZ3VpIjogMAogICAgfSwKICAgICJob21lIjogewogICAgICAiY3JlYXRlZCI6IDYsCiAgICAgICJsb3N0IjogNSwKICAgICAgInJhZiI6IDEsCiAgICAgICJyZXNpemUiOiAwLAogICAgICAiZG91YmxlQ2xpY2siOiAxLAogICAgICAiY2FudmFzIjogMSwKICAgICAgImd1aSI6IDAKICAgIH0KICB9LAogIHsKICAgICJjeWNsZSI6IDEwLAogICAgImF3YXkiOiB7CiAgICAgICJjcmVhdGVkIjogMTAsCiAgICAgICJsb3N0IjogMTAsCiAgICAgICJyYWYiOiAwLAogICAgICAicmVzaXplIjogMCwKICAgICAgImRvdWJsZUNsaWNrIjogMCwKICAgICAgImNhbnZhcyI6IDAsCiAgICAgICJndWkiOiAwCiAgICB9LAogICAgImhvbWUiOiB7CiAgICAgICJjcmVhdGVkIjogMTEsCiAgICAgICJsb3N0IjogMTAsCiAgICAgICJyYWYiOiAxLAogICAgICAicmVzaXplIjogMCwKICAgICAgImRvdWJsZUNsaWNrIjogMSwKICAgICAgImNhbnZhcyI6IDEsCiAgICAgICJndWkiOiAwCiAgICB9CiAgfSwKICB7CiAgICAiY3ljbGUiOiAyMCwKICAgICJhd2F5IjogewogICAgICAiY3JlYXRlZCI6IDIwLAogICAgICAibG9zdCI6IDIwLAogICAgICAicmFmIjogMCwKICAgICAgInJlc2l6ZSI6IDAsCiAgICAgICJkb3VibGVDbGljayI6IDAsCiAgICAgICJjYW52YXMiOiAwLAogICAgICAiZ3VpIjogMAogICAgfSwKICAgICJob21lIjogewogICAgICAiY3JlYXRlZCI6IDIxLAogICAgICAibG9zdCI6IDIwLAogICAgICAicmFmIjogMSwKICAgICAgInJlc2l6ZSI6IDAsCiAgICAgICJkb3VibGVDbGljayI6IDEsCiAgICAgICJjYW52YXMiOiAxLAogICAgICAiZ3VpIjogMAogICAgfQogIH0KXQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-89ba400d575c7cb81233",
+          "file": "phase1.spec.js",
+          "line": 44,
+          "column": 1
+        },
+        {
+          "title": "leaving during model download does not restart rendering",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 567,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:27.677Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-8babf0a5c20af632826b",
+          "file": "phase1.spec.js",
+          "line": 82,
+          "column": 1
+        },
+        {
+          "title": "a GLTF parse finishing after navigation is discarded",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 598,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:28.249Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-05a79dabd0ea2f089f18",
+          "file": "phase1.spec.js",
+          "line": 104,
+          "column": 1
+        },
+        {
+          "title": "3D fallback keeps navigation usable: no-webgl",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 241,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:28.852Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-64ebfc8acfda380ed671",
+          "file": "phase1.spec.js",
+          "line": 135,
+          "column": 3
+        },
+        {
+          "title": "3D fallback keeps navigation usable: model-http-error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 284,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:29.098Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-e27659db107b3b1aba7d",
+          "file": "phase1.spec.js",
+          "line": 135,
+          "column": 3
+        },
+        {
+          "title": "3D fallback keeps navigation usable: invalid-model",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 274,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:29.387Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-f852cb2b3dce370b135f",
+          "file": "phase1.spec.js",
+          "line": 135,
+          "column": 3
+        },
+        {
+          "title": "3D fallback keeps navigation usable: context-loss",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 347,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:29.665Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-023c444f908865a1ca0f",
+          "file": "phase1.spec.js",
+          "line": 135,
+          "column": 3
+        },
+        {
+          "title": "direct detail back has a site fallback; direct HOME does not leave the site",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 269,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:30.017Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-b24b230d0388ec1895b4",
+          "file": "phase1.spec.js",
+          "line": 160,
+          "column": 1
+        },
+        {
+          "title": "GCS card navigation restores the works scroll position on BACK",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 298,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:30.290Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-e092aad090443bce5720",
+          "file": "phase1.spec.js",
+          "line": 169,
+          "column": 1
+        },
+        {
+          "title": "unknown URL renders a useful 404 instead of an empty app",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 176,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:30.592Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61533eb7f4fb9fda5467-8c7876725e00c187658d",
+          "file": "phase1.spec.js",
+          "line": 182,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "phase2.spec.js",
+      "file": "phase2.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "responsive layout 320x568 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1379,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:36.537Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-b29c78f33e0e9998a51d",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 360x800 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1329,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:37.921Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-b09d58043f045b3263f0",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 390x844 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2530,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:39.255Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-9f36fe324febdb581182",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 430x932 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1329,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:41.789Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-57a75b0fe4267ed5e961",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 768x1024 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1366,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:43.123Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-e598acf3f9229618623d",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 1024x768 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1360,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:44.493Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-555b7b4b726df7cb8818",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 844x390 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1410,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:45.858Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-65351dfbc31fda71bc3f",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 1280x720 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1384,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:47.273Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-0804c0c6975575e61645",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 1440x900 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2914,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:48.661Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-177f5e0fc4565056add0",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 1920x1080 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1471,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:51.580Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-67414f3605b3467dfdcb",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 2560x1440 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1462,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:53.055Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-9a1a8d3453cf9bc18f1d",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "keyboard navigation, language state and honest card semantics",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 808,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:54.522Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-2e7b5e923423d1b411ba",
+          "file": "phase2.spec.js",
+          "line": 76,
+          "column": 1
+        },
+        {
+          "title": "200 percent text sizing and narrow effective viewport preserve content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1850,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:55.335Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-bf78dc2421b650ea921e",
+          "file": "phase2.spec.js",
+          "line": 111,
+          "column": 1
+        },
+        {
+          "title": "standalone touch controls are at least 44 pixels and do not rely on hover",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 872,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:57.189Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-8a56d4039a7b1691524a",
+          "file": "phase2.spec.js",
+          "line": 125,
+          "column": 1
+        },
+        {
+          "title": "responsive layout 320x568 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Matrix explicitly sets each viewport once.",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                    "line": 31,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 63,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:30.786Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Matrix explicitly sets each viewport once.",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                        "line": 31,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-3524c1a18fc57fbc4d5a",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 360x800 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Matrix explicitly sets each viewport once.",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                    "line": 31,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 61,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:30.854Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Matrix explicitly sets each viewport once.",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                        "line": 31,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-b773e138192b50f1b6b0",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 390x844 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Matrix explicitly sets each viewport once.",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                    "line": 31,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 60,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:30.921Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Matrix explicitly sets each viewport once.",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                        "line": 31,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-af712cb37bfa4d66ae99",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 430x932 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Matrix explicitly sets each viewport once.",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                    "line": 31,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 64,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:30.985Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Matrix explicitly sets each viewport once.",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                        "line": 31,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-29470efecfbfe5dee6ad",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 768x1024 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Matrix explicitly sets each viewport once.",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                    "line": 31,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 63,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:31.053Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Matrix explicitly sets each viewport once.",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                        "line": 31,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-80bbb754250e7a1c01e9",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 1024x768 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Matrix explicitly sets each viewport once.",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                    "line": 31,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 62,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:31.120Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Matrix explicitly sets each viewport once.",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                        "line": 31,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-d048c36d13612a0d4569",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 844x390 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Matrix explicitly sets each viewport once.",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                    "line": 31,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 61,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:31.186Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Matrix explicitly sets each viewport once.",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                        "line": 31,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-9170035f1f3d9dda1f76",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 1280x720 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Matrix explicitly sets each viewport once.",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                    "line": 31,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 63,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:31.253Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Matrix explicitly sets each viewport once.",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                        "line": 31,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-92ff627ab68d9cdbe4e7",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 1440x900 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Matrix explicitly sets each viewport once.",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                    "line": 31,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 63,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:31.320Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Matrix explicitly sets each viewport once.",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                        "line": 31,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-8c15302b579aa2d32488",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 1920x1080 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Matrix explicitly sets each viewport once.",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                    "line": 31,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 63,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:31.387Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Matrix explicitly sets each viewport once.",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                        "line": 31,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-5998d9e64d56f89cb1bd",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "responsive layout 2560x1440 in both languages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Matrix explicitly sets each viewport once.",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                    "line": 31,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 61,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:31.454Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Matrix explicitly sets each viewport once.",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\phase2.spec.js",
+                        "line": 31,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-cafae11f84171480ebfa",
+          "file": "phase2.spec.js",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "keyboard navigation, language state and honest card semantics",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 450,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:31.520Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-49c69272da11d530ccf3",
+          "file": "phase2.spec.js",
+          "line": 76,
+          "column": 1
+        },
+        {
+          "title": "200 percent text sizing and narrow effective viewport preserve content",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1856,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:31.976Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-71c4341d979d758d2f50",
+          "file": "phase2.spec.js",
+          "line": 111,
+          "column": 1
+        },
+        {
+          "title": "standalone touch controls are at least 44 pixels and do not rely on hover",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 522,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:33.836Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1083ebbd49ebb2973910-a9abbc646bbafffb12b3",
+          "file": "phase2.spec.js",
+          "line": 125,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "phase3.spec.js",
+      "file": "phase3.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "locale persists through routes and reloads and updates document metadata",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 449,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:58.080Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "427316fb5d624da3bedc-5c9e4a73e80709b17241",
+          "file": "phase3.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "language remains usable when storage is get-blocked",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 177,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:58.534Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "427316fb5d624da3bedc-4d0381f8d0972367ed63",
+          "file": "phase3.spec.js",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "title": "language remains usable when storage is set-blocked",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 180,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:58.716Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "427316fb5d624da3bedc-999bc25ab75b2c8177d2",
+          "file": "phase3.spec.js",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "title": "language remains usable when storage is invalid",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 162,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:58.900Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "427316fb5d624da3bedc-52b3e87616d4bce1087a",
+          "file": "phase3.spec.js",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "title": "Chinese browser preference is used when a saved locale is invalid",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 222,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:59.067Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "427316fb5d624da3bedc-8034190ae69df042d1ed",
+          "file": "phase3.spec.js",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "internal navigation creates exactly one history entry and external links open once",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 341,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:59.294Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "427316fb5d624da3bedc-8fba8e2f678164729b1c",
+          "file": "phase3.spec.js",
+          "line": 58,
+          "column": 1
+        },
+        {
+          "title": "About uses existing profile data; production TEST is retired",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 280,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:59.640Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "427316fb5d624da3bedc-69a6ac15bb5278d52bfd",
+          "file": "phase3.spec.js",
+          "line": 81,
+          "column": 1
+        },
+        {
+          "title": "all content loads in both languages without missing translation warnings",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 570,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:19:59.925Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "427316fb5d624da3bedc-e95993161c537bbbaa06",
+          "file": "phase3.spec.js",
+          "line": 95,
+          "column": 1
+        },
+        {
+          "title": "locale persists through routes and reloads and updates document metadata",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 437,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:34.370Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "427316fb5d624da3bedc-cda67d149a79563d9dc7",
+          "file": "phase3.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "language remains usable when storage is get-blocked",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 169,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:34.813Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "427316fb5d624da3bedc-2b9e6774aa702a3c7c48",
+          "file": "phase3.spec.js",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "title": "language remains usable when storage is set-blocked",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 228,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:34.989Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "427316fb5d624da3bedc-e7f13cacaed33533823c",
+          "file": "phase3.spec.js",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "title": "language remains usable when storage is invalid",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 162,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:35.222Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "427316fb5d624da3bedc-8a4448c987a1afd245ca",
+          "file": "phase3.spec.js",
+          "line": 29,
+          "column": 3
+        },
+        {
+          "title": "Chinese browser preference is used when a saved locale is invalid",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 155,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:35.389Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "427316fb5d624da3bedc-b4cfe976806f05f63d24",
+          "file": "phase3.spec.js",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "internal navigation creates exactly one history entry and external links open once",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 290,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:35.548Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "427316fb5d624da3bedc-6e93c6323043f784bab6",
+          "file": "phase3.spec.js",
+          "line": 58,
+          "column": 1
+        },
+        {
+          "title": "About uses existing profile data; production TEST is retired",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 243,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:35.843Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "427316fb5d624da3bedc-7b0912bd4230c55b2dfb",
+          "file": "phase3.spec.js",
+          "line": 81,
+          "column": 1
+        },
+        {
+          "title": "all content loads in both languages without missing translation warnings",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 550,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:36.090Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "427316fb5d624da3bedc-9bdb622fb49109e8ce3f",
+          "file": "phase3.spec.js",
+          "line": 95,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "phase4.spec.js",
+      "file": "phase4.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "direct content routes never request the home scene or model",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 275,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:00.506Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e94de60819f71340d926-52c22c0ad2df5afe10c3",
+          "file": "phase4.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "reduced motion paints usable content without WebGL; opt-in and off are persistent",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 466,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:00.785Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e94de60819f71340d926-9e6adc5f2c1393eaa0c7",
+          "file": "phase4.spec.js",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "pending scene module cannot mount after navigating away",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 513,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:01.256Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e94de60819f71340d926-e43f337e3f0ab8ff8685",
+          "file": "phase4.spec.js",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "background stops frames and foreground resumes; DPR obeys quality cap",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 582,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:01.773Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e94de60819f71340d926-740d7b420062a9ccd177",
+          "file": "phase4.spec.js",
+          "line": 50,
+          "column": 1
+        },
+        {
+          "title": "responsive covers use WebP and defer offscreen images with original fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 368,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:02.360Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e94de60819f71340d926-9b790d98ee3597647aec",
+          "file": "phase4.spec.js",
+          "line": 72,
+          "column": 1
+        },
+        {
+          "title": "picture sources do not occupy grid cells or change the original composition",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 271,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:02.733Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e94de60819f71340d926-29dac65ba25d24c743e4",
+          "file": "phase4.spec.js",
+          "line": 85,
+          "column": 1
+        },
+        {
+          "title": "sustained slow rendering degrades to static without breaking navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2182,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:03.009Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e94de60819f71340d926-9f3097fa14709cd0ea20",
+          "file": "phase4.spec.js",
+          "line": 103,
+          "column": 1
+        },
+        {
+          "title": "save-data defaults to static and live motion preference changes release the scene",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 520,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:05.195Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e94de60819f71340d926-79c297b78ec0538173ed",
+          "file": "phase4.spec.js",
+          "line": 118,
+          "column": 1
+        },
+        {
+          "title": "direct content routes never request the home scene or model",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 258,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:36.650Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e94de60819f71340d926-3bc2ccbdcbef6e7e692b",
+          "file": "phase4.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "reduced motion paints usable content without WebGL; opt-in and off are persistent",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 441,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:36.912Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e94de60819f71340d926-86f3a899bd967bb40a17",
+          "file": "phase4.spec.js",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "pending scene module cannot mount after navigating away",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 507,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:37.358Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e94de60819f71340d926-0d48a69b0bd4c1a449ed",
+          "file": "phase4.spec.js",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "background stops frames and foreground resumes; DPR obeys quality cap",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 558,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:37.869Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e94de60819f71340d926-31ecf0086f6ccd144ff0",
+          "file": "phase4.spec.js",
+          "line": 50,
+          "column": 1
+        },
+        {
+          "title": "responsive covers use WebP and defer offscreen images with original fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 411,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:38.432Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e94de60819f71340d926-4a21d4c0c34f17cfcd0c",
+          "file": "phase4.spec.js",
+          "line": 72,
+          "column": 1
+        },
+        {
+          "title": "picture sources do not occupy grid cells or change the original composition",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 274,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:38.847Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e94de60819f71340d926-602b4ff6232acdf0c9c5",
+          "file": "phase4.spec.js",
+          "line": 85,
+          "column": 1
+        },
+        {
+          "title": "sustained slow rendering degrades to static without breaking navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2118,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:39.125Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e94de60819f71340d926-33bbb17a165e0ac7f2f1",
+          "file": "phase4.spec.js",
+          "line": 103,
+          "column": 1
+        },
+        {
+          "title": "save-data defaults to static and live motion preference changes release the scene",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 503,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:41.248Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e94de60819f71340d926-97efdb5f68bb0f0490d6",
+          "file": "phase4.spec.js",
+          "line": 118,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "portfolio-visual.spec.js",
+      "file": "portfolio-visual.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "original portfolio corners, title hover and keyboard focus remain visible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5309,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:05.735Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61d9284a7a9efddf1aca-fc542f35733537a8283b",
+          "file": "portfolio-visual.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "original portfolio corners, title hover and keyboard focus remain visible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Hover is a mouse enhancement; touch navigation is covered separately.",
+                  "location": {
+                    "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\portfolio-visual.spec.js",
+                    "line": 4,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 65,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:41.767Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Hover is a mouse enhancement; touch navigation is covered separately.",
+                      "location": {
+                        "file": "E:\\Projects\\vite-homepage\\tests\\e2e\\portfolio-visual.spec.js",
+                        "line": 4,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "61d9284a7a9efddf1aca-aa8b3c5c4fc5eae694aa",
+          "file": "portfolio-visual.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "smoke.spec.js",
+      "file": "smoke.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "home renders and its local images and model are served",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 418,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:11.058Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-57f2fba0be2073771de7",
+          "file": "smoke.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "home navigation reaches about",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 354,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:11.481Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-37829cfd5d1a53d1510e",
+          "file": "smoke.spec.js",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "home navigation reaches works",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 365,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:11.840Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-5e5eaf229b5d6645e86b",
+          "file": "smoke.spec.js",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "home navigation reaches projects",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 527,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:12.210Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-43eff0f6d0509c14899e",
+          "file": "smoke.spec.js",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "language switches the home identity and navigation in both directions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 619,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:12.742Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-4e132b1d73c14a851787",
+          "file": "smoke.spec.js",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "works and projects images load in the production subpath",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 864,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:13.367Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-ea8c4cad0392a41b1170",
+          "file": "smoke.spec.js",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "home renders and its local images and model are served",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 326,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:41.845Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-3d0c839918d67b70b434",
+          "file": "smoke.spec.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "home navigation reaches about",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 293,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:42.176Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-644dc02c64ba9e690e32",
+          "file": "smoke.spec.js",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "home navigation reaches works",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 329,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:42.474Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-e668d41022f73905fdd1",
+          "file": "smoke.spec.js",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "home navigation reaches projects",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 311,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:42.807Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-f3b8cb00a47a0ad63f4f",
+          "file": "smoke.spec.js",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "language switches the home identity and navigation in both directions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 350,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:43.123Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-a2d02f5cc5330b06e918",
+          "file": "smoke.spec.js",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "works and projects images load in the production subpath",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 822,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:43.478Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2c14808d47b386fba9eb-e070e3bcd621fb68ca51",
+          "file": "smoke.spec.js",
+          "line": 37,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "visual.spec.js",
+      "file": "visual.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "original ./ composition in en-US",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 250,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:14.241Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "19ca25ef9cb7f0c9b81c-25ead894eceb89dec952",
+          "file": "visual.spec.js",
+          "line": 11,
+          "column": 3
+        },
+        {
+          "title": "original works composition in en-US",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 323,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:14.495Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "19ca25ef9cb7f0c9b81c-b598bbc86946f198a5d2",
+          "file": "visual.spec.js",
+          "line": 11,
+          "column": 3
+        },
+        {
+          "title": "original projects composition in en-US",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop-chromium",
+              "projectName": "desktop-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 414,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:14.823Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "19ca25ef9cb7f0c9b81c-99149d9df1f10ecb725a",
+          "file": "visual.spec.js",
+          "line": 11,
+          "column": 3
+        },
+        {
+          "title": "original ./ composition in en-US",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 206,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:44.312Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "19ca25ef9cb7f0c9b81c-5da020d657106dacab02",
+          "file": "visual.spec.js",
+          "line": 11,
+          "column": 3
+        },
+        {
+          "title": "original works composition in en-US",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 238,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:44.523Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "19ca25ef9cb7f0c9b81c-063dd0bb6c8fdb812790",
+          "file": "visual.spec.js",
+          "line": 11,
+          "column": 3
+        },
+        {
+          "title": "original projects composition in en-US",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chromium",
+              "projectName": "mobile-chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 260,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-20T19:20:44.765Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "19ca25ef9cb7f0c9b81c-e84ed4fddfc6e663ae07",
+          "file": "visual.spec.js",
+          "line": 11,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-20T19:19:04.699Z",
+    "duration": 113521.635,
+    "expected": 109,
+    "skipped": 12,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

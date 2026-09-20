@@ -1,0 +1,71 @@
+{
+  "node": "v24.19.0",
+  "conditions": "Five alternating cold loader parses per format in Node on the same host; not a browser/GPU or physical mobile benchmark.",
+  "runs": [
+    {
+      "run": 1,
+      "format": "gltf",
+      "parseMs": 63.149399999999986
+    },
+    {
+      "run": 1,
+      "format": "glb",
+      "parseMs": 1.4472000000000094
+    },
+    {
+      "run": 2,
+      "format": "gltf",
+      "parseMs": 38.49709999999999
+    },
+    {
+      "run": 2,
+      "format": "glb",
+      "parseMs": 1.211999999999989
+    },
+    {
+      "run": 3,
+      "format": "gltf",
+      "parseMs": 39.84820000000002
+    },
+    {
+      "run": 3,
+      "format": "glb",
+      "parseMs": 1.4107999999999947
+    },
+    {
+      "run": 4,
+      "format": "gltf",
+      "parseMs": 39.325000000000045
+    },
+    {
+      "run": 4,
+      "format": "glb",
+      "parseMs": 1.5568999999999846
+    },
+    {
+      "run": 5,
+      "format": "gltf",
+      "parseMs": 40.375099999999975
+    },
+    {
+      "run": 5,
+      "format": "glb",
+      "parseMs": 1.4364999999999668
+    }
+  ],
+  "original": {
+    "bytes": 2593854,
+    "gzip": 1049514
+  },
+  "candidate": {
+    "bytes": 1945352,
+    "gzip": 776544
+  },
+  "adopted": false,
+  "identicalGeometry": true,
+  "decision": "Keep original GLTF in production. Lossless GLB has identical vertex/index data; gzip gain is reported below. Physical-device decode and rendered-image validation remain unverified; no Draco/meshopt decoder or lossy geometry changes introduced.",
+  "medianParseMs": {
+    "gltf": 39.84820000000002,
+    "glb": 1.4364999999999668
+  }
+}

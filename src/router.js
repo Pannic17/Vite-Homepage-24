@@ -1,10 +1,10 @@
 import {createRouter, createWebHistory} from 'vue-router';
-import Home from './views/Home.vue';
-import About from './views/About.vue';
-import Works from './views/Works.vue';
-import Projects from './views/Projects.vue';
-import ProjectDetail from './views/ProjectDetail.vue';
-import NotFound from './views/NotFound.vue';
+const Home = () => import('./views/Home.vue');
+const About = () => import('./views/About.vue');
+const Works = () => import('./views/Works.vue');
+const Projects = () => import('./views/Projects.vue');
+const ProjectDetail = () => import('./views/ProjectDetail.vue');
+const NotFound = () => import('./views/NotFound.vue');
 import {pagePaths} from './routePaths';
 import {detailEntries} from './content/portfolio';
 

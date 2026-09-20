@@ -1,7 +1,3 @@
-import {
-    Vector2
-} from 'three';
-
 /**
  * Sobel Shader
  */

@@ -29,6 +29,8 @@ detail: {
 
 public 资源使用 `image/…` 形式，不拼接部署前缀；渲染时由 `publicAsset` 处理 BASE_URL。标签中技术名称用字符串，可翻译标签用 `{key: 'tags.installment'}`。共享 `TagList` 负责在列表与详情中一致显示。
 
+修改封面或 Kaiwu 海报后运行 `npm run images:optimize`，将生成的 `public/image/optimized/` 和 `src/content/imageVariants.json` 一起保存。组件使用 WebP 的 320／640／960px 变体（不放大原图）、实际宽高和原图回退。列表首图及 Kaiwu 首屏海报优先加载，其余卡片按需加载；新增但尚未生成变体的图片仍可通过原图展示。
+
 Kaiwu 的海报、功能链接和文案 key 也在 catalog 中；特殊的海报布局仍由 `KaiwuSection` 渲染。`src/content/profile.js` 集中维护官网和联系方式；Home、About 复用 `ProfileIdentity` 与 `ContactLinks`。
 
 ## 语言状态

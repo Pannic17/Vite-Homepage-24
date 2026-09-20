@@ -37,6 +37,10 @@ test('language switches the home identity and navigation in both directions', as
 test('works and projects images load in the production subpath', async ({ page }) => {
   for (const route of ['works', 'projects']) {
     await page.goto(route);
+    for (const image of await page.locator('img').all()) {
+      await image.scrollIntoViewIfNeeded();
+      await expect.poll(() => image.evaluate(el => el.complete && el.naturalWidth > 0)).toBe(true);
+    }
     await expect.poll(() => page.locator('img').evaluateAll(images => images.length > 0 && images.every(image => image.complete && image.naturalWidth > 0))).toBe(true);
   }
 });

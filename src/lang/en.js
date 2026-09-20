@@ -1,4 +1,5 @@
 export default {
+  "scene": {"enable":"Enable animation", "disable":"Disable animation", "quality":"Animation", "auto":"Auto", "static":"Static", "low":"Low", "medium":"Medium", "high":"High"},
   "accessibility": {
     "skip": "Skip to content",
     "navigation": "Site navigation",
@@ -70,8 +71,8 @@ export default {
     "C2F": "Generative art exploring a computer's understanding, memory and validation of your picture. For this project, I created a Python script that uses a Stable Diffusion model to generate an image from a hash string. I then used the generated image to replace a face in an input image. The script uses OpenCV to detect faces, a binary mask to replace the face with the generated image, and OpenCV to compute the perceptual hash of the input image."
   },
   "pages": {
-    "worksSubtitle": "Artworks by PANNIC",
-    "projectsSubtitle": "Projects developed or contributed to by PANNIC"
+    "worksSubtitle": "Artworks by {name}",
+    "projectsSubtitle": "Projects developed or contributed to by {name}"
   },
   "contact": {
     "label": "Contact and social links",
@@ -92,7 +93,8 @@ export default {
     "december2024": "December 2024"
   },
   "kaiwu": {
-    "title": "KaiwuArt",
+    "details": "Click For Details",
+    "title": "开物KaiwuArt",
     "poster": "Kaiwu promotional poster {number}",
     "intro": "Kaiwu is an NFT trading platform in China focusing on the 3D digital artwork market and its applications in the metaverse, games, popular culture, collections and CG industries.",
     "role": "As the project manager and developer, I participated in every aspect of development, including mobile apps for Android/iOS, a WeChat mini-program, the official website, cloud servers, databases, 3D rendering, and the publishing and trading of encrypted tokens. Working with developers and designers, we successfully launched KaiwuArt and rolled out a series of events.",

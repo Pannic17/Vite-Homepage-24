@@ -12,9 +12,9 @@ a { color: inherit; text-underline-offset: .25em; overflow-wrap: anywhere; }
 button { font: inherit; color: inherit; cursor: pointer; }
 img { display: block; max-width: 100%; height: auto; }
 button, a { -webkit-tap-highlight-color: transparent; }
-:focus-visible { outline: 3px solid var(--hover-color); outline-offset: 4px; }
 .page-container { width: 100%; max-width: var(--content-width); margin-inline: auto; padding: var(--space-page) max(var(--gutter), env(safe-area-inset-right)) max(var(--space-page), env(safe-area-inset-bottom)) max(var(--gutter), env(safe-area-inset-left)); }
 .text-link { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; padding: .5rem .75rem; border: 1px solid var(--border-color); background: transparent; text-decoration: none; }
+:focus-visible { outline: none; text-decoration: underline; text-underline-offset: .3em; }
 .skip-link { position: absolute; top: .5rem; left: 1rem; z-index: 10; padding: .75rem 1rem; background: var(--background-color); transform: translateY(-200%); }
 .skip-link:focus { transform: translateY(0); }
 @media (hover: hover) { a:hover, button:hover { color: var(--hover-color); } }

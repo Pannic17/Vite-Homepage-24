@@ -1,0 +1,41 @@
+/* Original portfolio art direction, isolated from Home/About/detail pages. */
+.portfolio-layout {
+  --context-color: #aaa;
+  --hover-color: #54a296;
+  width: 90%;
+  max-width: none;
+  padding: 0 0 2vh;
+  line-height: 1.2;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+.portfolio-layout .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding-top: 4vh;
+  padding-bottom: 1vh;
+  margin-bottom: 0;
+  gap: 1rem;
+  background: var(--background-color);
+  border-bottom-color: var(--context-color);
+}
+.portfolio-layout .site-heading h1 { font-size: max(2rem, 8vmin); line-height: 1.2; }
+.portfolio-layout .subtitle { font-size: max(.875rem, 2vmin); margin-top: 0; }
+.portfolio-brand { color: var(--hover-color); }
+.portfolio-layout .header-actions { flex-direction: column; align-items: flex-end; gap: 0; }
+.portfolio-layout .header-actions > a { border: 0; padding: 0; font-size: max(.875rem, 2vmin); color: var(--context-color); }
+.portfolio-layout .language-switch { font-size: max(.875rem, 2vmin); }
+.portfolio-layout .language-switch button { color: var(--context-color); }
+.portfolio-layout .language-switch button:last-child { padding-inline-end: 0; }
+.corner-frame { position: relative; }
+.corner-frame::before, .corner-frame::after {
+  content: '';
+  position: absolute;
+  width: 1vh;
+  pointer-events: none;
+  transition: width .5s ease;
+}
+.corner-frame::before { top: 0; left: 0; border-top: 2px solid var(--hover-color); border-left: 2px solid var(--hover-color); }
+.corner-frame::after { right: 0; bottom: 0; height: 1vh; border-bottom: 2px solid var(--hover-color); border-right: 2px solid var(--hover-color); }
+@media (hover: hover) { .corner-frame:hover::before, .corner-frame:hover::after { width: calc(100% - 1px); } }
+@media (max-height: 34rem) { .portfolio-layout .site-header { position: static; } }

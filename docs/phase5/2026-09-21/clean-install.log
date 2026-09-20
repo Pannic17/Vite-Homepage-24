@@ -1,0 +1,8 @@
+
+added 240 packages, and audited 241 packages in 23s
+
+52 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm WARN deprecated vue-i18n@9.14.5: v9 and v10 no longer supported. please migrate to v11. about maintenance status, see https://vue-i18n.intlify.dev/guide/maintenance.html

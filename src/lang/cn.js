@@ -1,4 +1,5 @@
 export default {
+  "scene": {"enable":"开启动画", "disable":"关闭动画", "quality":"动画", "auto":"自动", "static":"静态", "low":"低", "medium":"中", "high":"高"},
   "accessibility": {
     "skip": "跳到正文",
     "navigation": "网站导航",
@@ -70,8 +71,8 @@ export default {
     "C2F": "探索计算机对图片的理解、记忆与验证的生成艺术项目。我编写了 Python 脚本，使用 Stable Diffusion 根据哈希字符串生成图像，再将生成的图像用于替换输入图片中的人脸。脚本利用 OpenCV 检测人脸，通过二值掩码完成替换，并使用 OpenCV 计算输入图片的感知哈希。"
   },
   "pages": {
-    "worksSubtitle": "PANNIC 的艺术作品",
-    "projectsSubtitle": "PANNIC 开发或参与的项目"
+    "worksSubtitle": "{name} 的艺术作品",
+    "projectsSubtitle": "{name} 开发或参与的项目"
   },
   "contact": {
     "label": "联系方式与社交账号",
@@ -92,6 +93,7 @@ export default {
     "december2024": "2024年12月"
   },
   "kaiwu": {
+    "details": "查看详情",
     "title": "开物 KaiwuArt",
     "poster": "开物宣传海报 {number}",
     "intro": "开物是面向中国 3D 数字艺术品市场的 NFT 交易平台，关注 3D 数字艺术品在元宇宙、游戏、流行文化、收藏和 CG 行业中的应用。",

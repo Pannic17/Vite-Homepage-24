@@ -11,7 +11,7 @@ await mkdir(output, { recursive: true });
 const results = { capturedAt: new Date().toISOString(), mode: 'Local static-file server, directory redirects, real 404 status; no SPA success rewrite. Not a live GitHub deployment.', runs: [] };
 const browser = await chromium.launch({ channel: process.env.PLAYWRIGHT_CHANNEL || undefined });
 results.browser = browser.version();
-const mime = { '.html': 'text/html', '.js': 'application/javascript', '.css': 'text/css', '.png': 'image/png', '.jpg': 'image/jpeg', '.ico': 'image/x-icon', '.gltf': 'model/gltf+json', '.svg': 'image/svg+xml' };
+const mime = { '.html': 'text/html', '.js': 'application/javascript', '.css': 'text/css', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.ico': 'image/x-icon', '.gltf': 'model/gltf+json', '.svg': 'image/svg+xml' };
 try {
   for (const base of ['/', '/Vite-Homepage-24/']) {
     const root = resolve(base === '/' ? '.static-root.local' : '.static-project.local');
@@ -53,7 +53,13 @@ try {
         assert.equal(response.status(), ['/test','/unknown-page'].includes(route) ? 404 : 200);
         assert.equal(new URL(page.url()).search, '?probe=one');
         assert.equal(new URL(page.url()).hash, '#marker');
+        // Inspect emitted HTML, before Vite adds links for later dynamic imports.
+        const preloadUrls = [...(await response.text()).matchAll(/<link rel="modulepreload"[^>]*href="([^"]+)"/g)].map(match => match[1]);
+        assert(preloadUrls.length > 0, 'Current route should have module preload hints');
+        assert(!preloadUrls.some(url => /\/assets\/home-[\w-]+\.js/.test(url)), 'Optional 3D must not be preloaded');
+        if (route !== '/') assert(!preloadUrls.some(url => /\/assets\/Home-[\w-]+\.js/.test(url)), 'Other static routes must not preload the Home view');
         await page.waitForFunction(() => document.querySelector('#app')?.textContent.trim().length > 0);
+        await page.locator('img').evaluateAll(images => images.forEach(image => { image.loading = 'eager'; }));
         await page.waitForFunction(() => [...document.images].every(image => image.complete && image.naturalWidth > 0));
         if (route === '/works/gcs') {
           assert.equal(await page.locator('.d-header h1').textContent(), 'Chronoscape');

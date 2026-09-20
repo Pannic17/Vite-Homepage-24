@@ -1,0 +1,279 @@
+{
+  "capturedAt": "2026-09-20T14:47:45.729Z",
+  "browser": "152.0.4191.66",
+  "chunks": [
+    {
+      "name": "About-B3Vsd3nj.js",
+      "bytes": 533,
+      "gzip": 376
+    },
+    {
+      "name": "ContactLinks-C2LM5hlT.js",
+      "bytes": 14911,
+      "gzip": 10893
+    },
+    {
+      "name": "home-9lVdML4k.js",
+      "bytes": 528195,
+      "gzip": 133739
+    },
+    {
+      "name": "Home-CM_hxP2N.js",
+      "bytes": 4964,
+      "gzip": 2318
+    },
+    {
+      "name": "index-CgtU2dgU.js",
+      "bytes": 165532,
+      "gzip": 60363
+    },
+    {
+      "name": "LanguageSwitch-BZiQBEJd.js",
+      "bytes": 717,
+      "gzip": 451
+    },
+    {
+      "name": "NotFound-_yBKf4-O.js",
+      "bytes": 557,
+      "gzip": 382
+    },
+    {
+      "name": "ProjectCard--KSRzb1z.js",
+      "bytes": 1689,
+      "gzip": 868
+    },
+    {
+      "name": "ProjectDetail-CWuG0KWO.js",
+      "bytes": 2245,
+      "gzip": 1169
+    },
+    {
+      "name": "Projects-ChSVyckc.js",
+      "bytes": 1706,
+      "gzip": 880
+    },
+    {
+      "name": "ResponsiveImage-lxvyfDEV.js",
+      "bytes": 5818,
+      "gzip": 1473
+    },
+    {
+      "name": "SiteLayout-Dq_FWO20.js",
+      "bytes": 1090,
+      "gzip": 616
+    },
+    {
+      "name": "TagList-CGrl07st.js",
+      "bytes": 484,
+      "gzip": 344
+    },
+    {
+      "name": "Works-_dBVpw7m.js",
+      "bytes": 625,
+      "gzip": 420
+    }
+  ],
+  "routes": [
+    {
+      "route": "/",
+      "mode": "Static (no deferred 3D)",
+      "js": [
+        "ContactLinks-C2LM5hlT.js",
+        "Home-CM_hxP2N.js",
+        "index-CgtU2dgU.js",
+        "LanguageSwitch-BZiQBEJd.js",
+        "ResponsiveImage-lxvyfDEV.js"
+      ],
+      "gzip": 75498,
+      "requests": [
+        "http://127.0.0.1:4175/Vite-Homepage-24/",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-CgtU2dgU.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-BbgW1uqk.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-CM_hxP2N.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-lxvyfDEV.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BZiQBEJd.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-C2LM5hlT.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-tO6iFRXZ.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-DpADGlLm.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+        "http://127.0.0.1:4175/Vite-Homepage-24/logo_cat.ico"
+      ]
+    },
+    {
+      "route": "about",
+      "mode": "Static (no deferred 3D)",
+      "js": [
+        "About-B3Vsd3nj.js",
+        "ContactLinks-C2LM5hlT.js",
+        "Home-CM_hxP2N.js",
+        "index-CgtU2dgU.js",
+        "LanguageSwitch-BZiQBEJd.js",
+        "ResponsiveImage-lxvyfDEV.js",
+        "SiteLayout-Dq_FWO20.js"
+      ],
+      "gzip": 76490,
+      "requests": [
+        "http://127.0.0.1:4175/Vite-Homepage-24/about",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-CgtU2dgU.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-BbgW1uqk.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-CM_hxP2N.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-lxvyfDEV.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BZiQBEJd.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-C2LM5hlT.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-tO6iFRXZ.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-DpADGlLm.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/About-B3Vsd3nj.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/SiteLayout-Dq_FWO20.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/SiteLayout-DmBM75aQ.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/About-Yh_O3PFy.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/logo_cat.ico"
+      ]
+    },
+    {
+      "route": "works",
+      "mode": "Static (no deferred 3D)",
+      "js": [
+        "ContactLinks-C2LM5hlT.js",
+        "Home-CM_hxP2N.js",
+        "index-CgtU2dgU.js",
+        "LanguageSwitch-BZiQBEJd.js",
+        "ProjectCard--KSRzb1z.js",
+        "ResponsiveImage-lxvyfDEV.js",
+        "SiteLayout-Dq_FWO20.js",
+        "TagList-CGrl07st.js",
+        "Works-_dBVpw7m.js"
+      ],
+      "gzip": 77746,
+      "requests": [
+        "http://127.0.0.1:4175/Vite-Homepage-24/works",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-CgtU2dgU.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-BbgW1uqk.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-CM_hxP2N.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-lxvyfDEV.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BZiQBEJd.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-C2LM5hlT.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-tO6iFRXZ.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-DpADGlLm.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/Works-_dBVpw7m.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/SiteLayout-Dq_FWO20.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/SiteLayout-DmBM75aQ.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ProjectCard--KSRzb1z.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/TagList-CGrl07st.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/TagList-CFxuE7aq.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ProjectCard-DuO8T6cC.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/CAT-Cover-640.webp",
+        "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/GCS-Cover-640.webp",
+        "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/OGX-Cover-640.webp",
+        "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/C1F-Cover-640.webp",
+        "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/AMR-Cover-640.webp",
+        "http://127.0.0.1:4175/Vite-Homepage-24/logo_cat.ico"
+      ]
+    },
+    {
+      "route": "projects",
+      "mode": "Static (no deferred 3D)",
+      "js": [
+        "ContactLinks-C2LM5hlT.js",
+        "Home-CM_hxP2N.js",
+        "index-CgtU2dgU.js",
+        "LanguageSwitch-BZiQBEJd.js",
+        "ProjectCard--KSRzb1z.js",
+        "Projects-ChSVyckc.js",
+        "ResponsiveImage-lxvyfDEV.js",
+        "SiteLayout-Dq_FWO20.js",
+        "TagList-CGrl07st.js"
+      ],
+      "gzip": 78206,
+      "requests": [
+        "http://127.0.0.1:4175/Vite-Homepage-24/projects",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-CgtU2dgU.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-BbgW1uqk.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-CM_hxP2N.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-lxvyfDEV.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BZiQBEJd.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-C2LM5hlT.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-tO6iFRXZ.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-DpADGlLm.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/Projects-ChSVyckc.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/SiteLayout-Dq_FWO20.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/SiteLayout-DmBM75aQ.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ProjectCard--KSRzb1z.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/TagList-CGrl07st.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/TagList-CFxuE7aq.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ProjectCard-DuO8T6cC.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/Projects-CGmMJGT4.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/logo_kaiwu-BQnj14wb.png",
+        "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster1-640.webp",
+        "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster2-640.webp",
+        "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster3-640.webp",
+        "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster4-640.webp",
+        "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/ZAR-Cover-640.webp",
+        "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/BLA-Cover-640.webp",
+        "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/Split--640.webp",
+        "http://127.0.0.1:4175/Vite-Homepage-24/logo_cat.ico"
+      ]
+    },
+    {
+      "route": "works/gcs",
+      "mode": "Static (no deferred 3D)",
+      "js": [
+        "ContactLinks-C2LM5hlT.js",
+        "Home-CM_hxP2N.js",
+        "index-CgtU2dgU.js",
+        "LanguageSwitch-BZiQBEJd.js",
+        "NotFound-_yBKf4-O.js",
+        "ProjectDetail-CWuG0KWO.js",
+        "ResponsiveImage-lxvyfDEV.js",
+        "TagList-CGrl07st.js"
+      ],
+      "gzip": 77393,
+      "requests": [
+        "http://127.0.0.1:4175/Vite-Homepage-24/works/gcs",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-CgtU2dgU.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-BbgW1uqk.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-CM_hxP2N.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-lxvyfDEV.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BZiQBEJd.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-C2LM5hlT.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-tO6iFRXZ.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-DpADGlLm.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ProjectDetail-CWuG0KWO.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/NotFound-_yBKf4-O.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/NotFound-DpA3nMcy.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/TagList-CGrl07st.js",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/TagList-CFxuE7aq.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/assets/ProjectDetail-cBAYy5HN.css",
+        "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/GCS-Cover-640.webp",
+        "http://127.0.0.1:4175/Vite-Homepage-24/logo_cat.ico"
+      ]
+    }
+  ],
+  "model": {
+    "bytes": 2593854,
+    "gzip": 1049514,
+    "meshes": 1,
+    "embeddedBuffers": [
+      {
+        "bytes": 1944320,
+        "base64": true
+      }
+    ],
+    "policy": "Original preserved. HTTP gzip estimate only; actual hosting compression is not guaranteed. Draco/meshopt not adopted without decoder/device and visual validation."
+  },
+  "images": {
+    "count": 18,
+    "originalBytes": 16321600,
+    "largestVariant": 190502,
+    "variants960Bytes": 1347238
+  }
+}

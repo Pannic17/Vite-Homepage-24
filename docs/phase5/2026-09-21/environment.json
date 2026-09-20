@@ -1,0 +1,8 @@
+{
+  "node": "v24.19.0",
+  "platform": "win32",
+  "chromium": "153.0.8010.12",
+  "firefox": "155.0",
+  "webkit": "26.6",
+  "existingSiteHttpStatus": 200
+}

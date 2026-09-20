@@ -101,6 +101,7 @@ test('all content loads in both languages without missing translation warnings',
     for(const route of ['about','works','projects','works/gcs']) {
       await page.goto(route);
       await expect(page.locator('html')).toHaveAttribute('lang',locale);
+      await page.locator('img').evaluateAll(images => images.forEach(image => { image.loading = 'eager'; }));
       await expect.poll(() => page.locator('img').evaluateAll(images => images.every(image => image.complete && image.naturalWidth > 0))).toBe(true);
     }
   }
