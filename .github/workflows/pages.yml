@@ -30,6 +30,16 @@ jobs:
       - run: npx playwright install --with-deps chromium firefox webkit
       - run: npm run test:e2e
       - run: npm run test:static
+      - name: Upload browser evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: pages-browser-evidence-${{ github.run_id }}
+          path: |
+            playwright-report/
+            test-results/
+            phase1-latest.local/static-host.json
+          retention-days: 14
       - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4

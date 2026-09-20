@@ -42,7 +42,9 @@ const snapshot = page => page.evaluate(() => ({
 }));
 
 test('20 route round trips release render contexts, frames and page listeners', async ({ page }, testInfo) => {
-  test.setTimeout(90_000);
+  // Hosted runners render WebGL in software; allow the full 20-cycle stress
+  // test to finish without relaxing any disposal or navigation assertions.
+  test.setTimeout(process.env.CI ? 240_000 : 90_000);
   await installCounters(page);
   const errors = [];
   const warnings = [];
