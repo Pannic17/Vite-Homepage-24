@@ -4,13 +4,14 @@ const {locale} = useI18n({useScope: 'global'});
 </script>
 <template>
   <div class="language-switch" role="group" :aria-label="$t('accessibility.language')">
-    <button type="button" lang="zh-CN" :aria-pressed="locale === 'zh-CN'" @click="locale = 'zh-CN'">中文</button>
+    <button type="button" lang="zh-CN" aria-label="中文" :aria-pressed="locale === 'zh-CN'" @click="locale = 'zh-CN'"><span class="language-full">中文</span><span class="language-short" aria-hidden="true">中</span></button>
     <span aria-hidden="true">/</span>
-    <button type="button" lang="en" :aria-pressed="locale === 'en-US'" @click="locale = 'en-US'">ENGLISH</button>
+    <button type="button" lang="en" aria-label="ENGLISH" :aria-pressed="locale === 'en-US'" @click="locale = 'en-US'"><span class="language-full">ENGLISH</span><span class="language-short" aria-hidden="true">EN</span></button>
   </div>
 </template>
 <style scoped>
 .language-switch { display: flex; align-items: center; gap: .25rem; }
+.language-short { display: none; }
 button { min-height: 44px; min-width: 44px; padding: .5rem; border: 0; background: none; }
 button[aria-pressed="true"] { text-decoration: underline; text-underline-offset: .3em; color: var(--hover-color); }
 </style>

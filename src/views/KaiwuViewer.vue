@@ -16,7 +16,7 @@ async function start(){
     const {createScene}=await import('../features/kaiwu/scene');
     if(current!==generation)return;
     background.value=config.bgPath||'';playing.value=!!config.autoPlay;
-    scene=createScene(container.value,config,{onError:reason=>{
+    scene=createScene(container.value,config,{debug:route.query.debug==='1',onPlayingChange:value=>{playing.value=value;},onError:reason=>{
       if(current!==generation)return;
       generation++;clearTimeout(timer);abort.abort();error.value=errorKey(reason);status.value='failed';
     }});await scene.ready;

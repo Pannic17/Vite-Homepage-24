@@ -115,7 +115,7 @@ VITE_BASE_PATH=/ npm run preview
 
 ### Kaiwu 页面（Phase 2）
 
-Projects 的 Kaiwu“查看详情”和个人介绍中的 KaiwuArt 进入 `/projects/kaiwu`；“3D Viewer”进入 `/projects/kaiwu/viewer`。路径自动适配站点部署前缀，支持直接打开和刷新。
+Projects 的 Kaiwu“查看详情”和配置页的“查看示例”进入 `/projects/kaiwu/viewer?debug=1`，加载默认模型并展开 Three.js 调试菜单。“3D Viewer”仅作为能力标签展示。个人介绍中的 KaiwuArt 进入 `/projects/kaiwu`。路径自动适配站点部署前缀，支持直接打开和刷新。
 
 配置页提供默认示例、模型 URL、远程 JSON 和本地 JSON。默认配置位于 `public/kaiwu/default.json`；模型、纹理和 HDR 位于 `public/kaiwu/`。远程资源需要允许浏览器跨域访问；本地 JSON 保存在会话存储中，刷新可恢复，关闭会话后需重新选择。
 

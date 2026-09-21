@@ -22,6 +22,7 @@ const entry = computed(() => findEntry(props.id));
   <NotFound v-else />
 </template>
 <style scoped>
+.project-detail { padding-top: 0; }
 :deep(.detail-cover) { width: 100%; max-width: 40rem; margin-bottom: 2rem; }
 .detail-meta { margin-bottom: 2rem; }
 .detail-copy { max-width: 65ch; display: grid; gap: 1rem; }

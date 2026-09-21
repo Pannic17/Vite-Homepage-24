@@ -9,3 +9,7 @@ defineProps({ title: String, portfolio: Boolean });
     <main id="main-content" tabindex="-1"><slot /></main>
   </div>
 </template>
+
+<style scoped>
+.page-container { padding-top: 0; }
+</style>

@@ -53,7 +53,7 @@ test('baseline external destinations survive except the retired Kaiwu domain', (
     assert.ok(['internal','none'].includes(entry.destination.kind));
     if(entry.destination.kind==='internal')assert.ok(productionPaths.includes(entry.destination.to));
   }
-  assert.equal(kaiwu.links.filter(link=>link.destination.kind==='internal').length,1);
+  assert.equal(kaiwu.links.filter(link=>link.destination.kind==='internal').length,0);
   assert.ok(actual.has('mailto:pannic1984@outlook.com'));
 });
 

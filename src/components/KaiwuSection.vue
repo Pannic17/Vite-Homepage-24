@@ -8,7 +8,7 @@ import {kaiwu} from '../content/portfolio';
       <img class="k-logo" src="../assets/logo_kaiwu.png" alt="" width="112" height="112">
       <div><h2>{{ $t(kaiwu.titleKey) }}</h2><RouterLink class="k-link" :to="kaiwu.destination.to">KaiwuArt</RouterLink></div>
     </header>
-    <RouterLink class="k-detail" :to="kaiwu.destination.to">{{ $t('kaiwu.details') }}</RouterLink>
+    <RouterLink class="k-detail" :to="{name:'KaiwuViewer',query:{debug:'1'}}">{{ $t('kaiwu.details') }}</RouterLink>
     <div class="posters">
       <ResponsiveImage v-for="poster in kaiwu.posters" :key="poster.number" :src="poster.src" :alt="$t('kaiwu.poster', {number:poster.number})" sizes="22.5vw" loading="eager" />
     </div>

@@ -49,7 +49,7 @@ for (const [width,height] of viewports) {
         const header = page.locator('.site-header');
         if (await header.count()) {
           const bottom = await header.evaluate(el => el.getBoundingClientRect().bottom);
-          const top = await page.locator('main').evaluate(el => el.getBoundingClientRect().top);
+          const top = await page.locator('main').evaluate(el => (el.querySelector(':scope > .site-header')?.nextElementSibling || el).getBoundingClientRect().top);
           expect(top).toBeGreaterThanOrEqual(bottom);
         }
         if (route === '') {

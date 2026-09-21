@@ -3,11 +3,11 @@ import {test,expect} from '@playwright/test';
 test('Kaiwu links stay internal and the bilingual detail-to-viewer flow works',async({page},testInfo)=>{
   for(const language of ['ENGLISH','中文']){
     await page.goto('projects');await page.getByRole('button',{name:language,exact:true}).click();
-    await expect(page.locator('.kaiwu-links a')).toHaveCount(1);
-    await expect(page.locator('.kaiwu-links .k-label')).toHaveCount(4);
+    await expect(page.locator('.kaiwu-links a')).toHaveCount(0);
+    await expect(page.locator('.kaiwu-links .k-label')).toHaveCount(5);
     await page.locator('.k-detail').click();
-    await expect(page).toHaveURL(/\/projects\/kaiwu$/);
-    await page.getByRole('link',{name:language==='中文'?'查看示例':'View example',exact:true}).click();
+    await expect(page).toHaveURL(/\/projects\/kaiwu\/viewer\?debug=1$/);
+    await expect(page.locator('.kaiwu-debug')).toBeVisible();
     await expect(page.locator('.kaiwu-stage')).toHaveAttribute('data-state','ready',{timeout:30000});
     await page.getByRole('link',{name:language==='中文'?'返回项目':'Back to Projects',exact:true}).click();
     if(language==='中文')await page.screenshot({path:testInfo.outputPath('projects-cn.png'),fullPage:true});

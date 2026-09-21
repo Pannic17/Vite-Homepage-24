@@ -9,6 +9,8 @@
 .kaiwu-form button { justify-self:start; }
 .kaiwu-stage { height: min(65vh, 44rem); min-height:20rem; position:relative; background:#171717 center / cover; }
 .kaiwu-stage canvas { display:block; max-width:100%; touch-action:none; }
+.kaiwu-stage .kaiwu-debug { position:absolute; top:.5rem; right:.5rem; max-width:calc(100% - 1rem); max-height:calc(100% - 1rem); overflow-y:auto; overscroll-behavior:contain; z-index:1; }
+.kaiwu-debug button, .kaiwu-debug input { min-height:0; padding:0; }
 .kaiwu-status { padding:1rem; }
 .kaiwu-status a { margin-inline-start:1rem; }
 .kaiwu-page :is(a,button,input):focus-visible { outline:2px solid var(--hover-color); outline-offset:4px; }

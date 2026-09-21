@@ -97,7 +97,7 @@ export default {
     "title": "开物KaiwuArt",
     "poster": "Kaiwu promotional poster {number}",
     "intro": "Kaiwu is an NFT trading platform in China focusing on the 3D digital artwork market and its applications in the metaverse, games, popular culture, collections and CG industries.",
-    "role": "As the project manager and developer, I participated in every aspect of development, including mobile apps for Android/iOS, a WeChat mini-program, the official website, cloud servers, databases, 3D rendering, and the publishing and trading of encrypted tokens. Working with developers and designers, we successfully launched KaiwuArt and rolled out a series of events.",
+    "role": "As KaiwuArt’s technical lead and lead developer, I owned the overall technical architecture and core development, coordinating implementation across Android/iOS apps, a WeChat mini-program, the official website, cloud services, and databases. I also led development of 3D rendering and crypto token issuance and trading features, working closely with developers and designers to launch the product and support subsequent events.",
     "links": {
       "viewer": "3D Viewer",
       "app": "Mobile App",

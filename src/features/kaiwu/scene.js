@@ -2,18 +2,22 @@ import * as THREE from 'three';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 import {RGBELoader} from 'three/examples/jsm/loaders/RGBELoader.js';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
+import {createDebug} from './debug';
 import {disposeObject3D} from '../../three/dispose';
 import {failure} from './errors';
 
 // Every mounted page owns its resources; the shared r147 module owns no state.
-export function createScene(container,input,{onError=()=>{}}={}) {
+export function createScene(container,input,{debug=false,onError=()=>{},onPlayingChange=()=>{}}={}) {
   const config=structuredClone(input);
-  let renderer,scene,camera,controls,observer,object,environment;
-  let disposed=false,raf=0,playing=!!config.autoPlay,last=0,loaded=false;
+  let renderer,scene,camera,controls,observer,object,environment,gui,ambient,mappings;
+  let disposed=false,raf=0,last=0,loaded=false;
   const textures=new Set();
+  const playback={playing:!!config.autoPlay,speed:0.6};
+  function setPlaying(value){playback.playing=value;last=performance.now();onPlayingChange(value);schedule();}
   function dispose(){
     if(disposed)return;disposed=true;cancelAnimationFrame(raf);raf=0;
     observer?.disconnect();document.removeEventListener('visibilitychange',visibility);
+    gui?.dispose();
     renderer?.domElement.removeEventListener('webglcontextlost',contextLost);
     controls?.removeEventListener('change',schedule);controls?.dispose();
     const released=new Set();disposeObject3D(object,released);
@@ -26,21 +30,23 @@ export function createScene(container,input,{onError=()=>{}}={}) {
   function schedule(){if(!disposed && loaded && !document.hidden && !raf)raf=requestAnimationFrame(render);}
   function render(time){
     raf=0;if(disposed||document.hidden)return;
-    if(playing && object)object.rotation.y+=Math.min((time-last)/1000,0.05)*0.6;
+    if(playback.playing && object)object.rotation.y+=Math.min((time-last)/1000,0.05)*playback.speed;
+    controls.update();
     last=time;renderer.render(scene,camera);
-    if(playing)schedule();
+    if(playback.playing || controls.autoRotate || controls.enableDamping)schedule();
   }
   function visibility(){cancelAnimationFrame(raf);raf=0;last=performance.now();schedule();}
   try{
     try{renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});}catch{throw failure('webgl');}
     renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
     renderer.outputEncoding=THREE.sRGBEncoding;renderer.physicallyCorrectLights=true;
-    const mappings={None:THREE.NoToneMapping,Linear:THREE.LinearToneMapping,Reinhard:THREE.ReinhardToneMapping,Cineon:THREE.CineonToneMapping,ACESFilmic:THREE.ACESFilmicToneMapping};
+    mappings={None:THREE.NoToneMapping,Linear:THREE.LinearToneMapping,Reinhard:THREE.ReinhardToneMapping,Cineon:THREE.CineonToneMapping,ACESFilmic:THREE.ACESFilmicToneMapping};
     renderer.toneMapping=mappings[config.toneMapping]??THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure=config.hdrExposure;
     container.append(renderer.domElement);
     renderer.domElement.addEventListener('webglcontextlost',contextLost);
-    scene=new THREE.Scene();scene.add(new THREE.AmbientLight(0xffffff,config.ambientIntensity));
+    scene=new THREE.Scene();
+    ambient=new THREE.AmbientLight(0xffffff,config.ambientIntensity);scene.add(ambient);
     camera=new THREE.PerspectiveCamera(45,1,1,1000);
     camera.position.copy(config.camera.position);camera.setFocalLength(config.camera.focalLength);
     controls=new OrbitControls(camera,renderer.domElement);
@@ -75,12 +81,14 @@ export function createScene(container,input,{onError=()=>{}}={}) {
       const gltf=await loader.loadAsync(config.modelPath);
       if(disposed){disposeObject3D(gltf.scene);return;}
       object=gltf.scene;object.rotation.y=(config.rotation+180)*Math.PI/180;object.position.y=0.5;
-      scene.add(object);loaded=true;last=performance.now();schedule();
+      scene.add(object);
+      if(debug)gui=createDebug({container,renderer,scene,camera,controls,ambient,object,environment:environment.texture,mappings,playback,setPlaying,schedule});
+      loaded=true;last=performance.now();schedule();
     }catch(error){dispose();throw error;}
   })();
   return {
     ready,dispose,
-    setPlaying(value){playing=value;last=performance.now();schedule();},
+    setPlaying,
     reset(){controls.reset();if(object)object.rotation.y=(config.rotation+180)*Math.PI/180;schedule();},
   };
 }

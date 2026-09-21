@@ -284,6 +284,6 @@ export const kaiwu = {
   posters: [1,2,3,4].map(number => ({number,src:'image/kaiwu/KW-poster' + number + '.jpg'})),
   links: ['viewer','app','websites','backend','chain'].map(id => ({
     id, labelKey:'kaiwu.links.' + id,
-    destination:id==='viewer'?{kind:'internal',to:'/projects/kaiwu/viewer'}:{kind:'none'},
+    destination:{kind:'none'},
   })),
 };

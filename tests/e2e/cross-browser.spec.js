@@ -52,8 +52,9 @@ test('WebGL either starts or provides an operable fallback', async ({page},testI
 
 test('Kaiwu internal flow, language and graphics fallback work across engines',async({page},testInfo)=>{
   await page.goto('projects');await page.locator('.k-detail').click();
-  await expect(page).toHaveURL(/\/projects\/kaiwu$/);
+  await expect(page).toHaveURL(/\/projects\/kaiwu\/viewer\?debug=1$/);
   await page.getByRole('button',{name:'中文',exact:true}).click();
+  await page.getByRole('link',{name:'模型配置',exact:true}).click();
   const example=page.getByRole('link',{name:'查看示例',exact:true});
   await example.focus();await page.keyboard.press('Enter');
   await expect(page.locator('.kaiwu-stage')).toHaveAttribute('data-state',/^(ready|failed)$/,{timeout:35000});

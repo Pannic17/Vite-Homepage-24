@@ -8,6 +8,7 @@ test('Kaiwu page stays lightweight and its example survives refresh and navigati
   await expect(page.getByRole('heading',{name:'Kaiwu 3D'})).toBeVisible();
   expect(requests.some(url=>/\.gltf|\.hdr|\/assets\/scene-/.test(url))).toBe(false);
   await page.getByRole('link',{name:'View example'}).click();
+  await expect(page.locator('.kaiwu-debug')).toBeVisible();
   await expect(page.locator('.kaiwu-stage')).toHaveAttribute('data-state','ready',{timeout:30000});
   await expect(page.locator('canvas')).toHaveCount(1);
   await page.getByRole('button',{name:'Play',exact:true}).click();

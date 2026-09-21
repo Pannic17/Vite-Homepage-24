@@ -36,7 +36,7 @@ const {state: sceneState, quality, preference, select, toggle} = useHomeScene(ca
       </div>
     </div>
     <div id="three-canvas" ref="canvasHost" :data-state="sceneState" :data-quality="quality" aria-hidden="true"></div>
-    <ResponsiveImage v-if="sceneState !== 'ready'" class="scene-fallback" src="image/CAT-Cover.png" sizes="(max-width: 866px) 30vw, 260px" loading="eager" alt="" aria-hidden="true" />
+    <ResponsiveImage v-if="sceneState !== 'ready'" class="scene-fallback" src="image/home-cat.webp" loading="eager" width="720" height="960" alt="" aria-hidden="true" />
   </main>
 </template>
 
@@ -66,7 +66,7 @@ const {state: sceneState, quality, preference, select, toggle} = useHomeScene(ca
 .home-social :deep(img) { width: 5vh; height: 5vh; }
 #three-canvas { position: fixed; inset: 0; pointer-events: none; }
 #three-canvas :deep(canvas) { display: block; max-width: 100%; }
-:deep(.scene-fallback) { position: fixed; right: 5vw; top: 35vh; width: min(30vw, 260px); opacity: .12; pointer-events: none; }
+:deep(.scene-fallback) { position: absolute; right: 12vw; top: 20vh; width: min(34vw, 420px); height: auto; pointer-events: none; }
 .scene-controls { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem 1rem; color: var(--context-color); font-size: .875rem; order: 3; }
 .scene-controls button, .scene-controls select { min-height: 44px; min-width: 44px; border: 0; background: transparent; color: inherit; font: inherit; }
 .scene-controls button { padding: 0; }
@@ -79,6 +79,7 @@ const {state: sceneState, quality, preference, select, toggle} = useHomeScene(ca
   .f-button { flex-direction: column; }
   .sub-button { font-size: max(1.125rem, 3vh); }
   .home-social { order: 1; justify-content: center; padding-bottom: 3vh; }
+  :deep(.scene-fallback) { top: 39vh; right: 50%; width: auto; height: 27vh; transform: translateX(50%); }
   .test-link { order: 2; align-self: flex-start; }
 }
 </style>

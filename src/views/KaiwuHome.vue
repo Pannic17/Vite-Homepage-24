@@ -27,7 +27,7 @@ async function local(event){
     </nav>
     <img :src="publicAsset('kaiwu/image/logo.png')" alt="" width="100" height="100">
     <h1>{{ $t('kaiwuViewer.title') }}</h1><p>{{ $t('kaiwuViewer.intro') }}</p>
-    <p><RouterLink :to="{name:'KaiwuViewer'}">{{ $t('kaiwuViewer.example') }}</RouterLink></p>
+    <p><RouterLink :to="{name:'KaiwuViewer',query:{debug:'1'}}">{{ $t('kaiwuViewer.example') }}</RouterLink></p>
     <form class="kaiwu-form" @submit.prevent="open('1',model)">
       <label for="kaiwu-model">{{ $t('kaiwuViewer.model') }}</label><input id="kaiwu-model" v-model="model" type="url" required>
       <button>{{ $t('kaiwuViewer.open') }}</button>
