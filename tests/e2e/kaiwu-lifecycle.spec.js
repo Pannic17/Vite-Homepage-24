@@ -20,6 +20,9 @@ async function instrument(page){
 }
 
 test('viewer renders on demand, suspends in background and releases resources over repeated visits',async({page})=>{
+  // Three cold model loads each retain their 30s readiness bound, plus control
+  // and teardown assertions. Software-rendered CI needs a composite budget.
+  test.setTimeout(120000);
   await instrument(page);await page.goto('projects/kaiwu');
   const baseline=await page.evaluate(()=>({observers:window.observers.size,listeners:window.visibilityListeners.size}));
   for(let i=0;i<3;i++){
