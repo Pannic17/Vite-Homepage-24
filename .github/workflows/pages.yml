@@ -40,8 +40,11 @@ jobs:
             test-results/
             phase1-latest.local/static-host.json
           retention-days: 14
-      - run: npm run build
       - uses: actions/configure-pages@v5
+        id: pages
+      - run: npm run build
+        env:
+          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist/
