@@ -18,6 +18,11 @@ export default {
     "company": "Co-founder and Developer of {company}",
     "intro": "As a creative programmer, innovative developer and project manager, I successfully launched a mobile online trading app. My academic background in creative programming has focused on integrating neural networks with game engines, reflecting my commitment to the game industry."
   },
+  "about": {
+    "background": "I’m Jiangyun Pan, a creative developer also known as Pannic / Nic Pan. My studies took me from biology and immunology at the University of Toronto to creative computing at the University of the Arts London. My practice now spans games, artificial intelligence and interactive art, using code to explore connections between the physical world and digital experiences.",
+    "practice": "I’m particularly interested in bringing neural networks into real-time interactions. In CatNet, I used Unity to explore AI in augmented reality games. In PokemonPad, I combined Three.js, custom shaders and post-processing with music, 3D models and keyboard input to create a playful visual experience. Across C#, JavaScript and Python, these projects trace my explorations in game development, real-time graphics and creative coding.",
+    "experience": "Alongside experimental work, I build products for real users. As co-founder, technical lead and lead developer at KaiwuArt, I was responsible for technical architecture and core features, coordinating development across mobile apps, a WeChat mini-program, websites and cloud services. I worked with designers and developers to bring the product to launch. From interactive prototypes to complete products, I aim to turn technical ideas into things people can use and experience."
+  },
   "menu": {
     "about": "ABOUT",
     "works": "WORKS",

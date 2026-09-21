@@ -9,9 +9,17 @@ import ContactLinks from '../components/ContactLinks.vue';
     <section class="biography">
       <h2>{{ $t('home.name') }}</h2>
       <ProfileIdentity :show-name="false" />
-      <p>{{ $t('home.intro') }}</p>
+      <div class="biography-copy">
+        <p>{{ $t('about.background') }}</p>
+        <p>{{ $t('about.practice') }}</p>
+        <p>{{ $t('about.experience') }}</p>
+      </div>
       <ContactLinks />
     </section>
   </SiteLayout>
 </template>
-<style scoped>.biography { max-width: 65ch; display: grid; gap: 1.5rem; }</style>
+<style scoped>
+.biography { max-width: 65ch; display: grid; gap: 1.5rem; }
+.biography-copy { display: grid; gap: 1.25rem; }
+.biography-copy p { margin: 0; line-height: 1.85; }
+</style>

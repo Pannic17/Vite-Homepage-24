@@ -65,9 +65,11 @@ defineProps({ title: String, backTo: String });
   min-height: 0;
   line-height: 1.4;
   position: relative;
+  white-space: nowrap;
+  overflow-wrap: normal;
 }
 .site-header :deep(.header-links > a::after), .site-header :deep(.header-links > button::after) { content: ''; position: absolute; inset: 0; min-height: 44px; bottom: auto; }
-.site-header :deep(.header-home) { width: 4.5rem; flex: 0 0 4.5rem; justify-content: flex-end; }
+.site-header :deep(.header-home) { display: inline-grid; width: max-content; min-width: 4.5rem; flex: 0 0 auto; justify-content: end; }
 .site-header :deep(.language-switch button) { display: inline-flex; align-items: flex-start; justify-content: center; line-height: inherit; padding: 0; color: var(--context-color); }
 .site-header :deep(.language-switch button:last-child) { justify-content: flex-end; }
 @media (max-width: 48rem) {
