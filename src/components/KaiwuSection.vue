@@ -6,15 +6,15 @@ import {kaiwu} from '../content/portfolio';
   <section class="kaiwu corner-frame">
     <header class="k-head">
       <img class="k-logo" src="../assets/logo_kaiwu.png" alt="" width="112" height="112">
-      <div><h2>{{ $t(kaiwu.titleKey) }}</h2><a class="k-link" :href="kaiwu.href">kaiwuart.cn</a></div>
+      <div><h2>{{ $t(kaiwu.titleKey) }}</h2><RouterLink class="k-link" :to="kaiwu.destination.to">KaiwuArt</RouterLink></div>
     </header>
-    <a class="k-detail" :href="kaiwu.href">{{ $t('kaiwu.details') }}</a>
+    <RouterLink class="k-detail" :to="kaiwu.destination.to">{{ $t('kaiwu.details') }}</RouterLink>
     <div class="posters">
       <ResponsiveImage v-for="poster in kaiwu.posters" :key="poster.number" :src="poster.src" :alt="$t('kaiwu.poster', {number:poster.number})" sizes="22.5vw" loading="eager" />
     </div>
     <p>{{ $t(kaiwu.paragraphs[0]) }}</p>
     <ul class="kaiwu-links">
-      <li v-for="link in kaiwu.links" :key="link.id"><a class="k-link" :href="link.href">{{ $t(link.labelKey) }}</a></li>
+      <li v-for="link in kaiwu.links" :key="link.id"><RouterLink v-if="link.destination.kind==='internal'" class="k-link" :to="link.destination.to">{{ $t(link.labelKey) }}</RouterLink><span v-else class="k-label">{{ $t(link.labelKey) }}</span></li>
     </ul>
     <p>{{ $t(kaiwu.paragraphs[1]) }}</p>
   </section>
@@ -26,7 +26,7 @@ import {kaiwu} from '../content/portfolio';
 .k-head h2 { font-size: max(1.5rem, 8vmin); line-height: 1.2; text-shadow: 2px 2px 2px var(--hover-color); }
 .k-head a { margin-top: 1.5vmin; }
 .k-logo { width: 21vmin; height: 21vmin; object-fit: contain; }
-.k-link { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; color: var(--context-color); font-size: max(.875rem, 2vmin); }
+.k-link, .k-label { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; color: var(--context-color); font-size: max(.875rem, 2vmin); }
 .k-detail { justify-self: center; display: inline-flex; align-items: center; justify-content: center; width: max(10rem, 24vh); max-width: 100%; min-height: max(44px, 5vh); border: 1px solid var(--hover-color); color: var(--context-color); font-size: max(.875rem, 2vmin); text-decoration: none; margin-block: 1vh; }
 .posters { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: start; }
 .posters :deep(img) { width: 100%; }

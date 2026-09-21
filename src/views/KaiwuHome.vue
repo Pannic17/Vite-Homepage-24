@@ -2,16 +2,21 @@
 import {ref} from 'vue';
 import {useRouter} from 'vue-router';
 import LanguageSwitch from '../components/LanguageSwitch.vue';
-import {localConfigKey} from '../features/kaiwu/config';
+import {localConfigKey,normalizeConfig} from '../features/kaiwu/config';
+import {errorKey,parseConfig,failure} from '../features/kaiwu/errors';
 import {publicAsset} from '../utils/publicAsset';
 import '../features/kaiwu/kaiwu.css';
-const router=useRouter(),model=ref(''),remote=ref(''),error=ref(false);
+const router=useRouter(),model=ref(''),remote=ref(''),error=ref('');
 function open(type,url){router.push({name:'KaiwuViewer',query:{type,url}});}
 async function local(event){
-  error.value=false;
+  error.value='';
   const file=event.target.files[0];if(!file)return;
-  try{const text=await file.text();JSON.parse(text);sessionStorage.setItem(localConfigKey,text);open('3');}
-  catch{error.value=true;}
+  try{
+    const text=await file.text();normalizeConfig(parseConfig(text),new URL(import.meta.env.BASE_URL,location.origin).href);
+    try{sessionStorage.setItem(localConfigKey,text);}catch{throw failure('storage');}
+    open('3');
+  }catch(reason){error.value=errorKey(reason);}
+  finally{event.target.value='';}
 }
 </script>
 <template>
@@ -32,7 +37,7 @@ async function local(event){
       <button>{{ $t('kaiwuViewer.open') }}</button>
     </form>
     <div class="kaiwu-form"><label for="kaiwu-local">{{ $t('kaiwuViewer.local') }}</label><input id="kaiwu-local" type="file" accept=".json,application/json" @change="local"></div>
-    <p v-if="error" role="alert">{{ $t('kaiwuViewer.failed') }}</p>
+    <p v-if="error" role="alert">{{ $t(error) }}</p>
     <p>{{ $t('kaiwuViewer.hint') }}</p>
   </main>
 </template>

@@ -279,11 +279,11 @@ export const findEntry = id => portfolio.find(entry => entry.id === id);
 export const kaiwu = {
   id: 'kaiwu',
   titleKey: 'kaiwu.title',
-  href: 'https://kaiwuart.cn/',
+  destination: {kind:'internal',to:'/projects/kaiwu'},
   paragraphs: ['kaiwu.intro', 'kaiwu.role'],
   posters: [1,2,3,4].map(number => ({number,src:'image/kaiwu/KW-poster' + number + '.jpg'})),
-  // Existing URLs are intentionally preserved; distinct destinations were not supplied.
   links: ['viewer','app','websites','backend','chain'].map(id => ({
-    id, labelKey:'kaiwu.links.' + id, href:'https://kaiwuart.cn/3d-viewer',
+    id, labelKey:'kaiwu.links.' + id,
+    destination:id==='viewer'?{kind:'internal',to:'/projects/kaiwu/viewer'}:{kind:'none'},
   })),
 };

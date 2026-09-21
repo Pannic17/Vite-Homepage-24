@@ -41,7 +41,7 @@ test('original portfolio corners, title hover and keyboard focus remain visible'
       const feature = page.locator('.kaiwu');
       await feature.hover();
       await expect.poll(() => feature.evaluate(el => parseFloat(getComputedStyle(el,'::after').width))).toBeGreaterThan((await feature.boundingBox()).width - 3);
-      await expect(page.locator('.k-detail')).toHaveAttribute('href','https://kaiwuart.cn/');
+      await expect(page.locator('.k-detail')).toHaveAttribute('href','/Vite-Homepage-24/projects/kaiwu');
     }
     await page.mouse.move(0,0);
     await page.evaluate(() => {document.activeElement?.blur();window.scrollTo(0,0);});

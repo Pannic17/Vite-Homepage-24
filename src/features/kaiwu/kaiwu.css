@@ -10,3 +10,6 @@
 .kaiwu-stage { height: min(65vh, 44rem); min-height:20rem; position:relative; background:#171717 center / cover; }
 .kaiwu-stage canvas { display:block; max-width:100%; touch-action:none; }
 .kaiwu-status { padding:1rem; }
+.kaiwu-status a { margin-inline-start:1rem; }
+.kaiwu-page :is(a,button,input):focus-visible { outline:2px solid var(--hover-color); outline-offset:4px; }
+.kaiwu-page > img { background:#eee; border-radius:.3rem; padding:.5rem; }

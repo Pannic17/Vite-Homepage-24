@@ -39,13 +39,21 @@ test('catalog IDs, navigation, local assets and translations form a valid conten
   for(const poster of kaiwu.posters) assert.ok(existsSync('public/' + poster.src));
 });
 
-test('all baseline external destinations survive the content migration', () => {
+test('baseline external destinations survive except the retired Kaiwu domain', () => {
   const actual = new Set([
     ...portfolio.filter(entry => entry.destination.kind === 'external').map(entry => entry.destination.href),
-    kaiwu.href,...kaiwu.links.map(link => link.href),profile.company.href,...profile.contacts.map(contact => contact.href),
+    ...profile.contacts.map(contact => contact.href),
   ]);
   const baseline = JSON.parse(readFileSync('docs/Phase1/baseline/2026-09-18/external-links.json','utf8'));
-  for(const {url} of baseline) assert.ok(actual.has(url),'Missing destination: ' + url);
+  for(const {url} of baseline) {
+    if(new URL(url).hostname==='kaiwuart.cn')continue;
+    assert.ok(actual.has(url),'Missing destination: ' + url);
+  }
+  for(const entry of [kaiwu,profile.company,...kaiwu.links]) {
+    assert.ok(['internal','none'].includes(entry.destination.kind));
+    if(entry.destination.kind==='internal')assert.ok(productionPaths.includes(entry.destination.to));
+  }
+  assert.equal(kaiwu.links.filter(link=>link.destination.kind==='internal').length,1);
   assert.ok(actual.has('mailto:pannic1984@outlook.com'));
 });
 

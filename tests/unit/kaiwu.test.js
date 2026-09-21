@@ -1,6 +1,8 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {defaultConfig,normalizeConfig,assetUrl} from '../../src/features/kaiwu/config.js';
+import {en,cn} from '../../src/features/kaiwu/messages.js';
+import {errorKey,failure,parseConfig} from '../../src/features/kaiwu/errors.js';
 
 test('Kaiwu assets respect deployment base and remote configuration origin',()=>{
   const base='https://example.test/portfolio/';
@@ -18,4 +20,14 @@ test('Kaiwu configuration rejects invalid camera and unsupported effects explici
   assert.throws(()=>normalizeConfig({enablePostprocessing:true},base));
   const first=defaultConfig(base);first.camera.position.x=99;
   assert.equal(defaultConfig(base).camera.position.x,0);
+});
+
+test('Kaiwu recovery errors have matching English and Chinese copy',()=>{
+  assert.deepEqual(Object.keys(en).sort(),Object.keys(cn).sort());
+  assert.deepEqual(Object.keys(en.errors).sort(),Object.keys(cn.errors).sort());
+  for(const key of Object.keys(en.errors)){
+    assert.ok(en.errors[key] && cn.errors[key]);
+    assert.equal(errorKey(failure(key)),'kaiwuViewer.errors.'+key);
+  }
+  assert.throws(()=>parseConfig('{'),error=>error.code==='json');
 });

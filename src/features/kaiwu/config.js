@@ -1,10 +1,11 @@
+import {failure,parseConfig} from './errors.js';
 export const localConfigKey = 'kaiwu-viewer-config';
 
 export function assetUrl(value, base, configUrl) {
-  if (typeof value !== 'string' || !value.trim()) throw new Error('Invalid resource URL');
+  if (typeof value !== 'string' || !value.trim()) throw failure('url');
   // Remote configuration owns its relative paths, including root-relative ones.
-  const url = new URL(value, configUrl || base);
-  if (!['http:', 'https:'].includes(url.protocol)) throw new Error('Unsupported resource URL');
+  let url;try{url = new URL(value.trim(), configUrl || base);}catch{throw failure('url');}
+  if (!['http:', 'https:'].includes(url.protocol)) throw failure('url');
   return url.href;
 }
 
@@ -19,7 +20,7 @@ export function defaultConfig(base) {
 }
 
 export function normalizeConfig(input, base, configUrl) {
-  if (!input || typeof input !== 'object' || Array.isArray(input)) throw new Error('Invalid configuration');
+  if (!input || typeof input !== 'object' || Array.isArray(input)) throw failure('config');
   const defaults=defaultConfig(base);
   const config={...defaults,...input,camera:{...defaults.camera,...input.camera}};
   // Legacy local JSON uses source public-root paths. Scope those to Kaiwu.
@@ -29,14 +30,14 @@ export function normalizeConfig(input, base, configUrl) {
   config.hdrPath=resource(config.hdrPath);
   if(config.bgPath)config.bgPath=resource(config.bgPath);
   for(const key of ['rotation','hdrAngle','ambientIntensity','hdrExposure']) {
-    if(!Number.isFinite(config[key]))throw new Error('Invalid numeric configuration');
+    if(!Number.isFinite(config[key]))throw failure('config');
   }
   for(const key of ['position','lookAt']) {
-    if(!['x','y','z'].every(axis=>Number.isFinite(config.camera[key]?.[axis])))throw new Error('Invalid camera');
+    if(!['x','y','z'].every(axis=>Number.isFinite(config.camera[key]?.[axis])))throw failure('config');
   }
-  if(!Number.isFinite(config.camera.focalLength)||config.camera.focalLength<=0)throw new Error('Invalid focal length');
+  if(!Number.isFinite(config.camera.focalLength)||config.camera.focalLength<=0)throw failure('config');
   // Do not silently render an unsupported legacy effect as if it were preserved.
-  if(config.hdrAngle!==0 || config.enablePostprocessing===true)throw new Error('Advanced effects pending');
+  if(config.hdrAngle!==0 || config.enablePostprocessing===true)throw failure('effects');
   return config;
 }
 
@@ -45,14 +46,15 @@ export async function loadConfig(query,base,storage,signal) {
   if(query.type==='1')return normalizeConfig({modelPath:assetUrl(query.url,base)},base);
   if(query.type==='2') {
     const url=assetUrl(query.url,base);
-    const response=await fetch(url,{signal});
-    if(!response.ok)throw new Error('Configuration request failed');
-    return normalizeConfig(await response.json(),base,response.url || url);
+    let response,text;
+    try{response=await fetch(url,{signal});if(!response.ok)throw failure('network');text=await response.text();}
+    catch{throw failure('network');}
+    return normalizeConfig(parseConfig(text),base,response.url || url);
   }
   if(query.type==='3') {
-    const text=storage.getItem(localConfigKey);
-    if(!text)throw new Error('Select a local configuration again');
-    return normalizeConfig(JSON.parse(text),base);
+    let text;try{text=storage.getItem(localConfigKey);}catch{throw failure('storage');}
+    if(!text)throw failure('local');
+    return normalizeConfig(parseConfig(text),base);
   }
-  throw new Error('Unsupported configuration type');
+  throw failure('config');
 }

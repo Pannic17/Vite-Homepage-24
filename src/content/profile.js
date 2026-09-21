@@ -1,5 +1,5 @@
 export const profile = {
-  company: {label:'kaiwuart.cn',href:'https://kaiwuart.cn/'},
+  company: {label:'KaiwuArt',destination:{kind:'internal',to:'/projects/kaiwu'}},
   contacts: [
     {id:'email',href:'mailto:pannic1984@outlook.com',labelKey:'contact.email'},
     {id:'github',href:'https://github.com/Pannic17',labelKey:'contact.github'},

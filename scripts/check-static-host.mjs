@@ -76,6 +76,10 @@ try {
         }
         if (['/test','/unknown-page'].includes(route)) assert.equal(await page.locator('h1').textContent(), '404');
         assert.deepEqual(failures, []);
+        const retiredLinks=await page.locator('a[href]').evaluateAll(links=>links.filter(link=>{
+          const host=new URL(link.href).hostname;return host==='kaiwuart.cn'||host.endsWith('.kaiwuart.cn');
+        }).map(link=>link.href));
+        assert.deepEqual(retiredLinks,[], 'Retired Kaiwu links must not appear on any page');
         results.runs.push({ base, route, status: response.status(), finalUrl: page.url(), images: await page.locator('img').count(), failures });
         await page.close();
       }
