@@ -16,7 +16,10 @@ async function start(){
     const {createScene}=await import('../features/kaiwu/scene');
     if(current!==generation)return;
     background.value=config.bgPath||'';playing.value=!!config.autoPlay;
-    scene=createScene(container.value,config);await scene.ready;
+    scene=createScene(container.value,config,{onError:reason=>{
+      if(current!==generation)return;
+      generation++;clearTimeout(timer);abort.abort();error.value=errorKey(reason);status.value='failed';
+    }});await scene.ready;
   };
   let timeoutId;
   try{

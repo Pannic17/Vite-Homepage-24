@@ -1,0 +1,2752 @@
+{
+  "date": "2026-09-21T15:02:19.035Z",
+  "baseline": "653fee2b77c258433b0dfb929ed98327ef8c773a",
+  "viewerBaseline": "3c9db7f",
+  "runs": [
+    {
+      "version": "before",
+      "case": "home-static",
+      "run": 1,
+      "readyMs": 45.700000047683716,
+      "idleFramesIn500ms": 0,
+      "jsBytes": 75766,
+      "jsGzip": 75502,
+      "totalResourceBytes": 86787,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C2gh7EUB.js",
+          "bytes": 60367,
+          "transfer": 60667,
+          "duration": 12.599999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 8
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-Cv0Qpf9Z.js",
+          "bytes": 1470,
+          "transfer": 1770,
+          "duration": 8.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-B8sOZxiv.js",
+          "bytes": 2319,
+          "transfer": 2619,
+          "duration": 8.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-CDWGITAg.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 11.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-B7c_3Q9-.js",
+          "bytes": 10893,
+          "transfer": 11193,
+          "duration": 12.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-W86l-IM1.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 7.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BzIEzb-i.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 7.599999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-w3csPZXM.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 11.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-gk4Fif4x.css",
+          "bytes": 883,
+          "transfer": 1183,
+          "duration": 11.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+          "bytes": 8530,
+          "transfer": 8830,
+          "duration": 2.200000047683716
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "before",
+      "case": "home-static",
+      "run": 2,
+      "readyMs": 33.39999985694885,
+      "idleFramesIn500ms": 0,
+      "jsBytes": 75766,
+      "jsGzip": 75502,
+      "totalResourceBytes": 86787,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 5.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C2gh7EUB.js",
+          "bytes": 60367,
+          "transfer": 60667,
+          "duration": 9.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BzIEzb-i.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 5.1000001430511475
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-B8sOZxiv.js",
+          "bytes": 2319,
+          "transfer": 2619,
+          "duration": 5.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-Cv0Qpf9Z.js",
+          "bytes": 1470,
+          "transfer": 1770,
+          "duration": 5.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-CDWGITAg.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 8.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-B7c_3Q9-.js",
+          "bytes": 10893,
+          "transfer": 11193,
+          "duration": 8.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-W86l-IM1.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 5.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-w3csPZXM.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 7.8999998569488525
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-gk4Fif4x.css",
+          "bytes": 883,
+          "transfer": 1183,
+          "duration": 8.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+          "bytes": 8530,
+          "transfer": 8830,
+          "duration": 1.6999998092651367
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "before",
+      "case": "home-static",
+      "run": 3,
+      "readyMs": 33.90000009536743,
+      "idleFramesIn500ms": 0,
+      "jsBytes": 75766,
+      "jsGzip": 75502,
+      "totalResourceBytes": 86787,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C2gh7EUB.js",
+          "bytes": 60367,
+          "transfer": 60667,
+          "duration": 9.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 6.3999998569488525
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-B8sOZxiv.js",
+          "bytes": 2319,
+          "transfer": 2619,
+          "duration": 7.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-Cv0Qpf9Z.js",
+          "bytes": 1470,
+          "transfer": 1770,
+          "duration": 8.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BzIEzb-i.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 5.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-CDWGITAg.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 8.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-B7c_3Q9-.js",
+          "bytes": 10893,
+          "transfer": 11193,
+          "duration": 9.600000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-W86l-IM1.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 5.8999998569488525
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-w3csPZXM.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 8.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-gk4Fif4x.css",
+          "bytes": 883,
+          "transfer": 1183,
+          "duration": 9
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+          "bytes": 8530,
+          "transfer": 8830,
+          "duration": 1.7999999523162842
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "before",
+      "case": "home-animated",
+      "run": 1,
+      "readyMs": 201.90000009536743,
+      "idleFramesIn500ms": 31,
+      "jsBytes": 209477,
+      "jsGzip": 209213,
+      "totalResourceBytes": 2814456,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C2gh7EUB.js",
+          "bytes": 60367,
+          "transfer": 60667,
+          "duration": 8.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 6.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-B8sOZxiv.js",
+          "bytes": 2319,
+          "transfer": 2619,
+          "duration": 6.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-Cv0Qpf9Z.js",
+          "bytes": 1470,
+          "transfer": 1770,
+          "duration": 7.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-CDWGITAg.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 8.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-B7c_3Q9-.js",
+          "bytes": 10893,
+          "transfer": 11193,
+          "duration": 8.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BzIEzb-i.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 5.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-W86l-IM1.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 5.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-w3csPZXM.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 7.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-gk4Fif4x.css",
+          "bytes": 883,
+          "transfer": 1183,
+          "duration": 8.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+          "bytes": 8530,
+          "transfer": 8830,
+          "duration": 1.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/home-KOEfGSG4.js",
+          "bytes": 133711,
+          "transfer": 134011,
+          "duration": 8.899999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/cat.gltf",
+          "bytes": 2593958,
+          "transfer": 2594258,
+          "duration": 19
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "before",
+      "case": "home-animated",
+      "run": 2,
+      "readyMs": 201,
+      "idleFramesIn500ms": 31,
+      "jsBytes": 209477,
+      "jsGzip": 209213,
+      "totalResourceBytes": 2814456,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C2gh7EUB.js",
+          "bytes": 60367,
+          "transfer": 60667,
+          "duration": 8.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 5.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-B8sOZxiv.js",
+          "bytes": 2319,
+          "transfer": 2619,
+          "duration": 5.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-Cv0Qpf9Z.js",
+          "bytes": 1470,
+          "transfer": 1770,
+          "duration": 6
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BzIEzb-i.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 5.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-W86l-IM1.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 5.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-w3csPZXM.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 7.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-CDWGITAg.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 7.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-gk4Fif4x.css",
+          "bytes": 883,
+          "transfer": 1183,
+          "duration": 8
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-B7c_3Q9-.js",
+          "bytes": 10893,
+          "transfer": 11193,
+          "duration": 8.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+          "bytes": 8530,
+          "transfer": 8830,
+          "duration": 1.5999999046325684
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/home-KOEfGSG4.js",
+          "bytes": 133711,
+          "transfer": 134011,
+          "duration": 8.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/cat.gltf",
+          "bytes": 2593958,
+          "transfer": 2594258,
+          "duration": 20.100000143051147
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "before",
+      "case": "home-animated",
+      "run": 3,
+      "readyMs": 195.39999985694885,
+      "idleFramesIn500ms": 31,
+      "jsBytes": 209477,
+      "jsGzip": 209213,
+      "totalResourceBytes": 2814456,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C2gh7EUB.js",
+          "bytes": 60367,
+          "transfer": 60667,
+          "duration": 8.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BzIEzb-i.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 5.1000001430511475
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 5.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-B8sOZxiv.js",
+          "bytes": 2319,
+          "transfer": 2619,
+          "duration": 5.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-Cv0Qpf9Z.js",
+          "bytes": 1470,
+          "transfer": 1770,
+          "duration": 5.800000190734863
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-CDWGITAg.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 7.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-B7c_3Q9-.js",
+          "bytes": 10893,
+          "transfer": 11193,
+          "duration": 8.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-W86l-IM1.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 5.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-w3csPZXM.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 7.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-gk4Fif4x.css",
+          "bytes": 883,
+          "transfer": 1183,
+          "duration": 7.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+          "bytes": 8530,
+          "transfer": 8830,
+          "duration": 1.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/home-KOEfGSG4.js",
+          "bytes": 133711,
+          "transfer": 134011,
+          "duration": 9.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/cat.gltf",
+          "bytes": 2593958,
+          "transfer": 2594258,
+          "duration": 21.09999990463257
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "previous",
+      "case": "kaiwu-viewer",
+      "run": 1,
+      "readyMs": 1448.3999998569489,
+      "idleFramesIn500ms": 4,
+      "jsBytes": 211169,
+      "jsGzip": 210902,
+      "totalResourceBytes": 19180233,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-Bkfvefdx.js",
+          "bytes": 62471,
+          "transfer": 62771,
+          "duration": 9
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 5.6000001430511475
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-Muc8LNho.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 5.800000190734863
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-Bf6uCl-c.js",
+          "bytes": 2319,
+          "transfer": 2619,
+          "duration": 5.800000190734863
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/publicAsset-CD264jy_.js",
+          "bytes": 163,
+          "transfer": 463,
+          "duration": 7.8999998569488525
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BU8FNErH.js",
+          "bytes": 1375,
+          "transfer": 1675,
+          "duration": 8.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-XpAIVa_S.js",
+          "bytes": 10943,
+          "transfer": 11243,
+          "duration": 8.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-W86l-IM1.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 4.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-viBdgW8c.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 5.1000001430511475
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BzIEzb-i.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 7.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-gk4Fif4x.css",
+          "bytes": 883,
+          "transfer": 1183,
+          "duration": 7.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/KaiwuViewer-DXvXTuwK.js",
+          "bytes": 1331,
+          "transfer": 1631,
+          "duration": 2.3999998569488525
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-CX2LqOya.js",
+          "bytes": 936,
+          "transfer": 1236,
+          "duration": 2.3999998569488525
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-DB3PFE3r.css",
+          "bytes": 914,
+          "transfer": 1214,
+          "duration": 2
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/scene-BdX4--qp.js",
+          "bytes": 5231,
+          "transfer": 5531,
+          "duration": 1.8999998569488525
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/dispose-qkTo3u5-.js",
+          "bytes": 125683,
+          "transfer": 125983,
+          "duration": 8.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/hdr/xmas.hdr",
+          "bytes": 1454335,
+          "transfer": 1454635,
+          "duration": 36.59999990463257
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/1.gltf",
+          "bytes": 12621,
+          "transfer": 12921,
+          "duration": 1.5999999046325684
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/1.bin",
+          "bytes": 10926544,
+          "transfer": 10926844,
+          "duration": 38.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_baseColor.jpg",
+          "bytes": 508625,
+          "transfer": 508925,
+          "duration": 7.6000001430511475
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_occlusionRoughnessMetallic.jpg",
+          "bytes": 486183,
+          "transfer": 486483,
+          "duration": 7.800000190734863
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_normal.jpg",
+          "bytes": 317845,
+          "transfer": 318145,
+          "duration": 6.8999998569488525
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_baseColor.jpg",
+          "bytes": 515630,
+          "transfer": 515930,
+          "duration": 8.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_occlusionRoughnessMetallic.jpg",
+          "bytes": 464932,
+          "transfer": 465232,
+          "duration": 8.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_normal.jpg",
+          "bytes": 260926,
+          "transfer": 261226,
+          "duration": 11.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_baseColor.jpg",
+          "bytes": 601915,
+          "transfer": 602215,
+          "duration": 15
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 412776,
+          "transfer": 413076,
+          "duration": 14.199999809265137
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_normal.jpg",
+          "bytes": 434529,
+          "transfer": 434829,
+          "duration": 14.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_baseColor.jpg",
+          "bytes": 443052,
+          "transfer": 443352,
+          "duration": 14.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 533899,
+          "transfer": 534199,
+          "duration": 17.399999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_normal.jpg",
+          "bytes": 424831,
+          "transfer": 425131,
+          "duration": 20
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_baseColor.jpg",
+          "bytes": 444424,
+          "transfer": 444724,
+          "duration": 20.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 447340,
+          "transfer": 447640,
+          "duration": 21.40000009536743
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_normal.jpg",
+          "bytes": 275252,
+          "transfer": 275552,
+          "duration": 20.800000190734863
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "previous",
+      "case": "kaiwu-viewer",
+      "run": 2,
+      "readyMs": 1534.3999998569489,
+      "idleFramesIn500ms": 4,
+      "jsBytes": 211169,
+      "jsGzip": 210902,
+      "totalResourceBytes": 19180233,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-Bkfvefdx.js",
+          "bytes": 62471,
+          "transfer": 62771,
+          "duration": 13.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 10.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-Bf6uCl-c.js",
+          "bytes": 2319,
+          "transfer": 2619,
+          "duration": 10.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-Muc8LNho.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 10.599999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/publicAsset-CD264jy_.js",
+          "bytes": 163,
+          "transfer": 463,
+          "duration": 15
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BU8FNErH.js",
+          "bytes": 1375,
+          "transfer": 1675,
+          "duration": 15.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-XpAIVa_S.js",
+          "bytes": 10943,
+          "transfer": 11243,
+          "duration": 15.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-W86l-IM1.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 9.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-viBdgW8c.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 9.600000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BzIEzb-i.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 14
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-gk4Fif4x.css",
+          "bytes": 883,
+          "transfer": 1183,
+          "duration": 14.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/KaiwuViewer-DXvXTuwK.js",
+          "bytes": 1331,
+          "transfer": 1631,
+          "duration": 4
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-CX2LqOya.js",
+          "bytes": 936,
+          "transfer": 1236,
+          "duration": 5.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-DB3PFE3r.css",
+          "bytes": 914,
+          "transfer": 1214,
+          "duration": 3.0999999046325684
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/scene-BdX4--qp.js",
+          "bytes": 5231,
+          "transfer": 5531,
+          "duration": 3.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/dispose-qkTo3u5-.js",
+          "bytes": 125683,
+          "transfer": 125983,
+          "duration": 15.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/hdr/xmas.hdr",
+          "bytes": 1454335,
+          "transfer": 1454635,
+          "duration": 37.69999980926514
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/1.gltf",
+          "bytes": 12621,
+          "transfer": 12921,
+          "duration": 1.5999999046325684
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/1.bin",
+          "bytes": 10926544,
+          "transfer": 10926844,
+          "duration": 41.40000009536743
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_baseColor.jpg",
+          "bytes": 508625,
+          "transfer": 508925,
+          "duration": 7.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_occlusionRoughnessMetallic.jpg",
+          "bytes": 486183,
+          "transfer": 486483,
+          "duration": 7.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_occlusionRoughnessMetallic.jpg",
+          "bytes": 464932,
+          "transfer": 465232,
+          "duration": 8.800000190734863
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_normal.jpg",
+          "bytes": 317845,
+          "transfer": 318145,
+          "duration": 6.300000190734863
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_baseColor.jpg",
+          "bytes": 515630,
+          "transfer": 515930,
+          "duration": 8.100000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_normal.jpg",
+          "bytes": 260926,
+          "transfer": 261226,
+          "duration": 11.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_baseColor.jpg",
+          "bytes": 601915,
+          "transfer": 602215,
+          "duration": 16.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 412776,
+          "transfer": 413076,
+          "duration": 15.600000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_normal.jpg",
+          "bytes": 434529,
+          "transfer": 434829,
+          "duration": 16.600000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_baseColor.jpg",
+          "bytes": 443052,
+          "transfer": 443352,
+          "duration": 16.600000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 533899,
+          "transfer": 534199,
+          "duration": 22.40000009536743
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_normal.jpg",
+          "bytes": 424831,
+          "transfer": 425131,
+          "duration": 23.600000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_baseColor.jpg",
+          "bytes": 444424,
+          "transfer": 444724,
+          "duration": 23.59999990463257
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 447340,
+          "transfer": 447640,
+          "duration": 23.699999809265137
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_normal.jpg",
+          "bytes": 275252,
+          "transfer": 275552,
+          "duration": 23.200000047683716
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "previous",
+      "case": "kaiwu-viewer",
+      "run": 3,
+      "readyMs": 1615.2999999523163,
+      "idleFramesIn500ms": 4,
+      "jsBytes": 211169,
+      "jsGzip": 210902,
+      "totalResourceBytes": 19180233,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-Bkfvefdx.js",
+          "bytes": 62471,
+          "transfer": 62771,
+          "duration": 9.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 6.6000001430511475
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-Bf6uCl-c.js",
+          "bytes": 2319,
+          "transfer": 2619,
+          "duration": 6.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-Muc8LNho.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 6.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/publicAsset-CD264jy_.js",
+          "bytes": 163,
+          "transfer": 463,
+          "duration": 9.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BU8FNErH.js",
+          "bytes": 1375,
+          "transfer": 1675,
+          "duration": 9.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-XpAIVa_S.js",
+          "bytes": 10943,
+          "transfer": 11243,
+          "duration": 9.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-W86l-IM1.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 5.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-viBdgW8c.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 5.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BzIEzb-i.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 8.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-gk4Fif4x.css",
+          "bytes": 883,
+          "transfer": 1183,
+          "duration": 9.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/KaiwuViewer-DXvXTuwK.js",
+          "bytes": 1331,
+          "transfer": 1631,
+          "duration": 2.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-CX2LqOya.js",
+          "bytes": 936,
+          "transfer": 1236,
+          "duration": 2.6000001430511475
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-DB3PFE3r.css",
+          "bytes": 914,
+          "transfer": 1214,
+          "duration": 2.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/scene-BdX4--qp.js",
+          "bytes": 5231,
+          "transfer": 5531,
+          "duration": 2.4000000953674316
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/dispose-qkTo3u5-.js",
+          "bytes": 125683,
+          "transfer": 125983,
+          "duration": 9.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/hdr/xmas.hdr",
+          "bytes": 1454335,
+          "transfer": 1454635,
+          "duration": 38.39999985694885
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/1.gltf",
+          "bytes": 12621,
+          "transfer": 12921,
+          "duration": 1.6000001430511475
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/1.bin",
+          "bytes": 10926544,
+          "transfer": 10926844,
+          "duration": 37.89999985694885
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_normal.jpg",
+          "bytes": 317845,
+          "transfer": 318145,
+          "duration": 6.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_occlusionRoughnessMetallic.jpg",
+          "bytes": 486183,
+          "transfer": 486483,
+          "duration": 8
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_baseColor.jpg",
+          "bytes": 515630,
+          "transfer": 515930,
+          "duration": 8.100000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_baseColor.jpg",
+          "bytes": 508625,
+          "transfer": 508925,
+          "duration": 7.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_occlusionRoughnessMetallic.jpg",
+          "bytes": 464932,
+          "transfer": 465232,
+          "duration": 8.899999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_normal.jpg",
+          "bytes": 260926,
+          "transfer": 261226,
+          "duration": 10.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_baseColor.jpg",
+          "bytes": 601915,
+          "transfer": 602215,
+          "duration": 14.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 412776,
+          "transfer": 413076,
+          "duration": 14
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_normal.jpg",
+          "bytes": 434529,
+          "transfer": 434829,
+          "duration": 14.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_baseColor.jpg",
+          "bytes": 443052,
+          "transfer": 443352,
+          "duration": 15.300000190734863
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 533899,
+          "transfer": 534199,
+          "duration": 16.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_normal.jpg",
+          "bytes": 424831,
+          "transfer": 425131,
+          "duration": 20.600000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_normal.jpg",
+          "bytes": 275252,
+          "transfer": 275552,
+          "duration": 20.399999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_baseColor.jpg",
+          "bytes": 444424,
+          "transfer": 444724,
+          "duration": 20.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 447340,
+          "transfer": 447640,
+          "duration": 20.799999952316284
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "after",
+      "case": "home-static",
+      "run": 1,
+      "readyMs": 36.30000019073486,
+      "idleFramesIn500ms": 0,
+      "jsBytes": 78085,
+      "jsGzip": 77818,
+      "totalResourceBytes": 89105,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C4daK73y.js",
+          "bytes": 62565,
+          "transfer": 62865,
+          "duration": 9.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 6.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-MV6k8GiZ.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 6.599999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-MkRspYgv.js",
+          "bytes": 2322,
+          "transfer": 2622,
+          "duration": 6.599999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/publicAsset-CD264jy_.js",
+          "bytes": 163,
+          "transfer": 463,
+          "duration": 9
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-C1-i6G8M.js",
+          "bytes": 1375,
+          "transfer": 1675,
+          "duration": 9.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-_I90E89A.js",
+          "bytes": 10943,
+          "transfer": 11243,
+          "duration": 9.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 5.6000001430511475
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-CJPInjGh.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 5.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 8.399999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+          "bytes": 882,
+          "transfer": 1182,
+          "duration": 8.899999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+          "bytes": 8530,
+          "transfer": 8830,
+          "duration": 2
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "after",
+      "case": "home-static",
+      "run": 2,
+      "readyMs": 50.89999985694885,
+      "idleFramesIn500ms": 0,
+      "jsBytes": 78085,
+      "jsGzip": 77818,
+      "totalResourceBytes": 89105,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C4daK73y.js",
+          "bytes": 62565,
+          "transfer": 62865,
+          "duration": 17.199999809265137
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 10.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-MV6k8GiZ.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 11.100000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-MkRspYgv.js",
+          "bytes": 2322,
+          "transfer": 2622,
+          "duration": 11.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/publicAsset-CD264jy_.js",
+          "bytes": 163,
+          "transfer": 463,
+          "duration": 16.399999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-_I90E89A.js",
+          "bytes": 10943,
+          "transfer": 11243,
+          "duration": 17
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-C1-i6G8M.js",
+          "bytes": 1375,
+          "transfer": 1675,
+          "duration": 16.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 10
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-CJPInjGh.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 10.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 15.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+          "bytes": 882,
+          "transfer": 1182,
+          "duration": 15.899999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+          "bytes": 8530,
+          "transfer": 8830,
+          "duration": 2.700000047683716
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "after",
+      "case": "home-static",
+      "run": 3,
+      "readyMs": 49.89999985694885,
+      "idleFramesIn500ms": 0,
+      "jsBytes": 78085,
+      "jsGzip": 77818,
+      "totalResourceBytes": 89105,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C4daK73y.js",
+          "bytes": 62565,
+          "transfer": 62865,
+          "duration": 13.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 9.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-MV6k8GiZ.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 10.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-MkRspYgv.js",
+          "bytes": 2322,
+          "transfer": 2622,
+          "duration": 10.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-_I90E89A.js",
+          "bytes": 10943,
+          "transfer": 11243,
+          "duration": 14
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-C1-i6G8M.js",
+          "bytes": 1375,
+          "transfer": 1675,
+          "duration": 14
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 9
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-CJPInjGh.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 9.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 12.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/publicAsset-CD264jy_.js",
+          "bytes": 163,
+          "transfer": 463,
+          "duration": 13.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+          "bytes": 882,
+          "transfer": 1182,
+          "duration": 13.100000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+          "bytes": 8530,
+          "transfer": 8830,
+          "duration": 2.5999999046325684
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "after",
+      "case": "home-animated",
+      "run": 1,
+      "readyMs": 653.5999999046326,
+      "idleFramesIn500ms": 12,
+      "jsBytes": 213424,
+      "jsGzip": 213157,
+      "totalResourceBytes": 2818298,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C4daK73y.js",
+          "bytes": 62565,
+          "transfer": 62865,
+          "duration": 14.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 9.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-MkRspYgv.js",
+          "bytes": 2322,
+          "transfer": 2622,
+          "duration": 10.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-MV6k8GiZ.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 10
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-C1-i6G8M.js",
+          "bytes": 1375,
+          "transfer": 1675,
+          "duration": 14.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-_I90E89A.js",
+          "bytes": 10943,
+          "transfer": 11243,
+          "duration": 14.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 9.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-CJPInjGh.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 9.399999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 13
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+          "bytes": 882,
+          "transfer": 1182,
+          "duration": 13.599999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/publicAsset-CD264jy_.js",
+          "bytes": 163,
+          "transfer": 463,
+          "duration": 13.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+          "bytes": 8530,
+          "transfer": 8830,
+          "duration": 2.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/home-BoAFHzIS.js",
+          "bytes": 9647,
+          "transfer": 9947,
+          "duration": 71.19999980926514
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/dispose-C96Po2Py.js",
+          "bytes": 125692,
+          "transfer": 125992,
+          "duration": 80.79999995231628
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/cat.gltf",
+          "bytes": 2593854,
+          "transfer": 2594154,
+          "duration": 23.5
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "after",
+      "case": "home-animated",
+      "run": 2,
+      "readyMs": 247.70000004768372,
+      "idleFramesIn500ms": 17,
+      "jsBytes": 213424,
+      "jsGzip": 213157,
+      "totalResourceBytes": 2818298,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 9.699999809265137
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C4daK73y.js",
+          "bytes": 62565,
+          "transfer": 62865,
+          "duration": 15.199999809265137
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-MV6k8GiZ.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 9.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-MkRspYgv.js",
+          "bytes": 2322,
+          "transfer": 2622,
+          "duration": 10.100000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/publicAsset-CD264jy_.js",
+          "bytes": 163,
+          "transfer": 463,
+          "duration": 14.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-C1-i6G8M.js",
+          "bytes": 1375,
+          "transfer": 1675,
+          "duration": 14.800000190734863
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-_I90E89A.js",
+          "bytes": 10943,
+          "transfer": 11243,
+          "duration": 14.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 9
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-CJPInjGh.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 9.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 13.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+          "bytes": 882,
+          "transfer": 1182,
+          "duration": 14.399999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+          "bytes": 8530,
+          "transfer": 8830,
+          "duration": 2.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/home-BoAFHzIS.js",
+          "bytes": 9647,
+          "transfer": 9947,
+          "duration": 3.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/dispose-C96Po2Py.js",
+          "bytes": 125692,
+          "transfer": 125992,
+          "duration": 13.600000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/cat.gltf",
+          "bytes": 2593854,
+          "transfer": 2594154,
+          "duration": 24
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "after",
+      "case": "home-animated",
+      "run": 3,
+      "readyMs": 245.09999990463257,
+      "idleFramesIn500ms": 17,
+      "jsBytes": 213424,
+      "jsGzip": 213157,
+      "totalResourceBytes": 2818298,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C4daK73y.js",
+          "bytes": 62565,
+          "transfer": 62865,
+          "duration": 14.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 10.599999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-MV6k8GiZ.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 10.599999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-MkRspYgv.js",
+          "bytes": 2322,
+          "transfer": 2622,
+          "duration": 10.899999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-_I90E89A.js",
+          "bytes": 10943,
+          "transfer": 11243,
+          "duration": 15
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 9.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-CJPInjGh.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 10
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 13.599999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/publicAsset-CD264jy_.js",
+          "bytes": 163,
+          "transfer": 463,
+          "duration": 14.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-C1-i6G8M.js",
+          "bytes": 1375,
+          "transfer": 1675,
+          "duration": 15
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+          "bytes": 882,
+          "transfer": 1182,
+          "duration": 14.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+          "bytes": 8530,
+          "transfer": 8830,
+          "duration": 2.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/home-BoAFHzIS.js",
+          "bytes": 9647,
+          "transfer": 9947,
+          "duration": 3.1000001430511475
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/dispose-C96Po2Py.js",
+          "bytes": 125692,
+          "transfer": 125992,
+          "duration": 13.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/cat.gltf",
+          "bytes": 2593854,
+          "transfer": 2594154,
+          "duration": 25.399999856948853
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "after",
+      "case": "kaiwu-config",
+      "run": 1,
+      "readyMs": 39.299999952316284,
+      "idleFramesIn500ms": 0,
+      "jsBytes": 80096,
+      "jsGzip": 79829,
+      "totalResourceBytes": 133242,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 9.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C4daK73y.js",
+          "bytes": 62565,
+          "transfer": 62865,
+          "duration": 12.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-MkRspYgv.js",
+          "bytes": 2322,
+          "transfer": 2622,
+          "duration": 9.699999809265137
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 8.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-MV6k8GiZ.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 9.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/publicAsset-CD264jy_.js",
+          "bytes": 163,
+          "transfer": 463,
+          "duration": 13.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-_I90E89A.js",
+          "bytes": 10943,
+          "transfer": 11243,
+          "duration": 13.599999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-C1-i6G8M.js",
+          "bytes": 1375,
+          "transfer": 1675,
+          "duration": 13.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-CJPInjGh.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 8.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 12.300000190734863
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+          "bytes": 882,
+          "transfer": 1182,
+          "duration": 12.800000190734863
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/KaiwuHome-pxlF5ITz.js",
+          "bytes": 1070,
+          "transfer": 1370,
+          "duration": 3.3000001907348633
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-DB3PFE3r.css",
+          "bytes": 914,
+          "transfer": 1214,
+          "duration": 2.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-B5n-rGHT.js",
+          "bytes": 941,
+          "transfer": 1241,
+          "duration": 3.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/image/logo.png",
+          "bytes": 49742,
+          "transfer": 50042,
+          "duration": 2
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "after",
+      "case": "kaiwu-config",
+      "run": 2,
+      "readyMs": 39.700000047683716,
+      "idleFramesIn500ms": 0,
+      "jsBytes": 80096,
+      "jsGzip": 79829,
+      "totalResourceBytes": 133242,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C4daK73y.js",
+          "bytes": 62565,
+          "transfer": 62865,
+          "duration": 12.899999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 9.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-MV6k8GiZ.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 9.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-MkRspYgv.js",
+          "bytes": 2322,
+          "transfer": 2622,
+          "duration": 9.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-_I90E89A.js",
+          "bytes": 10943,
+          "transfer": 11243,
+          "duration": 13.599999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-C1-i6G8M.js",
+          "bytes": 1375,
+          "transfer": 1675,
+          "duration": 13.699999809265137
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 8.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-CJPInjGh.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 8.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 12.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+          "bytes": 882,
+          "transfer": 1182,
+          "duration": 13.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/publicAsset-CD264jy_.js",
+          "bytes": 163,
+          "transfer": 463,
+          "duration": 13.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-DB3PFE3r.css",
+          "bytes": 914,
+          "transfer": 1214,
+          "duration": 2.8000001907348633
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/KaiwuHome-pxlF5ITz.js",
+          "bytes": 1070,
+          "transfer": 1370,
+          "duration": 3.1000001430511475
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-B5n-rGHT.js",
+          "bytes": 941,
+          "transfer": 1241,
+          "duration": 3.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/image/logo.png",
+          "bytes": 49742,
+          "transfer": 50042,
+          "duration": 2.0999999046325684
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "after",
+      "case": "kaiwu-config",
+      "run": 3,
+      "readyMs": 41.90000009536743,
+      "idleFramesIn500ms": 0,
+      "jsBytes": 80096,
+      "jsGzip": 79829,
+      "totalResourceBytes": 133242,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 9.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C4daK73y.js",
+          "bytes": 62565,
+          "transfer": 62865,
+          "duration": 12.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-MV6k8GiZ.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 9.699999809265137
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-MkRspYgv.js",
+          "bytes": 2322,
+          "transfer": 2622,
+          "duration": 9.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-C1-i6G8M.js",
+          "bytes": 1375,
+          "transfer": 1675,
+          "duration": 13.699999809265137
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-_I90E89A.js",
+          "bytes": 10943,
+          "transfer": 11243,
+          "duration": 13.699999809265137
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 8.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-CJPInjGh.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 9.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 12.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+          "bytes": 882,
+          "transfer": 1182,
+          "duration": 13.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/publicAsset-CD264jy_.js",
+          "bytes": 163,
+          "transfer": 463,
+          "duration": 13.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/KaiwuHome-pxlF5ITz.js",
+          "bytes": 1070,
+          "transfer": 1370,
+          "duration": 3.9000000953674316
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-B5n-rGHT.js",
+          "bytes": 941,
+          "transfer": 1241,
+          "duration": 3.9000000953674316
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-DB3PFE3r.css",
+          "bytes": 914,
+          "transfer": 1214,
+          "duration": 3.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/image/logo.png",
+          "bytes": 49742,
+          "transfer": 50042,
+          "duration": 2.0999999046325684
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "after",
+      "case": "kaiwu-viewer",
+      "run": 1,
+      "readyMs": 1955.1000001430511,
+      "idleFramesIn500ms": 0,
+      "jsBytes": 211724,
+      "jsGzip": 211457,
+      "totalResourceBytes": 19180787,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 9.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-MV6k8GiZ.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 9.399999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-MkRspYgv.js",
+          "bytes": 2322,
+          "transfer": 2622,
+          "duration": 9.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C4daK73y.js",
+          "bytes": 62565,
+          "transfer": 62865,
+          "duration": 12.199999809265137
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-_I90E89A.js",
+          "bytes": 10943,
+          "transfer": 11243,
+          "duration": 13.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 8.100000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-CJPInjGh.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 8.600000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 11.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+          "bytes": 882,
+          "transfer": 1182,
+          "duration": 12.600000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/publicAsset-CD264jy_.js",
+          "bytes": 163,
+          "transfer": 463,
+          "duration": 12.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-C1-i6G8M.js",
+          "bytes": 1375,
+          "transfer": 1675,
+          "duration": 13.100000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/KaiwuViewer-CljbqEyw.js",
+          "bytes": 1373,
+          "transfer": 1673,
+          "duration": 2.8999998569488525
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-B5n-rGHT.js",
+          "bytes": 941,
+          "transfer": 1241,
+          "duration": 3
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-DB3PFE3r.css",
+          "bytes": 914,
+          "transfer": 1214,
+          "duration": 2.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/scene-qCD7-XHP.js",
+          "bytes": 5633,
+          "transfer": 5933,
+          "duration": 2.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/dispose-C96Po2Py.js",
+          "bytes": 125692,
+          "transfer": 125992,
+          "duration": 12.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/hdr/xmas.hdr",
+          "bytes": 1454335,
+          "transfer": 1454635,
+          "duration": 54
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/1.gltf",
+          "bytes": 12621,
+          "transfer": 12921,
+          "duration": 2.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/1.bin",
+          "bytes": 10926544,
+          "transfer": 10926844,
+          "duration": 50.90000009536743
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_baseColor.jpg",
+          "bytes": 508625,
+          "transfer": 508925,
+          "duration": 10.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_normal.jpg",
+          "bytes": 317845,
+          "transfer": 318145,
+          "duration": 9.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_occlusionRoughnessMetallic.jpg",
+          "bytes": 464932,
+          "transfer": 465232,
+          "duration": 12.100000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_baseColor.jpg",
+          "bytes": 515630,
+          "transfer": 515930,
+          "duration": 12.100000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_occlusionRoughnessMetallic.jpg",
+          "bytes": 486183,
+          "transfer": 486483,
+          "duration": 11.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_normal.jpg",
+          "bytes": 260926,
+          "transfer": 261226,
+          "duration": 17.899999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 412776,
+          "transfer": 413076,
+          "duration": 23.59999990463257
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_normal.jpg",
+          "bytes": 434529,
+          "transfer": 434829,
+          "duration": 23.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_baseColor.jpg",
+          "bytes": 601915,
+          "transfer": 602215,
+          "duration": 25
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_baseColor.jpg",
+          "bytes": 443052,
+          "transfer": 443352,
+          "duration": 23.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 533899,
+          "transfer": 534199,
+          "duration": 36.40000009536743
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_normal.jpg",
+          "bytes": 424831,
+          "transfer": 425131,
+          "duration": 35.59999990463257
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_baseColor.jpg",
+          "bytes": 444424,
+          "transfer": 444724,
+          "duration": 35.59999990463257
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 447340,
+          "transfer": 447640,
+          "duration": 36.40000009536743
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_normal.jpg",
+          "bytes": 275252,
+          "transfer": 275552,
+          "duration": 35.200000047683716
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "after",
+      "case": "kaiwu-viewer",
+      "run": 2,
+      "readyMs": 1916.2000000476837,
+      "idleFramesIn500ms": 0,
+      "jsBytes": 211724,
+      "jsGzip": 211457,
+      "totalResourceBytes": 19180787,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 9.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C4daK73y.js",
+          "bytes": 62565,
+          "transfer": 62865,
+          "duration": 13.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-MV6k8GiZ.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 9.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-MkRspYgv.js",
+          "bytes": 2322,
+          "transfer": 2622,
+          "duration": 9.699999809265137
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 8.599999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-CJPInjGh.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 8.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 12.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+          "bytes": 882,
+          "transfer": 1182,
+          "duration": 13.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/publicAsset-CD264jy_.js",
+          "bytes": 163,
+          "transfer": 463,
+          "duration": 13.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-C1-i6G8M.js",
+          "bytes": 1375,
+          "transfer": 1675,
+          "duration": 14
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-_I90E89A.js",
+          "bytes": 10943,
+          "transfer": 11243,
+          "duration": 14.099999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-B5n-rGHT.js",
+          "bytes": 941,
+          "transfer": 1241,
+          "duration": 3.4000000953674316
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/KaiwuViewer-CljbqEyw.js",
+          "bytes": 1373,
+          "transfer": 1673,
+          "duration": 3.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-DB3PFE3r.css",
+          "bytes": 914,
+          "transfer": 1214,
+          "duration": 2.8999998569488525
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/scene-qCD7-XHP.js",
+          "bytes": 5633,
+          "transfer": 5933,
+          "duration": 3.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/dispose-C96Po2Py.js",
+          "bytes": 125692,
+          "transfer": 125992,
+          "duration": 13
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/hdr/xmas.hdr",
+          "bytes": 1454335,
+          "transfer": 1454635,
+          "duration": 53.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/1.gltf",
+          "bytes": 12621,
+          "transfer": 12921,
+          "duration": 2.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/1.bin",
+          "bytes": 10926544,
+          "transfer": 10926844,
+          "duration": 48.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_occlusionRoughnessMetallic.jpg",
+          "bytes": 486183,
+          "transfer": 486483,
+          "duration": 12.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_baseColor.jpg",
+          "bytes": 508625,
+          "transfer": 508925,
+          "duration": 10.599999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_normal.jpg",
+          "bytes": 317845,
+          "transfer": 318145,
+          "duration": 9.900000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_baseColor.jpg",
+          "bytes": 515630,
+          "transfer": 515930,
+          "duration": 12.600000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_occlusionRoughnessMetallic.jpg",
+          "bytes": 464932,
+          "transfer": 465232,
+          "duration": 12.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_normal.jpg",
+          "bytes": 260926,
+          "transfer": 261226,
+          "duration": 17.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_baseColor.jpg",
+          "bytes": 601915,
+          "transfer": 602215,
+          "duration": 23.199999809265137
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 412776,
+          "transfer": 413076,
+          "duration": 23.399999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_normal.jpg",
+          "bytes": 434529,
+          "transfer": 434829,
+          "duration": 24.399999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_baseColor.jpg",
+          "bytes": 443052,
+          "transfer": 443352,
+          "duration": 24.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_baseColor.jpg",
+          "bytes": 444424,
+          "transfer": 444724,
+          "duration": 33.90000009536743
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 533899,
+          "transfer": 534199,
+          "duration": 33.40000009536743
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 447340,
+          "transfer": 447640,
+          "duration": 34.40000009536743
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_normal.jpg",
+          "bytes": 424831,
+          "transfer": 425131,
+          "duration": 33.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_normal.jpg",
+          "bytes": 275252,
+          "transfer": 275552,
+          "duration": 33.5
+        }
+      ],
+      "errors": []
+    },
+    {
+      "version": "after",
+      "case": "kaiwu-viewer",
+      "run": 3,
+      "readyMs": 1936.8999998569489,
+      "idleFramesIn500ms": 0,
+      "jsBytes": 211724,
+      "jsGzip": 211457,
+      "totalResourceBytes": 19180787,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-B7HaWui4.css",
+          "bytes": 891,
+          "transfer": 1191,
+          "duration": 8.899999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/index-C4daK73y.js",
+          "bytes": 62565,
+          "transfer": 62865,
+          "duration": 13.599999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-MV6k8GiZ.js",
+          "bytes": 717,
+          "transfer": 1017,
+          "duration": 9.600000143051147
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-MkRspYgv.js",
+          "bytes": 2322,
+          "transfer": 2622,
+          "duration": 9.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+          "bytes": 292,
+          "transfer": 592,
+          "duration": 8.399999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-CJPInjGh.css",
+          "bytes": 345,
+          "transfer": 645,
+          "duration": 9.199999809265137
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+          "bytes": 80,
+          "transfer": 380,
+          "duration": 13.199999809265137
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+          "bytes": 882,
+          "transfer": 1182,
+          "duration": 14.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/publicAsset-CD264jy_.js",
+          "bytes": 163,
+          "transfer": 463,
+          "duration": 14.399999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ResponsiveImage-C1-i6G8M.js",
+          "bytes": 1375,
+          "transfer": 1675,
+          "duration": 14.799999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/ContactLinks-_I90E89A.js",
+          "bytes": 10943,
+          "transfer": 11243,
+          "duration": 14.899999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-B5n-rGHT.js",
+          "bytes": 941,
+          "transfer": 1241,
+          "duration": 3.0999999046325684
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/KaiwuViewer-CljbqEyw.js",
+          "bytes": 1373,
+          "transfer": 1673,
+          "duration": 3
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/kaiwu-DB3PFE3r.css",
+          "bytes": 914,
+          "transfer": 1214,
+          "duration": 2.6000001430511475
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/scene-qCD7-XHP.js",
+          "bytes": 5633,
+          "transfer": 5933,
+          "duration": 2.9000000953674316
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/assets/dispose-C96Po2Py.js",
+          "bytes": 125692,
+          "transfer": 125992,
+          "duration": 12.599999904632568
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/hdr/xmas.hdr",
+          "bytes": 1454335,
+          "transfer": 1454635,
+          "duration": 54.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/1.gltf",
+          "bytes": 12621,
+          "transfer": 12921,
+          "duration": 2.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/1.bin",
+          "bytes": 10926544,
+          "transfer": 10926844,
+          "duration": 51.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_baseColor.jpg",
+          "bytes": 508625,
+          "transfer": 508925,
+          "duration": 11.399999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_normal.jpg",
+          "bytes": 317845,
+          "transfer": 318145,
+          "duration": 10.299999952316284
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/hua_occlusionRoughnessMetallic.jpg",
+          "bytes": 486183,
+          "transfer": 486483,
+          "duration": 12.200000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_baseColor.jpg",
+          "bytes": 515630,
+          "transfer": 515930,
+          "duration": 12.400000095367432
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_occlusionRoughnessMetallic.jpg",
+          "bytes": 464932,
+          "transfer": 465232,
+          "duration": 13
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/jiao.005_normal.jpg",
+          "bytes": 260926,
+          "transfer": 261226,
+          "duration": 18.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_baseColor.jpg",
+          "bytes": 601915,
+          "transfer": 602215,
+          "duration": 25.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 412776,
+          "transfer": 413076,
+          "duration": 24.5
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/shu.003_normal.jpg",
+          "bytes": 434529,
+          "transfer": 434829,
+          "duration": 24.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_baseColor.jpg",
+          "bytes": 443052,
+          "transfer": 443352,
+          "duration": 24.899999856948853
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 533899,
+          "transfer": 534199,
+          "duration": 27.59999990463257
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_occlusionRoughnessMetallic.jpg",
+          "bytes": 447340,
+          "transfer": 447640,
+          "duration": 39.700000047683716
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_baseColor.jpg",
+          "bytes": 444424,
+          "transfer": 444724,
+          "duration": 39.39999985694885
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/zui.003_normal.jpg",
+          "bytes": 275252,
+          "transfer": 275552,
+          "duration": 38.89999985694885
+        },
+        {
+          "url": "http://127.0.0.1:4187/Vite-Homepage-24/kaiwu/model/owl_gltf/weiba.003_normal.jpg",
+          "bytes": 424831,
+          "transfer": 425131,
+          "duration": 39.200000047683716
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "note": "Local headless Chromium, fresh context per run, no network throttling. Timing is diagnostic, not real-device performance. gzip is calculated, not guaranteed host compression.",
+  "browser": "153.0.8010.12",
+  "summary": [
+    {
+      "key": "before/home-static",
+      "readyMs": 33.90000009536743,
+      "idleFramesIn500ms": 0,
+      "jsBytes": 75766,
+      "jsGzip": 75502,
+      "totalResourceBytes": 86787
+    },
+    {
+      "key": "before/home-animated",
+      "readyMs": 201,
+      "idleFramesIn500ms": 31,
+      "jsBytes": 209477,
+      "jsGzip": 209213,
+      "totalResourceBytes": 2814456
+    },
+    {
+      "key": "previous/kaiwu-viewer",
+      "readyMs": 1534.3999998569489,
+      "idleFramesIn500ms": 4,
+      "jsBytes": 211169,
+      "jsGzip": 210902,
+      "totalResourceBytes": 19180233
+    },
+    {
+      "key": "after/home-static",
+      "readyMs": 49.89999985694885,
+      "idleFramesIn500ms": 0,
+      "jsBytes": 78085,
+      "jsGzip": 77818,
+      "totalResourceBytes": 89105
+    },
+    {
+      "key": "after/home-animated",
+      "readyMs": 247.70000004768372,
+      "idleFramesIn500ms": 17,
+      "jsBytes": 213424,
+      "jsGzip": 213157,
+      "totalResourceBytes": 2818298
+    },
+    {
+      "key": "after/kaiwu-config",
+      "readyMs": 39.700000047683716,
+      "idleFramesIn500ms": 0,
+      "jsBytes": 80096,
+      "jsGzip": 79829,
+      "totalResourceBytes": 133242
+    },
+    {
+      "key": "after/kaiwu-viewer",
+      "readyMs": 1936.8999998569489,
+      "idleFramesIn500ms": 0,
+      "jsBytes": 211724,
+      "jsGzip": 211457,
+      "totalResourceBytes": 19180787
+    }
+  ]
+}
