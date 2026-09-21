@@ -49,3 +49,20 @@ test('WebGL either starts or provides an operable fallback', async ({page},testI
   await page.getByRole('link',{name:'PROJECTS',exact:true}).click();
   await expect(page.getByRole('heading',{name:'PROJECTS',exact:true})).toBeVisible();
 });
+
+test('Kaiwu internal flow, language and graphics fallback work across engines',async({page},testInfo)=>{
+  await page.goto('projects');await page.locator('.k-detail').click();
+  await expect(page).toHaveURL(/\/projects\/kaiwu$/);
+  await page.getByRole('button',{name:'中文',exact:true}).click();
+  const example=page.getByRole('link',{name:'查看示例',exact:true});
+  await example.focus();await page.keyboard.press('Enter');
+  await expect(page.locator('.kaiwu-stage')).toHaveAttribute('data-state',/^(ready|failed)$/,{timeout:35000});
+  const state=await page.locator('.kaiwu-stage').getAttribute('data-state');
+  testInfo.annotations.push({type:'kaiwu-webgl',description:state});
+  if(state==='failed')await expect(page.getByRole('alert')).toContainText('3D 渲染不可用');
+  else await expect(page.locator('canvas')).toHaveCount(1);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
+  await page.getByRole('link',{name:'返回项目',exact:true}).click();
+  await expect(page.locator('canvas')).toHaveCount(0);
+  await expect(page).toHaveURL(/\/projects$/);
+});

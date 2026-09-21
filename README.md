@@ -2,7 +2,7 @@
 
 基于 Vue 3、Vite 和 Three.js 构建的个人网站，用于展示潘江昀的个人介绍、创意编程作品和开发项目。网站支持中英文切换、响应式布局和交互式 3D 首页，可构建为静态文件部署，无需后端服务或数据库。
 
-线上地址：[pannic17.github.io/Vite-Homepage-24](https://pannic17.github.io/Vite-Homepage-24/)
+线上地址：[pannic17.github.io/Vite-Homepage](https://pannic17.github.io/Vite-Homepage/)。本地默认前缀仍为 `/Vite-Homepage-24/`；Pages 工作流从仓库配置读取实际发布前缀。
 
 ## 项目功能
 
@@ -112,6 +112,18 @@ VITE_BASE_PATH=/ npm run preview
 - 发布后检查首页、作品列表、详情页直接访问与刷新，以及图片、模型和语言切换是否正常。
 
 ## 内容维护
+
+### Kaiwu 页面（Phase 2）
+
+Projects 的 Kaiwu“查看详情”和个人介绍中的 KaiwuArt 进入 `/projects/kaiwu`；“3D Viewer”进入 `/projects/kaiwu/viewer`。路径自动适配站点部署前缀，支持直接打开和刷新。
+
+配置页提供默认示例、模型 URL、远程 JSON 和本地 JSON。默认配置位于 `public/kaiwu/default.json`；模型、纹理和 HDR 位于 `public/kaiwu/`。远程资源需要允许浏览器跨域访问；本地 JSON 保存在会话存储中，刷新可恢复，关闭会话后需重新选择。
+
+查看器与首页仅共用 **Three.js 0.147.0**，渲染实例独立。暂停时按需绘制、后台停止调度、离开时释放资源。非零 HDR 旋转和旧版高级后处理尚未支持，配置启用这些功能时会显示提示。
+
+维护入口：`src/features/kaiwu/`（配置、渲染、双语文案）、`src/views/KaiwuHome.vue`、`src/views/KaiwuViewer.vue`。默认示例资源约 19 MB，应按需加载；修改模型或压缩资源后需重新核对材质和移动端表现。
+
+参见 [Phase 2 Roadmap](docs/Phase2/Roadmap.md) 与 [Phase 2 发布验收](docs/Phase2/deployment.md)。
 
 ```text
 src/

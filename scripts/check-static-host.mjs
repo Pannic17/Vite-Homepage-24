@@ -13,7 +13,7 @@ const browser = await chromium.launch({ channel: process.env.PLAYWRIGHT_CHANNEL 
 results.browser = browser.version();
 const mime = { '.html': 'text/html', '.js': 'application/javascript', '.css': 'text/css', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.ico': 'image/x-icon', '.gltf': 'model/gltf+json', '.svg': 'image/svg+xml' };
 try {
-  for (const base of ['/', '/Vite-Homepage-24/']) {
+  for (const base of ['/', '/Vite-Homepage-24/', '/Vite-Homepage/']) {
     const root = resolve(base === '/' ? '.static-root.local' : '.static-project.local');
     await build({ base, build: { outDir: root } });
     const server = createServer(async (request, response) => {
@@ -89,5 +89,5 @@ try {
     }
   }
   await writeFile(join(output, 'static-host.json'), JSON.stringify(results, null, 2));
-  console.log('Static host checks passed for root and project paths: ' + results.runs.length + ' routes');
+  console.log('Static host checks passed for root, legacy and current Pages paths: ' + results.runs.length + ' routes');
 } finally { await browser.close(); }
