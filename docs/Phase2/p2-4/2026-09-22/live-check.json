@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-09-21T20:56:38.376Z",
+  "base": "https://pannic17.github.io/Vite-Homepage/",
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "failures": [],
+      "retiredLinks": []
+    },
+    {
+      "route": "about/",
+      "status": 200,
+      "failures": [],
+      "retiredLinks": []
+    },
+    {
+      "route": "works/",
+      "status": 200,
+      "failures": [],
+      "retiredLinks": []
+    },
+    {
+      "route": "projects/",
+      "status": 200,
+      "failures": [],
+      "retiredLinks": []
+    },
+    {
+      "route": "works/gcs/",
+      "status": 200,
+      "failures": [],
+      "retiredLinks": []
+    },
+    {
+      "route": "projects/kaiwu/",
+      "status": 200,
+      "failures": [],
+      "retiredLinks": []
+    },
+    {
+      "route": "projects/kaiwu/viewer/",
+      "status": 200,
+      "failures": [],
+      "retiredLinks": []
+    }
+  ],
+  "defaultConfigStatus": 200
+}
