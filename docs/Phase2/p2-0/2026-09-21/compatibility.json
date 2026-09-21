@@ -1,0 +1,196 @@
+{
+  "node": "v24.19.0",
+  "threeVersion": "0.147.0",
+  "threeEntries": [
+    {
+      "name": "node_modules/three",
+      "version": "0.147.0"
+    }
+  ],
+  "moduleChecks": [
+    {
+      "specifier": "three/examples/jsm/controls/OrbitControls",
+      "normalized": "three/examples/jsm/controls/OrbitControls.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/examples/jsm/libs/stats.module",
+      "normalized": "three/examples/jsm/libs/stats.module.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/examples/jsm/postprocessing/ShaderPass",
+      "normalized": "three/examples/jsm/postprocessing/ShaderPass.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/examples/jsm/shaders/FXAAShader.js",
+      "normalized": "three/examples/jsm/shaders/FXAAShader.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/examples/jsm/postprocessing/SMAAPass",
+      "normalized": "three/examples/jsm/postprocessing/SMAAPass.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/src/constants.js",
+      "normalized": "three/src/constants.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/src/core/BufferAttribute.js",
+      "normalized": "three/src/core/BufferAttribute.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/src/core/BufferGeometry.js",
+      "normalized": "three/src/core/BufferGeometry.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/src/objects/Mesh.js",
+      "normalized": "three/src/objects/Mesh.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/src/cameras/OrthographicCamera.js",
+      "normalized": "three/src/cameras/OrthographicCamera.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/src/cameras/PerspectiveCamera.js",
+      "normalized": "three/src/cameras/PerspectiveCamera.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/src/materials/RawShaderMaterial.js",
+      "normalized": "three/src/materials/RawShaderMaterial.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/src/math/Vector2.js",
+      "normalized": "three/src/math/Vector2.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/src/math/Vector3.js",
+      "normalized": "three/src/math/Vector3.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/src/math/Color.js",
+      "normalized": "three/src/math/Color.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/src/renderers/WebGLRenderTarget.js",
+      "normalized": "three/src/renderers/WebGLRenderTarget.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/src/materials/MeshBasicMaterial.js",
+      "normalized": "three/src/materials/MeshBasicMaterial.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/src/geometries/BoxGeometry.js",
+      "normalized": "three/src/geometries/BoxGeometry.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/examples/jsm/postprocessing/Pass.js",
+      "normalized": "three/examples/jsm/postprocessing/Pass.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/examples/jsm/math/SimplexNoise.js",
+      "normalized": "three/examples/jsm/math/SimplexNoise.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/examples/jsm/shaders/SSAOShader.js",
+      "normalized": "three/examples/jsm/shaders/SSAOShader.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/examples/jsm/shaders/CopyShader.js",
+      "normalized": "three/examples/jsm/shaders/CopyShader.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/examples/jsm/shaders/LuminosityHighPassShader.js",
+      "normalized": "three/examples/jsm/shaders/LuminosityHighPassShader.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/examples/jsm/loaders/RGBELoader",
+      "normalized": "three/examples/jsm/loaders/RGBELoader.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/examples/jsm/loaders/GLTFLoader",
+      "normalized": "three/examples/jsm/loaders/GLTFLoader.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/examples/jsm/utils/RoughnessMipmapper.js",
+      "normalized": "three/examples/jsm/utils/RoughnessMipmapper.js",
+      "exists": false
+    },
+    {
+      "specifier": "three/examples/jsm/libs/lil-gui.module.min",
+      "normalized": "three/examples/jsm/libs/lil-gui.module.min.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/examples/jsm/postprocessing/EffectComposer",
+      "normalized": "three/examples/jsm/postprocessing/EffectComposer.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/examples/jsm/postprocessing/RenderPass",
+      "normalized": "three/examples/jsm/postprocessing/RenderPass.js",
+      "exists": true
+    },
+    {
+      "specifier": "three/examples/jsm/shaders/GammaCorrectionShader",
+      "normalized": "three/examples/jsm/shaders/GammaCorrectionShader.js",
+      "exists": true
+    }
+  ],
+  "typescriptChecks": [
+    {
+      "file": "src/env.d.ts",
+      "transpile": "passed",
+      "typecheck": "not performed"
+    },
+    {
+      "file": "src/main.ts",
+      "transpile": "passed",
+      "typecheck": "not performed"
+    },
+    {
+      "file": "src/router/index.ts",
+      "transpile": "passed",
+      "typecheck": "not performed"
+    },
+    {
+      "file": "src/viewer/DebugHelper.ts",
+      "transpile": "passed",
+      "typecheck": "not performed"
+    },
+    {
+      "file": "src/viewer/GUIHelper.ts",
+      "transpile": "passed",
+      "typecheck": "not performed"
+    },
+    {
+      "file": "src/viewer/touchHelper.ts",
+      "transpile": "passed",
+      "typecheck": "not performed"
+    }
+  ],
+  "pdfPresent": false,
+  "sourceDependenciesInstalled": false
+}

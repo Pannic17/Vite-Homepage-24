@@ -1,0 +1,532 @@
+{
+  "source": "E:\\Projects\\kaiwu-view",
+  "homepageCommit": "64a8983e2ef5ba59ba69f7d387e3af5020f46bf7",
+  "sourceCommit": "7abf71ac0b2e9ee5432bc6dcb58013545bca3d43",
+  "sourcePackage": {
+    "name": "kaiwu_3d",
+    "version": "0.0.0",
+    "scripts": {
+      "dev": "vite",
+      "build": "vue-tsc --noEmit && vite build",
+      "serve": "vite preview"
+    },
+    "dependencies": {
+      "@capacitor/android": "^3.4.3",
+      "@capacitor/ios": "^3.4.3",
+      "axios": "0.25.0",
+      "blob": "^0.1.0",
+      "file-saver": "^2.0.5",
+      "FileSaver": "0.10.0",
+      "postprocessing": "^6.23.2",
+      "sass": "^1.43.4",
+      "sass-loader": "^12.3.0",
+      "three": "0.136.0",
+      "vue": "^3.2.16",
+      "vue-i18n": "9.2.0-beta.18",
+      "vue-router": "4.0.12",
+      "webpack": "^5.64.1"
+    },
+    "devDependencies": {
+      "@types/node": "^17.0.5",
+      "@types/three": "^0.134.0",
+      "@vitejs/plugin-vue": "^1.9.3",
+      "typescript": "^4.4.3",
+      "vite": "^2.6.4",
+      "vue-tsc": "^0.3.0"
+    }
+  },
+  "assets": [
+    {
+      "path": "public/2.json",
+      "bytes": 2097
+    },
+    {
+      "path": "public/apple-app-site-association",
+      "bytes": 353
+    },
+    {
+      "path": "public/favicon.ico",
+      "bytes": 4286
+    },
+    {
+      "path": "public/hdr/club.hdr",
+      "bytes": 1728719
+    },
+    {
+      "path": "public/hdr/forest.hdr",
+      "bytes": 1857839
+    },
+    {
+      "path": "public/hdr/hall.hdr",
+      "bytes": 1684563
+    },
+    {
+      "path": "public/hdr/small.hdr",
+      "bytes": 262018
+    },
+    {
+      "path": "public/hdr/studio.hdr",
+      "bytes": 1615316
+    },
+    {
+      "path": "public/hdr/vt_cube.hdr",
+      "bytes": 923659
+    },
+    {
+      "path": "public/hdr/xmas.hdr",
+      "bytes": 1666986
+    },
+    {
+      "path": "public/image/background.jpg",
+      "bytes": 480597
+    },
+    {
+      "path": "public/image/background.png",
+      "bytes": 7896865
+    },
+    {
+      "path": "public/image/circle.png",
+      "bytes": 126755
+    },
+    {
+      "path": "public/image/galaxy.jpg",
+      "bytes": 137839
+    },
+    {
+      "path": "public/image/high.png",
+      "bytes": 2802
+    },
+    {
+      "path": "public/image/logo.png",
+      "bytes": 49742
+    },
+    {
+      "path": "public/image/low.png",
+      "bytes": 2436
+    },
+    {
+      "path": "public/image/pause.png",
+      "bytes": 489
+    },
+    {
+      "path": "public/image/play.png",
+      "bytes": 1447
+    },
+    {
+      "path": "public/image/reset.png",
+      "bytes": 2977
+    },
+    {
+      "path": "public/image/shooting_star.jpg",
+      "bytes": 294272
+    },
+    {
+      "path": "public/image/smoke_1.png",
+      "bytes": 10632
+    },
+    {
+      "path": "public/image/smoke_2.png",
+      "bytes": 113305
+    },
+    {
+      "path": "public/image/smoke_3.png",
+      "bytes": 248872
+    },
+    {
+      "path": "public/logo.ico",
+      "bytes": 12185
+    },
+    {
+      "path": "public/model/owl_gltf/1.bin",
+      "bytes": 10926544
+    },
+    {
+      "path": "public/model/owl_gltf/1.gltf",
+      "bytes": 12621
+    },
+    {
+      "path": "public/model/owl_gltf/hua_baseColor.jpg",
+      "bytes": 508625
+    },
+    {
+      "path": "public/model/owl_gltf/hua_normal.jpg",
+      "bytes": 317845
+    },
+    {
+      "path": "public/model/owl_gltf/hua_occlusionRoughnessMetallic.jpg",
+      "bytes": 486183
+    },
+    {
+      "path": "public/model/owl_gltf/jiao.005_baseColor.jpg",
+      "bytes": 515630
+    },
+    {
+      "path": "public/model/owl_gltf/jiao.005_normal.jpg",
+      "bytes": 260926
+    },
+    {
+      "path": "public/model/owl_gltf/jiao.005_occlusionRoughnessMetallic.jpg",
+      "bytes": 464932
+    },
+    {
+      "path": "public/model/owl_gltf/shu.003_baseColor.jpg",
+      "bytes": 601915
+    },
+    {
+      "path": "public/model/owl_gltf/shu.003_normal.jpg",
+      "bytes": 434529
+    },
+    {
+      "path": "public/model/owl_gltf/shu.003_occlusionRoughnessMetallic.jpg",
+      "bytes": 412776
+    },
+    {
+      "path": "public/model/owl_gltf/weiba.003_baseColor.jpg",
+      "bytes": 443052
+    },
+    {
+      "path": "public/model/owl_gltf/weiba.003_normal.jpg",
+      "bytes": 424831
+    },
+    {
+      "path": "public/model/owl_gltf/weiba.003_occlusionRoughnessMetallic.jpg",
+      "bytes": 533899
+    },
+    {
+      "path": "public/model/owl_gltf/zui.003_baseColor.jpg",
+      "bytes": 444424
+    },
+    {
+      "path": "public/model/owl_gltf/zui.003_normal.jpg",
+      "bytes": 275252
+    },
+    {
+      "path": "public/model/owl_gltf/zui.003_occlusionRoughnessMetallic.jpg",
+      "bytes": 447340
+    }
+  ],
+  "totalBytes": 36638375,
+  "imports": [
+    {
+      "file": "src/App.vue",
+      "imports": [
+        "./components/HelloWorld.vue"
+      ]
+    },
+    {
+      "file": "src/components/HelloWorld.vue",
+      "imports": [
+        "vue"
+      ]
+    },
+    {
+      "file": "src/env.d.ts",
+      "imports": [
+        "vue"
+      ]
+    },
+    {
+      "file": "src/main.ts",
+      "imports": [
+        "vue",
+        "./App.vue",
+        "./router"
+      ]
+    },
+    {
+      "file": "src/pages/Home.vue",
+      "imports": [
+        "vue-router",
+        "vue"
+      ]
+    },
+    {
+      "file": "src/pages/Jump.vue",
+      "imports": []
+    },
+    {
+      "file": "src/router/index.ts",
+      "imports": [
+        "vue-router",
+        "../pages/Home.vue",
+        "../pages/Jump.vue",
+        "../viewer/viewer.vue"
+      ]
+    },
+    {
+      "file": "src/viewer/CameraHelper.js",
+      "imports": [
+        "three/",
+        "three",
+        "three/examples/jsm/controls/OrbitControls"
+      ]
+    },
+    {
+      "file": "src/viewer/DebugHelper.ts",
+      "imports": [
+        "three/"
+      ]
+    },
+    {
+      "file": "src/viewer/GUIHelper.ts",
+      "imports": [
+        "three/"
+      ]
+    },
+    {
+      "file": "src/viewer/InitHelper.js",
+      "imports": [
+        "three",
+        "three/examples/jsm/libs/stats.module"
+      ]
+    },
+    {
+      "file": "src/viewer/LightHelper.js",
+      "imports": [
+        "three/"
+      ]
+    },
+    {
+      "file": "src/viewer/PostHelper.js",
+      "imports": [
+        "three/",
+        "three",
+        "three/examples/jsm/postprocessing/ShaderPass",
+        "three/examples/jsm/shaders/FXAAShader.js",
+        "./Postproceesing/SSRPass",
+        "./Postproceesing/SSAOPass",
+        "./Postproceesing/UnrealBloomPass",
+        "./Postproceesing/SSAAPass",
+        "three/examples/jsm/postprocessing/SMAAPass",
+        "./Postproceesing/SharpenShader"
+      ]
+    },
+    {
+      "file": "src/viewer/Postproceesing/ChromaticShader.js",
+      "imports": []
+    },
+    {
+      "file": "src/viewer/Postproceesing/PMREMGenerator.js",
+      "imports": [
+        "three/src/constants.js",
+        "three/src/core/BufferAttribute.js",
+        "three/src/core/BufferGeometry.js",
+        "three/src/objects/Mesh.js",
+        "three/src/cameras/OrthographicCamera.js",
+        "three/src/cameras/PerspectiveCamera.js",
+        "three/src/materials/RawShaderMaterial.js",
+        "three/src/math/Vector2.js",
+        "three/src/math/Vector3.js",
+        "three/src/math/Color.js",
+        "three/src/renderers/WebGLRenderTarget.js",
+        "three/src/materials/MeshBasicMaterial.js",
+        "three/src/geometries/BoxGeometry.js",
+        "three/src/constants.js"
+      ]
+    },
+    {
+      "file": "src/viewer/Postproceesing/SharpenShader.js",
+      "imports": []
+    },
+    {
+      "file": "src/viewer/Postproceesing/SSAAPass.js",
+      "imports": [
+        "three",
+        "three/examples/jsm/postprocessing/Pass.js",
+        "./SSAAShader.js"
+      ]
+    },
+    {
+      "file": "src/viewer/Postproceesing/SSAAShader.js",
+      "imports": []
+    },
+    {
+      "file": "src/viewer/Postproceesing/SSAOPass.js",
+      "imports": [
+        "three",
+        "three/examples/jsm/postprocessing/Pass.js",
+        "three/examples/jsm/math/SimplexNoise.js",
+        "./SSAOShader.js",
+        "three/examples/jsm/shaders/SSAOShader.js",
+        "three/examples/jsm/shaders/SSAOShader.js",
+        "three/examples/jsm/shaders/CopyShader.js"
+      ]
+    },
+    {
+      "file": "src/viewer/Postproceesing/SSAOShader.js",
+      "imports": [
+        "three"
+      ]
+    },
+    {
+      "file": "src/viewer/Postproceesing/SSRPass.js",
+      "imports": [
+        "three",
+        "three/examples/jsm/postprocessing/Pass.js",
+        "./SSRShader.js",
+        "./SSRShader.js",
+        "./SSRShader.js",
+        "three/examples/jsm/shaders/CopyShader.js"
+      ]
+    },
+    {
+      "file": "src/viewer/Postproceesing/SSRShader.js",
+      "imports": [
+        "three"
+      ]
+    },
+    {
+      "file": "src/viewer/Postproceesing/UnrealBloomPass.js",
+      "imports": [
+        "three",
+        "three/examples/jsm/postprocessing/Pass.js",
+        "three/examples/jsm/shaders/CopyShader.js",
+        "three/examples/jsm/shaders/LuminosityHighPassShader.js"
+      ]
+    },
+    {
+      "file": "src/viewer/ThreeHelper.js",
+      "imports": [
+        "three",
+        "./InitHelper",
+        "./GUIHelper",
+        "./CameraHelper",
+        "./LightHelper",
+        "./Postproceesing/PMREMGenerator",
+        "three/examples/jsm/loaders/RGBELoader",
+        "three/examples/jsm/loaders/GLTFLoader",
+        "three/examples/jsm/utils/RoughnessMipmapper.js",
+        "three/examples/jsm/libs/lil-gui.module.min",
+        "file-saver",
+        "three/examples/jsm/postprocessing/EffectComposer",
+        "three/examples/jsm/postprocessing/RenderPass",
+        "./PostHelper",
+        "three/examples/jsm/postprocessing/ShaderPass",
+        "three/examples/jsm/shaders/GammaCorrectionShader",
+        "three"
+      ]
+    },
+    {
+      "file": "src/viewer/touchHelper.ts",
+      "imports": []
+    },
+    {
+      "file": "src/viewer/viewer.vue",
+      "imports": [
+        "three/",
+        "vue",
+        "file-saver",
+        "axios",
+        "./ThreeHelper",
+        "vue-router",
+        "./ThreeHelper"
+      ]
+    }
+  ],
+  "gltfReferences": [
+    "1.bin",
+    "hua_baseColor.jpg",
+    "hua_occlusionRoughnessMetallic.jpg",
+    "hua_normal.jpg",
+    "jiao.005_baseColor.jpg",
+    "jiao.005_occlusionRoughnessMetallic.jpg",
+    "jiao.005_normal.jpg",
+    "shu.003_baseColor.jpg",
+    "shu.003_occlusionRoughnessMetallic.jpg",
+    "shu.003_normal.jpg",
+    "weiba.003_baseColor.jpg",
+    "weiba.003_occlusionRoughnessMetallic.jpg",
+    "weiba.003_normal.jpg",
+    "zui.003_baseColor.jpg",
+    "zui.003_occlusionRoughnessMetallic.jpg",
+    "zui.003_normal.jpg"
+  ],
+  "sampleConfig": {
+    "modelPath": "/model/owl_gltf/1.gltf",
+    "hdrPath": "/hdr/xmas.hdr",
+    "bgPath": null,
+    "rotation": 38.52,
+    "hdrAngle": 0,
+    "autoPlay": false,
+    "ambientIntensity": 0.2,
+    "hdrExposure": 1,
+    "enablePostprocessing": true,
+    "toneMapping": "ACESFilmic",
+    "maps": {
+      "arm": null,
+      "env": null
+    },
+    "postprocessing": {
+      "enable": {
+        "BLOOM": false,
+        "SSR": true,
+        "SSAO": true,
+        "FXAA": false,
+        "SMAA": false,
+        "SSAA": true,
+        "SHARP": true
+      },
+      "SSAA": {
+        "sampleLevel": 3,
+        "unbiased": true
+      },
+      "BLOOM": {
+        "strength": 1.5,
+        "radius": 4,
+        "threshold": 1
+      },
+      "SSAO": {
+        "output": 0,
+        "kernelRadius": 0.75,
+        "minDistance": 0.00001,
+        "maxDistance": 0.001,
+        "contrast": 1
+      },
+      "SSR": {
+        "output": 0,
+        "thickness": 0.1,
+        "maxDistance": 3,
+        "opacity": 1,
+        "surfDist": 0.001
+      },
+      "SHARP": {
+        "intensity": 0.05
+      }
+    },
+    "camera": {
+      "position": {
+        "x": -3.961387339620879,
+        "y": 2.771810900656674,
+        "z": -13.831451188307106
+      },
+      "rotation": {
+        "x": -2.8420386636826076,
+        "y": -0.26711089640663915,
+        "z": -3.0602534481665025
+      },
+      "lookAt": {
+        "x": 0,
+        "y": -1.5,
+        "z": 0
+      },
+      "focalLength": 44.99999999999999
+    },
+    "lights": [
+      {
+        "type": 2,
+        "intensity": 1,
+        "color": 65535,
+        "rotate": {
+          "r": 20,
+          "a": 90,
+          "h": 15
+        },
+        "shadow": {
+          "radius": 4,
+          "blurSamples": 8
+        },
+        "enable": true
+      }
+    ]
+  }
+}

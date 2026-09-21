@@ -13,6 +13,8 @@ const routes = [
   {path:pagePaths.about,name:'About',component:About,meta:{titleKey:'menu.about'}},
   {path:pagePaths.works,name:'Works',component:Works,meta:{titleKey:'menu.works'}},
   {path:pagePaths.projects,name:'Projects',component:Projects,meta:{titleKey:'menu.projects'}},
+  {path:pagePaths.kaiwu,name:'KaiwuHome',component:()=>import('./views/KaiwuHome.vue'),meta:{titleKey:'kaiwuViewer.title'}},
+  {path:pagePaths.kaiwuViewer,name:'KaiwuViewer',component:()=>import('./views/KaiwuViewer.vue'),meta:{titleKey:'kaiwuViewer.title'}},
   ...detailEntries.map(entry => ({
     path:entry.detail.path, name:entry.id, component:ProjectDetail, props:{id:entry.id},
     meta:{parent:entry.detail.parent,titleKey:entry.titleKey},

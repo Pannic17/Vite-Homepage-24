@@ -1,0 +1,151 @@
+{
+  "capturedAt": "2026-09-21T04:27:41.290Z",
+  "mode": "Local static-file server, directory redirects, real 404 status; no SPA success rewrite. Not a live GitHub deployment.",
+  "runs": [
+    {
+      "base": "/",
+      "route": "/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:52642/?probe=one#marker",
+      "images": 3,
+      "failures": []
+    },
+    {
+      "base": "/",
+      "route": "/about",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:52642/about/?probe=one#marker",
+      "images": 3,
+      "failures": []
+    },
+    {
+      "base": "/",
+      "route": "/works",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:52642/works/?probe=one#marker",
+      "images": 8,
+      "failures": []
+    },
+    {
+      "base": "/",
+      "route": "/projects",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:52642/projects/?probe=one#marker",
+      "images": 11,
+      "failures": []
+    },
+    {
+      "base": "/",
+      "route": "/projects/kaiwu",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:52642/projects/kaiwu/?probe=one#marker",
+      "images": 1,
+      "failures": []
+    },
+    {
+      "base": "/",
+      "route": "/projects/kaiwu/viewer",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:52642/projects/kaiwu/viewer/?probe=one#marker",
+      "images": 0,
+      "failures": []
+    },
+    {
+      "base": "/",
+      "route": "/works/gcs",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:52642/works/gcs/?probe=one#marker",
+      "images": 1,
+      "failures": []
+    },
+    {
+      "base": "/",
+      "route": "/test",
+      "status": 404,
+      "finalUrl": "http://127.0.0.1:52642/test?probe=one#marker",
+      "images": 0,
+      "failures": []
+    },
+    {
+      "base": "/",
+      "route": "/unknown-page",
+      "status": 404,
+      "finalUrl": "http://127.0.0.1:52642/unknown-page?probe=one#marker",
+      "images": 0,
+      "failures": []
+    },
+    {
+      "base": "/Vite-Homepage-24/",
+      "route": "/",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:52701/Vite-Homepage-24/?probe=one#marker",
+      "images": 3,
+      "failures": []
+    },
+    {
+      "base": "/Vite-Homepage-24/",
+      "route": "/about",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:52701/Vite-Homepage-24/about/?probe=one#marker",
+      "images": 3,
+      "failures": []
+    },
+    {
+      "base": "/Vite-Homepage-24/",
+      "route": "/works",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:52701/Vite-Homepage-24/works/?probe=one#marker",
+      "images": 8,
+      "failures": []
+    },
+    {
+      "base": "/Vite-Homepage-24/",
+      "route": "/projects",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:52701/Vite-Homepage-24/projects/?probe=one#marker",
+      "images": 11,
+      "failures": []
+    },
+    {
+      "base": "/Vite-Homepage-24/",
+      "route": "/projects/kaiwu",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:52701/Vite-Homepage-24/projects/kaiwu/?probe=one#marker",
+      "images": 1,
+      "failures": []
+    },
+    {
+      "base": "/Vite-Homepage-24/",
+      "route": "/projects/kaiwu/viewer",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:52701/Vite-Homepage-24/projects/kaiwu/viewer/?probe=one#marker",
+      "images": 0,
+      "failures": []
+    },
+    {
+      "base": "/Vite-Homepage-24/",
+      "route": "/works/gcs",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:52701/Vite-Homepage-24/works/gcs/?probe=one#marker",
+      "images": 1,
+      "failures": []
+    },
+    {
+      "base": "/Vite-Homepage-24/",
+      "route": "/test",
+      "status": 404,
+      "finalUrl": "http://127.0.0.1:52701/Vite-Homepage-24/test?probe=one#marker",
+      "images": 0,
+      "failures": []
+    },
+    {
+      "base": "/Vite-Homepage-24/",
+      "route": "/unknown-page",
+      "status": 404,
+      "finalUrl": "http://127.0.0.1:52701/Vite-Homepage-24/unknown-page?probe=one#marker",
+      "images": 0,
+      "failures": []
+    }
+  ],
+  "browser": "153.0.8010.12"
+}

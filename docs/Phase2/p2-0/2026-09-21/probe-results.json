@@ -1,0 +1,190 @@
+[
+  {
+    "base": "/",
+    "result": {
+      "revision": "147",
+      "meshes": 5,
+      "coloredPixels": 122470,
+      "triangles": 367500,
+      "glError": 0,
+      "officialImports": true
+    },
+    "errors": [],
+    "requests": [
+      {
+        "url": "http://127.0.0.1:4186/",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/assets/index-deR8cyBl.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/hdr/xmas.hdr",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/1.gltf",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/1.bin",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/hua_baseColor.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/jiao.005_occlusionRoughnessMetallic.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/hua_occlusionRoughnessMetallic.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/hua_normal.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/jiao.005_baseColor.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/jiao.005_normal.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/shu.003_baseColor.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/shu.003_occlusionRoughnessMetallic.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/shu.003_normal.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/weiba.003_baseColor.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/weiba.003_occlusionRoughnessMetallic.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/weiba.003_normal.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/zui.003_baseColor.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/zui.003_occlusionRoughnessMetallic.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/model/owl_gltf/zui.003_normal.jpg",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "base": "/Vite-Homepage-24/",
+    "result": {
+      "revision": "147",
+      "meshes": 5,
+      "coloredPixels": 122470,
+      "triangles": 367500,
+      "glError": 0,
+      "officialImports": true
+    },
+    "errors": [],
+    "requests": [
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/assets/index-BnPvwy5J.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/hdr/xmas.hdr",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/1.gltf",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/1.bin",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/hua_baseColor.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/hua_normal.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/hua_occlusionRoughnessMetallic.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/jiao.005_baseColor.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/jiao.005_occlusionRoughnessMetallic.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/jiao.005_normal.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/shu.003_baseColor.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/shu.003_occlusionRoughnessMetallic.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/shu.003_normal.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/weiba.003_baseColor.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/weiba.003_occlusionRoughnessMetallic.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/weiba.003_normal.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/zui.003_baseColor.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/zui.003_occlusionRoughnessMetallic.jpg",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4186/Vite-Homepage-24/model/owl_gltf/zui.003_normal.jpg",
+        "status": 200
+      }
+    ]
+  }
+]

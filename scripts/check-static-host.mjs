@@ -65,6 +65,15 @@ try {
           assert.equal(await page.locator('.d-header h1').textContent(), 'Chronoscape');
           if (base !== '/') await page.screenshot({ path: join(output, 'gcs-desktop.png'), fullPage: true });
         }
+        if (route === '/projects/kaiwu' || route === '/projects/kaiwu/viewer') {
+          const view=route.endsWith('/viewer')?'KaiwuViewer':'KaiwuHome';
+          assert(preloadUrls.some(url=>url.includes('/assets/'+view+'-')), 'Kaiwu entry must preload its own page');
+          assert(!preloadUrls.some(url=>url.includes('/assets/scene-')), 'Viewer renderer must remain dynamic');
+          if(route.endsWith('/viewer'))await page.waitForFunction(()=>document.querySelector('.kaiwu-stage')?.dataset.state==='ready');
+          const reload=await page.reload({waitUntil:'networkidle'});
+          assert.equal(reload.status(),200);
+          if(route.endsWith('/viewer'))await page.waitForFunction(()=>document.querySelector('.kaiwu-stage')?.dataset.state==='ready');
+        }
         if (['/test','/unknown-page'].includes(route)) assert.equal(await page.locator('h1').textContent(), '404');
         assert.deepEqual(failures, []);
         results.runs.push({ base, route, status: response.status(), finalUrl: page.url(), images: await page.locator('img').count(), failures });

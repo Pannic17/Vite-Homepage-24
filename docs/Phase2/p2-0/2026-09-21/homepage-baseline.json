@@ -1,0 +1,806 @@
+[
+  {
+    "name": "home-1440",
+    "errors": [],
+    "requests": [
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-tO6iFRXZ.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-B7HaWui4.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-D6W0uj8G.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-Cw4qCMLn.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BaXFwpN9.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-Bux6f8Eu.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-Cy8cHqb8.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/home-64qdquze.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/cat.gltf",
+        "status": 200
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-Cy8cHqb8.js",
+        "duration": 8.899999976158142,
+        "transferSize": 60665
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-B7HaWui4.css",
+        "duration": 5.600000023841858,
+        "transferSize": 1191
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-D6W0uj8G.js",
+        "duration": 5.899999976158142,
+        "transferSize": 2616
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BaXFwpN9.js",
+        "duration": 8.399999976158142,
+        "transferSize": 1769
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-Cw4qCMLn.js",
+        "duration": 7.799999952316284,
+        "transferSize": 1017
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+        "duration": 5.099999904632568,
+        "transferSize": 592
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+        "duration": 5,
+        "transferSize": 380
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-tO6iFRXZ.css",
+        "duration": 5.199999928474426,
+        "transferSize": 645
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+        "duration": 8.199999928474426,
+        "transferSize": 1182
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-Bux6f8Eu.js",
+        "duration": 8.399999976158142,
+        "transferSize": 11193
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+        "duration": 1.899999976158142,
+        "transferSize": 8830
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/home-64qdquze.js",
+        "duration": 9.600000023841858,
+        "transferSize": 134012
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/cat.gltf",
+        "duration": 5.300000071525574,
+        "transferSize": 2594154
+      }
+    ]
+  },
+  {
+    "name": "projects-1440",
+    "errors": [],
+    "requests": [
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/projects",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-tO6iFRXZ.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-B7HaWui4.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-D6W0uj8G.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BaXFwpN9.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-Cw4qCMLn.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-Bux6f8Eu.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-Cy8cHqb8.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/TagList-CFxuE7aq.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/SiteLayout-DmBM75aQ.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ProjectCard-DuO8T6cC.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Projects-CGmMJGT4.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Projects-D2kNy5hz.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/TagList-CkwkKGED.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/SiteLayout-eYfg6KYJ.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ProjectCard-PyhncBtv.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/logo_kaiwu-BQnj14wb.png",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster2-640.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster1-640.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster3-640.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster4-640.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/ZAR-Cover-640.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/BLA-Cover-640.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/Split--640.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/CourseWork-640.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/Construction-640.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/HPG-Cover-640.webp",
+        "status": 200
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-Cy8cHqb8.js",
+        "duration": 9.5,
+        "transferSize": 60665
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-B7HaWui4.css",
+        "duration": 5.899999976158142,
+        "transferSize": 1191
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-D6W0uj8G.js",
+        "duration": 6.100000023841858,
+        "transferSize": 2616
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+        "duration": 5.100000023841858,
+        "transferSize": 380
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BaXFwpN9.js",
+        "duration": 8.899999976158142,
+        "transferSize": 1769
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-Cw4qCMLn.js",
+        "duration": 9.100000023841858,
+        "transferSize": 1017
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-Bux6f8Eu.js",
+        "duration": 9.399999976158142,
+        "transferSize": 11193
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-tO6iFRXZ.css",
+        "duration": 5.399999976158142,
+        "transferSize": 645
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+        "duration": 5.099999904632568,
+        "transferSize": 592
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+        "duration": 8.700000047683716,
+        "transferSize": 1182
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Projects-D2kNy5hz.js",
+        "duration": 4,
+        "transferSize": 1180
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/SiteLayout-eYfg6KYJ.js",
+        "duration": 4.100000023841858,
+        "transferSize": 915
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/SiteLayout-DmBM75aQ.css",
+        "duration": 3.5,
+        "transferSize": 1027
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/TagList-CFxuE7aq.css",
+        "duration": 3.100000023841858,
+        "transferSize": 824
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/TagList-CkwkKGED.js",
+        "duration": 3.799999952316284,
+        "transferSize": 784
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ProjectCard-PyhncBtv.js",
+        "duration": 3.899999976158142,
+        "transferSize": 1171
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ProjectCard-DuO8T6cC.css",
+        "duration": 4.699999928474426,
+        "transferSize": 977
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Projects-CGmMJGT4.css",
+        "duration": 4.799999952316284,
+        "transferSize": 892
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/logo_kaiwu-BQnj14wb.png",
+        "duration": 3.600000023841858,
+        "transferSize": 19483
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster2-640.webp",
+        "duration": 3.700000047683716,
+        "transferSize": 41872
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster1-640.webp",
+        "duration": 3.799999952316284,
+        "transferSize": 47498
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster3-640.webp",
+        "duration": 3.799999952316284,
+        "transferSize": 48996
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster4-640.webp",
+        "duration": 3.899999976158142,
+        "transferSize": 25906
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/HPG-Cover-640.webp",
+        "duration": 4.600000023841858,
+        "transferSize": 42686
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/ZAR-Cover-640.webp",
+        "duration": 4.200000047683716,
+        "transferSize": 28214
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/BLA-Cover-640.webp",
+        "duration": 4.400000095367432,
+        "transferSize": 19040
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/Split--640.webp",
+        "duration": 4.600000023841858,
+        "transferSize": 86708
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/CourseWork-640.webp",
+        "duration": 4.5,
+        "transferSize": 84862
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/Construction-640.webp",
+        "duration": 4.600000023841858,
+        "transferSize": 77806
+      }
+    ]
+  },
+  {
+    "name": "home-390",
+    "errors": [],
+    "requests": [
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-B7HaWui4.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-tO6iFRXZ.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-D6W0uj8G.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-Cw4qCMLn.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BaXFwpN9.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-Bux6f8Eu.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-Cy8cHqb8.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/home-64qdquze.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/cat.gltf",
+        "status": 200
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-Cy8cHqb8.js",
+        "duration": 8.899999976158142,
+        "transferSize": 60665
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-B7HaWui4.css",
+        "duration": 5.600000023841858,
+        "transferSize": 1191
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-D6W0uj8G.js",
+        "duration": 6,
+        "transferSize": 2616
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+        "duration": 5.399999976158142,
+        "transferSize": 380
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-tO6iFRXZ.css",
+        "duration": 5.600000023841858,
+        "transferSize": 645
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+        "duration": 5.799999952316284,
+        "transferSize": 592
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-Cw4qCMLn.js",
+        "duration": 7.899999976158142,
+        "transferSize": 1017
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+        "duration": 8.299999952316284,
+        "transferSize": 1182
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BaXFwpN9.js",
+        "duration": 8.399999976158142,
+        "transferSize": 1769
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-Bux6f8Eu.js",
+        "duration": 8.600000023841858,
+        "transferSize": 11193
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/CAT-Cover-320.webp",
+        "duration": 1.5999999046325684,
+        "transferSize": 8830
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/home-64qdquze.js",
+        "duration": 9.5,
+        "transferSize": 134012
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/cat.gltf",
+        "duration": 5.399999976158142,
+        "transferSize": 2594154
+      }
+    ]
+  },
+  {
+    "name": "projects-390",
+    "errors": [],
+    "requests": [
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/projects",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-B7HaWui4.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-tO6iFRXZ.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-D6W0uj8G.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-Cw4qCMLn.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BaXFwpN9.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-Bux6f8Eu.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-Cy8cHqb8.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/TagList-CFxuE7aq.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/SiteLayout-DmBM75aQ.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/TagList-CkwkKGED.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Projects-D2kNy5hz.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/SiteLayout-eYfg6KYJ.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ProjectCard-PyhncBtv.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Projects-CGmMJGT4.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ProjectCard-DuO8T6cC.css",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/assets/logo_kaiwu-BQnj14wb.png",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster1-320.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster2-320.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster4-320.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster3-320.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/ZAR-Cover-640.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/BLA-Cover-640.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/Split--640.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/HPG-Cover-640.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/CourseWork-640.webp",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/Construction-640.webp",
+        "status": 200
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-B7HaWui4.css",
+        "duration": 5.5,
+        "transferSize": 1191
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-D6W0uj8G.js",
+        "duration": 5.799999952316284,
+        "transferSize": 2616
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/index-Cy8cHqb8.js",
+        "duration": 8.299999952316284,
+        "transferSize": 60665
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-BTHtYS6j.css",
+        "duration": 5.199999928474426,
+        "transferSize": 592
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BB3VFDTq.css",
+        "duration": 5.299999952316284,
+        "transferSize": 380
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/LanguageSwitch-Cw4qCMLn.js",
+        "duration": 7.5,
+        "transferSize": 1017
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ResponsiveImage-BaXFwpN9.js",
+        "duration": 7.899999976158142,
+        "transferSize": 1769
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-Bux6f8Eu.js",
+        "duration": 8,
+        "transferSize": 11193
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ContactLinks-tO6iFRXZ.css",
+        "duration": 5.5,
+        "transferSize": 645
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Home-BDxiaYGC.css",
+        "duration": 7.600000023841858,
+        "transferSize": 1182
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Projects-D2kNy5hz.js",
+        "duration": 3.5999999046325684,
+        "transferSize": 1180
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/SiteLayout-DmBM75aQ.css",
+        "duration": 3.200000047683716,
+        "transferSize": 1027
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/SiteLayout-eYfg6KYJ.js",
+        "duration": 3.5,
+        "transferSize": 915
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/TagList-CFxuE7aq.css",
+        "duration": 2.799999952316284,
+        "transferSize": 824
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/TagList-CkwkKGED.js",
+        "duration": 3.299999952316284,
+        "transferSize": 784
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ProjectCard-PyhncBtv.js",
+        "duration": 3.5,
+        "transferSize": 1171
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/ProjectCard-DuO8T6cC.css",
+        "duration": 4.899999976158142,
+        "transferSize": 977
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/Projects-CGmMJGT4.css",
+        "duration": 4.699999928474426,
+        "transferSize": 892
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/assets/logo_kaiwu-BQnj14wb.png",
+        "duration": 3,
+        "transferSize": 19483
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster1-320.webp",
+        "duration": 3.100000023841858,
+        "transferSize": 13234
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster2-320.webp",
+        "duration": 3.100000023841858,
+        "transferSize": 18498
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster3-320.webp",
+        "duration": 3.200000047683716,
+        "transferSize": 22568
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/KW-poster4-320.webp",
+        "duration": 3,
+        "transferSize": 12022
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/ZAR-Cover-640.webp",
+        "duration": 3.6999999284744263,
+        "transferSize": 28214
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/CourseWork-640.webp",
+        "duration": 4,
+        "transferSize": 84862
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/BLA-Cover-640.webp",
+        "duration": 3.8000000715255737,
+        "transferSize": 19040
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/Construction-640.webp",
+        "duration": 4,
+        "transferSize": 77806
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/Split--640.webp",
+        "duration": 4,
+        "transferSize": 86708
+      },
+      {
+        "name": "http://127.0.0.1:4175/Vite-Homepage-24/image/optimized/HPG-Cover-640.webp",
+        "duration": 3.9000000953674316,
+        "transferSize": 42686
+      }
+    ]
+  }
+]

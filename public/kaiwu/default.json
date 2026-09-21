@@ -1,0 +1,11 @@
+{
+  "modelPath": "./model/owl_gltf/1.gltf",
+  "hdrPath": "./hdr/xmas.hdr",
+  "rotation": 0,
+  "hdrAngle": 0,
+  "autoPlay": false,
+  "ambientIntensity": 0.2,
+  "hdrExposure": 1,
+  "toneMapping": "ACESFilmic",
+  "enablePostprocessing": false
+}
