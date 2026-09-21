@@ -166,3 +166,5 @@ npm run test:static
 ```
 
 浏览器检查请依次运行，避免预览端口冲突。更多开发记录见 [Roadmap](docs/Phase1/Roadmap.md) 和 `docs/Phase1/` 目录。
+
+Pages 发布仅执行依赖安装和生产构建；完整回归在 Actions 的 `Verify site` 手动运行，不阻塞上线。发布后可运行 `node scripts/verify-kaiwu-live.mjs` 检查主要线上流程。

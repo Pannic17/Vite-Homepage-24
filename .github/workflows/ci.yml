@@ -1,8 +1,6 @@
 name: Verify site
 on:
-  push:
-    branches: [master, 'codex/**']
-  pull_request:
+  # Run the full regression suite on demand; Pages builds independently.
   workflow_dispatch:
 
 permissions:

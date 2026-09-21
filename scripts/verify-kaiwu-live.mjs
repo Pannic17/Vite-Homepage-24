@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import {chromium} from '@playwright/test';
 
 const base=process.argv[2]||'https://pannic17.github.io/Vite-Homepage/';
-const output=resolve('docs/Phase2/p2-4/2026-09-22');
+const output=resolve(process.argv[3]||'docs/Phase2/p2-4/2026-09-22');
 await mkdir(output,{recursive:true});
 const report={checkedAt:new Date().toISOString(),base,routes:[]};
 const browser=await chromium.launch();
@@ -19,7 +19,14 @@ try{
     await page.locator('h1').waitFor();
     const retired=await page.locator('a[href]').evaluateAll(links=>links.filter(link=>/(^|\.)kaiwuart\.cn$/.test(new URL(link.href).hostname)).map(link=>link.href));
     assert.deepEqual(retired,[]);
-    if(route==='projects/')assert(new URL(await page.locator('.k-detail').getAttribute('href'),base).pathname.endsWith('/projects/kaiwu'));
+    if(route==='projects/'){
+      const target=new URL(await page.locator('.k-detail').getAttribute('href'),base);
+      assert(target.pathname.endsWith('/projects/kaiwu/viewer'));
+      assert.equal(target.searchParams.get('debug'),'1');
+      await page.locator('.k-detail').click();
+      await page.waitForFunction(()=>document.querySelector('.kaiwu-stage')?.dataset.state==='ready',{},{timeout:60000});
+      await page.locator('.lil-gui').first().waitFor();
+    }
     if(route==='projects/kaiwu/viewer/'){
       await page.waitForFunction(()=>document.querySelector('.kaiwu-stage')?.dataset.state==='ready',{},{timeout:60000});
       await page.reload({waitUntil:'networkidle'});
@@ -27,6 +34,8 @@ try{
       await page.screenshot({path:join(output,'live-viewer.png'),fullPage:true});
       await page.getByRole('button',{name:'中文',exact:true}).click();
       await page.getByRole('link',{name:'返回项目',exact:true}).click();
+      await page.waitForURL(url=>url.pathname.replace(/\/$/,'')===new URL('projects',base).pathname);
+      await page.locator('.kaiwu-stage').waitFor({state:'detached'});
       assert.equal(await page.locator('canvas').count(),0);
     }
     assert.deepEqual(failures,[]);

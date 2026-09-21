@@ -1,12 +1,12 @@
 # Phase 2 发布与验收
 
-保持现有 GitHub Actions／GitHub Pages 发布流程。当前远端规范仓库为 `Pannic17/Vite-Homepage`，线上前缀为 `/Vite-Homepage/`；本地默认仍为 `/Vite-Homepage-24/`。`pages.yml` 从 configure-pages 输出读取实际前缀，在 master 推送后执行检查、审计、浏览器测试和静态部署验证，再重新构建并发布。静态检查覆盖根路径、旧默认前缀和实际线上前缀。
+保持现有 GitHub Actions／GitHub Pages 发布流程。当前远端规范仓库为 `Pannic17/Vite-Homepage`，线上前缀为 `/Vite-Homepage/`；本地默认仍为 `/Vite-Homepage-24/`。`pages.yml` 从 configure-pages 输出读取实际前缀，在 master 推送后执行 `npm ci`、配置 Pages 前缀、生产构建并发布。完整回归保留在手动触发的 `Verify site`，与部署独立，不阻塞上线。安装或生产构建失败仍会停止发布。
 
 ## 发布前
 
 1. 使用 `.node-version` 中的 Node 版本、`npm ci` 安装锁定依赖；Three.js 仍为 `0.147.0`。
-2. 执行 `npm run check`、`npm run test:e2e`、`npm run test:static` 和 `npm audit --audit-level=high`。
-3. 核对默认模型、三种输入、两种语言、键盘操作和错误恢复。记录跳过项与真实设备未验证项，不能将浏览器模拟等同真机。
+2. 使用实际部署前缀执行生产构建；按需运行现有检查，不新增完整测试门禁。
+3. 核对主要路由、详情跳转、默认模型和刷新；完整回归及真机未验证项记录为后续项。
 4. 提交源代码、资源、测试和交付文档。每步交付执行英文 Git commit；发布步骤单独记录对应源码 SHA 和 Actions URL。
 
 `npm run build` 会写入 dist。仓库仍有少量历史 dist 跟踪项，因此本地验收使用 `.check-dist.local/`；发布以 CI 从源码重新构建的 artifact 为准，不手动混入旧产物。
@@ -19,6 +19,8 @@
 - `/kaiwu/default.json` 及引用资源可加载，默认模型实际可见。
 - 配置页不加载模型／HDR；查看器退出后无残留 canvas。
 - 中文／英文切换、错误提示和“返回项目”正常。
+
+线上可用 `node scripts/verify-kaiwu-live.mjs` 执行已有的轻量验收；可选第一个参数指定站点 URL，第二个指定证据输出目录。
 
 实际执行结果记录在 [P2-4 验收报告](p2-4/2026-09-22/README.md)。缺少设备或发布验证时保留未完成状态。
 
